@@ -29,4 +29,4 @@
 | Thomas     | Bealer        |                                          |
 | Todd       | Adelman       |                                          |
 | Tyler      | Rozboril      |                                          |
-| Valerie    | Kraucunas     | (Dink Kitchen)[https://github.com/vkraucunas/dinkKitchen]                                          |
+| Valerie    | Kraucunas     | https://github.com/vkraucunas/dinkKitchen                                          |
