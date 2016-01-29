@@ -12,7 +12,7 @@
 | David      | Schwartz      |                                          |
 | David      | Sudia         | https://github.com/dsudia/G19-DavidSudia |
 | Dennis     | Bailey        | https://github.com/dennisbailey/unit-1-personal-project/blob/master/proposal.md                                         |
-| Garan      | Guillory      |                                          |
+| Garan      | Guillory      | https://github.com/garanguillory/G19-GaranGuillory                                         |
 | James      | Volmert       |                                          |
 | Jon        | Hammond       |                                          |
 | Kathleen   | Dieser        | https://github.com/katdiese/sentences                                         |
