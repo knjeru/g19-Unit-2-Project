@@ -2,7 +2,7 @@
 
 | First Name |   Last Name   | Proposal                                 |
 |------------|---------------|------------------------------------------|
-| Aaron      | Toys          |                                          |
+| Aaron      | Toys          |https://github.com/aarontoys/predictive_shopping_list                                          |
 | Adam       | Poulsen       |https://github.com/amp0024/G19-AdamPoulsen|
 | Andy       | Gross         |                                          |
 | Ben        | Hernandez     | https://github.com/BenAychh/Calculator-G19-BenHernandez |
