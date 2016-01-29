@@ -18,7 +18,7 @@
 | Kathleen   | Dieser        | https://github.com/katdiese/sentences                                         |
 | Kaylyn     | Van Norstrand | https://github.com/KayTV/pokemon-app                                        |
 | Kevin      | Njeru         | https://github.com/knjeru/U1_caloriecounter_proj                                        |
-| Klaus      | Sagehorn      |                                          |
+| Klaus      | Sagehorn      | https://github.com/khsagehorn/Unit1-Project                                         |
 | Kyle       | Maxwell       | https://github.com/KyleJayMaxwell/local-Co                                         |
 | Lina       | Sachuk        |                                          |
 | Louisa     | Reese         | https://github.com/weezy93/unit-1-personal-project/blob/master/proposal.md                                         |
