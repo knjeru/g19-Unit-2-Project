@@ -29,4 +29,4 @@
 | Thomas     | Bealer        |                                          |
 | Todd       | Adelman       |                                          |
 | Tyler      | Rozboril      |                                          |
-| Valerie    | Kraucunas     |                                          |
+| Valerie    | Kraucunas     | (Dink Kitchen)[git@github.com:gSchool/g19-unit-1-personal-project.git]                                          |
