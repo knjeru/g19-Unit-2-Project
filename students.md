@@ -17,7 +17,7 @@
 | Jon        | Hammond       |                                          |
 | Kathleen   | Dieser        | https://github.com/katdiese/sentences                                         |
 | Kaylyn     | Van Norstrand | https://github.com/KayTV/pokemon-app                                        |
-| Kevin      | Njeru         |                                          |
+| Kevin      | Njeru         | https://github.com/knjeru/U1_caloriecounter_proj                                        |
 | Klaus      | Sagehorn      |                                          |
 | Kyle       | Maxwell       |                                          |
 | Lina       | Sachuk        |                                          |
