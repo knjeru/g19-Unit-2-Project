@@ -28,5 +28,5 @@
 | Robert     | Gaines        |                                          |
 | Thomas     | Bealer        |https://github.com/tbealer/personalProject1.git|
 | Todd       | Adelman       |                                          |
-| Tyler      | Rozboril      |                                          |
+| Tyler      | Rozboril      |https://github.com/trozboril/rockOnKeyboard                                      |
 | Valerie    | Kraucunas     | https://github.com/vkraucunas/dinkKitchen                                         |
