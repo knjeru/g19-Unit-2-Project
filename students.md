@@ -14,7 +14,7 @@
 | Dennis     | Bailey        | https://github.com/dennisbailey/unit-1-personal-project/blob/master/proposal.md                                         |
 | Garan      | Guillory      |                                          |
 | James      | Volmert       |                                          |
-| Jon        | Hammond       | https://github.com/jonhammond/Unit-1/tree/master/Project                                         |
+| Jon        | Hammond       | https://github.com/jonhammond/Unit-1/tree/master/Personal-Project                                         |
 | Kathleen   | Dieser        | https://github.com/katdiese/sentences                                         |
 | Kaylyn     | Van Norstrand | https://github.com/KayTV/pokemon-app                                        |
 | Kevin      | Njeru         |                                          |
