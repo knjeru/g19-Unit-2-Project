@@ -27,6 +27,6 @@
 | Rachel     | Koldenhoven   | https://github.com/RachelKoldenhoven/g19-RKoldenhoven-Unit1-Project                                         |
 | Robert     | Gaines        |                                          |
 | Thomas     | Bealer        |https://github.com/tbealer/personalProject1.git|
-| Todd       | Adelman       |                                          |
+| Todd       | Adelman       | https://github.com/toddadelman/persoproj1                                         |
 | Tyler      | Rozboril      |                                          |
 | Valerie    | Kraucunas     | https://github.com/vkraucunas/dinkKitchen                                         |
