@@ -17,7 +17,7 @@
 | Jon        | Hammond       | https://github.com/jonhammond/Unit-1/tree/master/Personal-Project                                         |
 | Kathleen   | Dieser        | https://github.com/katdiese/sentences                                         |
 | Kaylyn     | Van Norstrand | https://github.com/KayTV/pokemon-app                                        |
-| Kevin      | Njeru         |                                          |
+| Kevin      | Njeru         | https://github.com/knjeru/U1_caloriecounter_proj                                        |
 | Klaus      | Sagehorn      |                                          |
 | Kyle       | Maxwell       | https://github.com/KyleJayMaxwell/local-Co                                         |
 | Lina       | Sachuk        |                                          |
