@@ -15,7 +15,7 @@
 | Garan      | Guillory      |                                          |
 | James      | Volmert       |                                          |
 | Jon        | Hammond       |                                          |
-| Kathleen   | Dieser        |                                          |
+| Kathy      | Dieser        | https://github.com/katdiese/sentences    |
 | Kaylyn     | Van Norstrand |                                          |
 | Kevin      | Njeru         |                                          |
 | Klaus      | Sagehorn      |                                          |
