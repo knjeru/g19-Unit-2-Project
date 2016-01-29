@@ -20,7 +20,7 @@
 | Kevin      | Njeru         |                                          |
 | Klaus      | Sagehorn      |                                          |
 | Kyle       | Maxwell       |                                          |
-| Lina       | Sachuk    https://github.com/1linasachuk/g19-LinaSachuk-Unit1-Project  |                                          |
+| Lina       | Sachuk       | https://github.com/1linasachuk/g19-LinaSachuk-Unit1-Project |                                          |
 | Louisa     | Reese         |                                          |
 | Michael    | DiGuiseppi    |                                          |
 | Mills      | McIlroy       |                                          |
