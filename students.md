@@ -9,7 +9,7 @@
 | Caleb      | Pollman       | [link](https://github.com/cpollman1/Personal-Project-One.git) |[style wars = blood wars?](https://cpollman1-01.firebaseapp.com/)  |                                       |
 | Daniel     | Klein         | [link](https://github.com/danhklein/godwin) | [Hitler in America](https://godwin-project.firebaseapp.com/) |
 | Danny      | Robinson      | [link](https://github.com/djrobinson/campaign_finance) | [Campaign Finance Explorer](https://blinding-heat-4630.firebaseapp.com/)|
-| David      | Schwartz      | [link](https://github.com/Mavs212/g19-unit-1-personal-project) | [Allergenie](http://mavs212.github.io/personal-project/) |
+| David      | Schwartz      | [link](https://github.com/Mavs212/personal-project) | [Allergenie](http://mavs212.github.io/personal-project/) |
 | David      | Sudia         | [link](https://github.com/dsudia/G19-DavidSudia) | [Welcome to HQ](https://dsudia.github.io/G19-DavidSudia) |
 | Dennis     | Bailey        | [link](https://github.com/dennisbailey/unit-1-personal-project/) | [Plēthōrā](https://plethora.firebaseapp.com/) |
 | Garan      | Guillory      | [link](https://github.com/garanguillory/G19-GaranGuillory)| [State Flag Game](http://garanguillory.github.io/G19-GaranGuillory/) |
@@ -25,9 +25,9 @@
 | Michael    | DiGuiseppi    | [link](https://github.com/michaeldiguiseppi/front-end-personal-project) | [MMDB](https://mmdb-movie-database.firebaseapp.com/) |
 | Mills      | McIlroy       | [link](https://github.com/millsmcilroy/personalProject1) | [Dodger](https://dodger.firebaseapp.com/) |
 | Rachel     | Koldenhoven   | [link](https://github.com/RachelKoldenhoven/g19-RKoldenhoven-Unit1-Project) | [Vocabulary Memory Game](https://vocabmemory.firebaseapp.com/) |
-| Robert     | Gaines        | [link](https://github.com/rlgaines/proj-proposal) | [Not So Fifa](https://notsofifa.firebaseapp.com/) |
+| Robert     | Gaines        | [link](https://github.com/rlgaines/Soccer-Game) | [Not So Fifa](https://notsofifa.firebaseapp.com/) |
 | Thomas     | Bealer        | [link](https://github.com/tbealer/personalProject1.git)| [Bracket Buster!](http://tbealer.github.io/personalProject1/src/) |
-| Todd       | Adelman       | [link](https://github.com/toddadelman/) | [3x](http://toddadelman.github.io/persoproj1/src/) |
+| Todd       | Adelman       | [link](https://github.com/toddadelman/persoproj1) | [3x](http://toddadelman.github.io/persoproj1/src/) |
 | Tyler      | Rozboril      | [link](https://github.com/trozboril/rockOnKeyboard) | [rockOn Keyboard](https://rockon-keyboard.firebaseapp.com) |
 | Valerie    | Kraucunas     | [link](https://github.com/vkraucunas/dinkKitchen)  | [Dink Kitchen](https://dinkkitchen.firebaseapp.com/index.html) |
 
