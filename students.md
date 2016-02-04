@@ -10,7 +10,7 @@
 | Daniel     | Klein         | https://github.com/danhklein/godwin                                         |
 | Danny      | Robinson      |https://github.com/djrobinson/campaign_finance|
 | David      | Schwartz      | https://github.com/Mavs212/g19-unit-1-personal-project/blob/master/proposal.md                                         |
-| David      | Sudia         | https://github.com/dsudia/G19-DavidSudia |
+| David      | Sudia         | https://github.com/dsudia/G19-DavidSudia | Welcome to HQ | https://github.com/dsudia/G19-DavidSudia | dsudia.github.io/G19-DavidSudia |
 | Dennis     | Bailey        | https://github.com/dennisbailey/unit-1-personal-project/blob/master/proposal.md                                         |
 | Garan      | Guillory      | https://github.com/garanguillory/G19-GaranGuillory                                         |
 | James      | Volmert       | https://github.com/jamesv28/mlbPlayer                                        |
