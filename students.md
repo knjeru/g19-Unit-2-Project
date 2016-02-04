@@ -2,7 +2,7 @@
 
 | First Name |   Last Name   | Proposal                                 | Project Name | Github URL | Live Site URL |
 |------------|---------------|------------------------------------------|--------------|------------|---------------|
-| Aaron      | Toys          |https://github.com/aarontoys/predictive_shopping_list |
+| Aaron      | Toys          |https://github.com/aarontoys/predictive_shopping_list | Not-So-Predictive Shopping List | https://github.com/aarontoys/predictive_shopping_list | https://aarontoys-psl.firebaseapp.com/ |
 | Adam       | Poulsen       |https://github.com/amp0024/G19-AdamPoulsen|
 | Andy       | Gross         | https://github.com/andogro/personal-project-1|
 | Ben        | Hernandez     | https://github.com/BenAychh/Calculator-G19-BenHernandez | Calculator | https://github.com/BenAychh/Calculator-G19-BenHernandez | https://benaychh.github.io/Calculator-G19-BenHernandez/
