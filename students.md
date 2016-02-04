@@ -4,8 +4,10 @@
 |------------|---------------|------------------------------------------|--------------|------------|---------------|
 | Aaron      | Toys          |https://github.com/aarontoys/predictive_shopping_list | Not-So-Predictive Shopping List | https://github.com/aarontoys/predictive_shopping_list | https://aarontoys-psl.firebaseapp.com/ |
 | Adam       | Poulsen       |https://github.com/amp0024/G19-AdamPoulsen|
-| Andy       | Gross         | https://github.com/andogro/personal-project-1|
+<<<<<<< HEAD
+| Andy       | Gross         | https://github.com/andogro/personal-project-1| Slots for Dinner| https://github.com/andogro/personal-project-1/tree/master/public| https://slotsfordinner.firebaseapp.com/ |
 | Ben        | Hernandez     | https://github.com/BenAychh/Calculator-G19-BenHernandez | Calculator | https://github.com/BenAychh/Calculator-G19-BenHernandez | https://benaychh.github.io/Calculator-G19-BenHernandez/
+>>>>>>> upstream/master
 | Caleb      | Pollman       | https://github.com/cpollman1/Personal-Project-One.git                                         |
 | Daniel     | Klein         | https://github.com/danhklein/godwin                                         |
 | Danny      | Robinson      |https://github.com/djrobinson/campaign_finance|Campaign Finance Explorer |https://github.com/djrobinson/campaign_finance |https://blinding-heat-4630.firebaseapp.com/|
