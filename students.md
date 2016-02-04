@@ -21,7 +21,7 @@
 | Klaus      | Sagehorn      | https://github.com/khsagehorn/Unit1-Project                                         |
 | Kyle       | Maxwell       | https://github.com/KyleJayMaxwell/local-Co                                         |
 | Lina       | Sachuk   |  https://github.com/1linasachuk/g19-LinaSachuk-Unit1-Project                                        |
-| Louisa     | Reese         | https://github.com/weezy93/unit-1-personal-project/blob/master/proposal.md                                         |
+| Louisa     | Reese         | https://github.com/weezy93/unit-1-personal-project/blob/master/proposal.md | Spare Change | https://github.com/weezy93/unit-1-personal-project | https://spare00change.firebaseapp.com                                         |
 | Michael    | DiGuiseppi    | https://github.com/michaeldiguiseppi/front-end-personal-project | MMDB | https://github.com/michaeldiguiseppi/front-end-personal-project | https://mmdb-movie-database.firebaseapp.com/ |
 | Mills      | McIlroy       | https://github.com/millsmcilroy/personalProject1 | Dodger | https://github.com/millsmcilroy/personalProject1 | https://dodger.firebaseapp.com/
 | Rachel     | Koldenhoven   | https://github.com/RachelKoldenhoven/g19-RKoldenhoven-Unit1-Project                                         |
