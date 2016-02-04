@@ -23,7 +23,7 @@
 | Lina       | Sachuk   |  https://github.com/1linasachuk/g19-LinaSachuk-Unit1-Project                                        |
 | Louisa     | Reese         | https://github.com/weezy93/unit-1-personal-project/blob/master/proposal.md                                         |
 | Michael    | DiGuiseppi    | https://github.com/michaeldiguiseppi/front-end-personal-project | MMDB | https://github.com/michaeldiguiseppi/front-end-personal-project | https://mmdb-movie-database.firebaseapp.com/ |
-| Mills      | McIlroy       | https://github.com/millsmcilroy/personalProject1 |
+| Mills      | McIlroy       | https://github.com/millsmcilroy/personalProject1 | Dodger | https://github.com/millsmcilroy/personalProject1 | https://dodger.firebaseapp.com/
 | Rachel     | Koldenhoven   | https://github.com/RachelKoldenhoven/g19-RKoldenhoven-Unit1-Project                                         |
 | Robert     | Gaines        | https://github.com/rlgaines/proj-proposal                                      |
 | Thomas     | Bealer        |https://github.com/tbealer/personalProject1.git|
