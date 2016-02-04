@@ -3,7 +3,7 @@
 | First Name |   Last Name   | Proposal                                 | Project Name | Github URL | Live Site URL |
 |------------|---------------|------------------------------------------|--------------|------------|---------------|
 | Aaron      | Toys          |https://github.com/aarontoys/predictive_shopping_list |
-| Adam       | Poulsen       |https://github.com/amp0024/G19-AdamPoulsen| PPCAp  |  https://github.com/amp0024/pitching_practiceApp  |  http://amp0024.github.io/pitching_practiceApp/  |
+| Adam       | Poulsen       |https://github.com/amp0024/G19-AdamPoulsen|
 | Andy       | Gross         | https://github.com/andogro/personal-project-1|
 | Ben        | Hernandez     | https://github.com/BenAychh/Calculator-G19-BenHernandez | Calculator | https://github.com/BenAychh/Calculator-G19-BenHernandez | https://benaychh.github.io/Calculator-G19-BenHernandez/
 | Caleb      | Pollman       | https://github.com/cpollman1/Personal-Project-One.git                                         |
@@ -17,9 +17,9 @@
 | Jon        | Hammond       | https://github.com/jonhammond/Unit-1/tree/master/Personal-Project                                         |
 | Kathleen   | Dieser        | https://github.com/katdiese/sentences                                         |
 | Kaylyn     | Van Norstrand | https://github.com/KayTV/pokemon-app                      | Pokemon Battle! | https://github.com/KayTV/pokemon-app | http://kaytv.github.io/pokemon-app/
-| Kevin      | Njeru         | https://github.com/knjeru/U1_caloriecounter_proj                                        |
+| Kevin      | Njeru         | https://github.com/knjeru/U1_caloriecounter_proj |Calorie Counter| https://github.com/knjeru/U1_caloriecounter_proj | http://knjeru.github.io/  |
 | Klaus      | Sagehorn      | https://github.com/khsagehorn/Unit1-Project                                         |
-| Kyle       | Maxwell       | https://github.com/KyleJayMaxwell/local-Co  |  Local-CO | https://github.com/KyleJayMaxwell/local-Co | http://kylejaymaxwell.tk/local-Fashion/ |                                
+| Kyle       | Maxwell       | https://github.com/KyleJayMaxwell/local-Co                                         |
 | Lina       | Sachuk   |  https://github.com/1linasachuk/g19-LinaSachuk-Unit1-Project                                        |
 | Louisa     | Reese         | https://github.com/weezy93/unit-1-personal-project/blob/master/proposal.md | Spare Change | https://github.com/weezy93/unit-1-personal-project | https://spare00change.firebaseapp.com                                         |
 | Michael    | DiGuiseppi    | https://github.com/michaeldiguiseppi/front-end-personal-project | MMDB | https://github.com/michaeldiguiseppi/front-end-personal-project | https://mmdb-movie-database.firebaseapp.com/ |
