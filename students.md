@@ -11,10 +11,10 @@
 | Danny      | Robinson      |https://github.com/djrobinson/campaign_finance|Campaign Finance Explorer |https://github.com/djrobinson/campaign_finance |https://blinding-heat-4630.firebaseapp.com/|
 | David      | Schwartz      | https://github.com/Mavs212/g19-unit-1-personal-project/blob/master/proposal.md                                         |
 | David      | Sudia         | https://github.com/dsudia/G19-DavidSudia | Welcome to HQ | https://github.com/dsudia/G19-DavidSudia | https://dsudia.github.io/G19-DavidSudia |
-| Dennis     | Bailey        | https://github.com/dennisbailey/unit-1-personal-project/blob/master/proposal.md                                         |
+| Dennis     | Bailey        | [Proposal](https://github.com/dennisbailey/unit-1-personal-project/blob/master/proposal.md) | Plēthōrā | [Repo](https://github.com/dennisbailey/unit-1-personal-project/) | [Deployed](https://plethora.firebaseapp.com/) |
 | Garan      | Guillory      | https://github.com/garanguillory/G19-GaranGuillory| State Flag Game | https://github.com/garanguillory/G19-GaranGuillory  | http://garanguillory.github.io/G19-GaranGuillory/
 | James      | Volmert       | https://github.com/jamesv28/mlbPlayer                                        |
-| Jon        | Hammond       | https://github.com/jonhammond/Personal-Project | DANCE MACHINE!!! | https://github.com/jonhammond/Personal-Project | https://antsinmahpants.firebaseapp.com
+| Jon        | Hammond       | https://github.com/jonhammond/Unit-1/tree/master/Personal-Project                                         |
 | Kathleen   | Dieser        | https://github.com/katdiese/sentences                                         |
 | Kaylyn     | Van Norstrand | https://github.com/KayTV/pokemon-app                      | Pokemon Battle! | https://github.com/KayTV/pokemon-app | http://kaytv.github.io/pokemon-app/
 | Kevin      | Njeru         | https://github.com/knjeru/U1_caloriecounter_proj |Calorie Counter| https://github.com/knjeru/U1_caloriecounter_proj | http://knjeru.github.io/  |
@@ -28,5 +28,4 @@
 | Robert     | Gaines        | https://github.com/rlgaines/proj-proposal            | Not So Fifa | https://github.com/rlgaines/Soccer-Game | https://notsofifa.firebaseapp.com/
 | Thomas     | Bealer        |https://github.com/tbealer/personalProject1.git
 | Todd       | Adelman       | https://github.com/toddadelman/ | 3x                                         | https://github.com/toddadelman/persoproj1 | http://toddadelman.github.io/persoproj1/src/ | Tyler      | Rozboril      | https://github.com/trozboril/rockOnKeyboard                                   |
-| Tyler      | Rozboril      |https://github.com/trozboril/rockOnKeyboard| rockOn! Keyboard | https://github.com/trozboril |  https://rockon-keyboard.firebaseapp.com
 Valerie    | Kraucunas     | https://github.com/vkraucunas/dinkKitchen                                         | Dink Kitchen | https://github.com/vkraucunas/dinkKitchen|https://dinkkitchen.firebaseapp.com/index.html
