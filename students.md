@@ -3,7 +3,7 @@
 | First Name |   Last Name   | Repo | Live Site |
 |------------|---------------|------|-----------|
 | Aaron | Toys | [link](https://github.com/aarontoys/predictive_shopping_list) | [Not-So-Predictive Shopping List](https://aarontoys-psl.firebaseapp.com/) |
-| Adam | Poulsen | [link](https://github.com/amp0024/G19-AdamPoulsen) | TBA |
+| Adam | Poulsen | [link](https://github.com/amp0024/G19-AdamPoulsen) | [http://amp0024.github.io/pitching_practiceApp](Pitching Practice) |
 | Andy | Gross | [link](https://github.com/andogro/personal-project-1) | [Slots for Dinner](https://slotsfordinner.firebaseapp.com/) |
 | Ben        | Hernandez     | https://github.com/BenAychh/Calculator-G19-BenHernandez | Calculator | https://github.com/BenAychh/Calculator-G19-BenHernandez | https://benaychh.github.io/Calculator-G19-BenHernandez/
 | Caleb      | Pollman       | https://github.com/cpollman1/Personal-Project-One.git |style wars = blood wars?                                       | https://github.com/cpollman1/Personal-Project-One.git | https://cpollman1-01.firebaseapp.com/                                         |
@@ -27,5 +27,5 @@
 | Rachel     | Koldenhoven   | https://github.com/RachelKoldenhoven/g19-RKoldenhoven-Unit1-Project |Vocabulary Memory Game |https://github.com/RachelKoldenhoven/g19-RKoldenhoven-Unit1-Project |https://vocabmemory.firebaseapp.com/                                        |
 | Robert     | Gaines        | https://github.com/rlgaines/proj-proposal            | Not So Fifa | https://github.com/rlgaines/Soccer-Game | https://notsofifa.firebaseapp.com/
 | Thomas     | Bealer        |https://github.com/tbealer/personalProject1.git| Bracket Buster! | https://github.com/tbealer/personalProject1 | http://tbealer.github.io/personalProject1/src/ |
-| Todd       | Adelman       | https://github.com/toddadelman/ | 3x                                         | https://github.com/toddadelman/persoproj1 | http://toddadelman.github.io/persoproj1/src/ | Tyler      | Rozboril      | https://github.com/trozboril/rockOnKeyboard                                   |
-Valerie    | Kraucunas     | https://github.com/vkraucunas/dinkKitchen                                         | Dink Kitchen | https://github.com/vkraucunas/dinkKitchen|https://dinkkitchen.firebaseapp.com/index.html
+| Todd       | Adelman       | https://github.com/toddadelman/ | 3x                                         | https://github.com/toddadelman/persoproj1 | http://toddadelman.github.io/persoproj1/src/ | Tyler      | Rozboril      | https://github.com/trozboril/rockOnKeyboard |
+| Valerie | Kraucunas | [link](https://github.com/vkraucunas/dinkKitchen) | [Dink Kitchen](https://dinkkitchen.firebaseapp.com/) |
