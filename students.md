@@ -10,20 +10,20 @@
 | Daniel     | Klein         | https://github.com/danhklein/godwin                                         |
 | Danny      | Robinson      |https://github.com/djrobinson/campaign_finance|
 | David      | Schwartz      | https://github.com/Mavs212/g19-unit-1-personal-project/blob/master/proposal.md                                         |
-| David      | Sudia         | https://github.com/dsudia/G19-DavidSudia |
+| David      | Sudia         | https://github.com/dsudia/G19-DavidSudia | Welcome to HQ | https://github.com/dsudia/G19-DavidSudia | https://dsudia.github.io/G19-DavidSudia |
 | Dennis     | Bailey        | https://github.com/dennisbailey/unit-1-personal-project/blob/master/proposal.md                                         |
-| Garan      | Guillory      | https://github.com/garanguillory/G19-GaranGuillory                                         |
+| Garan      | Guillory      | https://github.com/garanguillory/G19-GaranGuillory| State Flag Game | https://github.com/garanguillory/G19-GaranGuillory  | http://garanguillory.github.io/G19-GaranGuillory/
 | James      | Volmert       | https://github.com/jamesv28/mlbPlayer                                        |
 | Jon        | Hammond       | https://github.com/jonhammond/Unit-1/tree/master/Personal-Project                                         |
 | Kathleen   | Dieser        | https://github.com/katdiese/sentences                                         |
-| Kaylyn     | Van Norstrand | https://github.com/KayTV/pokemon-app                                        |
+| Kaylyn     | Van Norstrand | https://github.com/KayTV/pokemon-app                      | Pokemon Battle! | https://github.com/KayTV/pokemon-app | http://kaytv.github.io/pokemon-app/ 
 | Kevin      | Njeru         | https://github.com/knjeru/U1_caloriecounter_proj                                        |
 | Klaus      | Sagehorn      | https://github.com/khsagehorn/Unit1-Project                                         |
 | Kyle       | Maxwell       | https://github.com/KyleJayMaxwell/local-Co                                         |
 | Lina       | Sachuk   |  https://github.com/1linasachuk/g19-LinaSachuk-Unit1-Project                                        |
 | Louisa     | Reese         | https://github.com/weezy93/unit-1-personal-project/blob/master/proposal.md                                         |
 | Michael    | DiGuiseppi    | https://github.com/michaeldiguiseppi/front-end-personal-project | MMDB | https://github.com/michaeldiguiseppi/front-end-personal-project | https://mmdb-movie-database.firebaseapp.com/ |
-| Mills      | McIlroy       | https://github.com/millsmcilroy/personalProject1 |
+| Mills      | McIlroy       | https://github.com/millsmcilroy/personalProject1 | Dodger | https://github.com/millsmcilroy/personalProject1 | https://dodger.firebaseapp.com/
 | Rachel     | Koldenhoven   | https://github.com/RachelKoldenhoven/g19-RKoldenhoven-Unit1-Project                                         |
 | Robert     | Gaines        | https://github.com/rlgaines/proj-proposal                                      |
 | Thomas     | Bealer        |https://github.com/tbealer/personalProject1.git|
