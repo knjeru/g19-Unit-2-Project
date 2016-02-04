@@ -2,7 +2,7 @@
 
 | First Name |   Last Name   | Proposal                                 | Project Name | Github URL | Live Site URL |
 |------------|---------------|------------------------------------------|--------------|------------|---------------|
-| Aaron      | Toys          |https://github.com/aarontoys/predictive_shopping_list                                          |
+| Aaron      | Toys          |https://github.com/aarontoys/predictive_shopping_list |
 | Adam       | Poulsen       |https://github.com/amp0024/G19-AdamPoulsen|
 | Andy       | Gross         | https://github.com/andogro/personal-project-1|
 | Ben        | Hernandez     | https://github.com/BenAychh/Calculator-G19-BenHernandez |
@@ -22,7 +22,7 @@
 | Kyle       | Maxwell       | https://github.com/KyleJayMaxwell/local-Co                                         |
 | Lina       | Sachuk   |  https://github.com/1linasachuk/g19-LinaSachuk-Unit1-Project                                        |
 | Louisa     | Reese         | https://github.com/weezy93/unit-1-personal-project/blob/master/proposal.md                                         |
-| Michael    | DiGuiseppi    | https://github.com/michaeldiguiseppi/front-end-personal-project|
+| Michael    | DiGuiseppi    | https://github.com/michaeldiguiseppi/front-end-personal-project | MMDB | https://github.com/michaeldiguiseppi/front-end-personal-project | https://mmdb-movie-database.firebaseapp.com/ |
 | Mills      | McIlroy       | https://github.com/millsmcilroy/personalProject1 |
 | Rachel     | Koldenhoven   | https://github.com/RachelKoldenhoven/g19-RKoldenhoven-Unit1-Project                                         |
 | Robert     | Gaines        | https://github.com/rlgaines/proj-proposal                                      |
