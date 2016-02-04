@@ -2,7 +2,7 @@
 
 | First Name |   Last Name   | Repo                                 | Live Site |
 |------------|---------------|--------------------------------------|-----------|
-| Aaron      | Toys          | [link](https://github.com/aarontoys/predictive_shopping_list) | [Not-So-Predictive Shopping List](https://aarontoys-psl.firebaseapp.com/) | 
+| Aaron | Toys | [link](https://github.com/aarontoys/predictive_shopping_list) | [Not-So-Predictive Shopping List](https://aarontoys-psl.firebaseapp.com/) | 
 | Adam       | Poulsen       |https://github.com/amp0024/G19-AdamPoulsen|
 | Andy       | Gross         | https://github.com/andogro/personal-project-1| Slots for Dinner| https://github.com/andogro/personal-project-1/tree/master/public| https://slotsfordinner.firebaseapp.com/ |
 | Ben        | Hernandez     | https://github.com/BenAychh/Calculator-G19-BenHernandez | Calculator | https://github.com/BenAychh/Calculator-G19-BenHernandez | https://benaychh.github.io/Calculator-G19-BenHernandez/
