@@ -9,7 +9,7 @@
 | Caleb      | Pollman       | https://github.com/cpollman1/Personal-Project-One.git |style wars = blood wars?                                       | https://github.com/cpollman1/Personal-Project-One.git | https://cpollman1-01.firebaseapp.com/                                         |
 | Daniel     | Klein         | https://github.com/danhklein/godwin                                         |
 | Danny      | Robinson      |https://github.com/djrobinson/campaign_finance|Campaign Finance Explorer |https://github.com/djrobinson/campaign_finance |https://blinding-heat-4630.firebaseapp.com/|
-| David      | Schwartz      | https://github.com/Mavs212/g19-unit-1-personal-project/blob/master/proposal.md                                         |
+| David      | Schwartz      | https://github.com/Mavs212/g19-unit-1-personal-project/blob/master/proposal.md| Allergenie | https://github.com/Mavs212/personal-project | http://mavs212.github.io/personal-project/|
 | David      | Sudia         | https://github.com/dsudia/G19-DavidSudia | Welcome to HQ | https://github.com/dsudia/G19-DavidSudia | https://dsudia.github.io/G19-DavidSudia |
 | Dennis     | Bailey        | [Proposal](https://github.com/dennisbailey/unit-1-personal-project/blob/master/proposal.md) | Plēthōrā | [Repo](https://github.com/dennisbailey/unit-1-personal-project/) | [Deployed](https://plethora.firebaseapp.com/) |
 | Garan      | Guillory      | https://github.com/garanguillory/G19-GaranGuillory| State Flag Game | https://github.com/garanguillory/G19-GaranGuillory  | http://garanguillory.github.io/G19-GaranGuillory/
