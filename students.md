@@ -19,7 +19,7 @@
 | Kaylyn     | Van Norstrand | https://github.com/KayTV/pokemon-app                      | Pokemon Battle! | https://github.com/KayTV/pokemon-app | http://kaytv.github.io/pokemon-app/
 | Kevin      | Njeru         | https://github.com/knjeru/U1_caloriecounter_proj                                        |
 | Klaus      | Sagehorn      | https://github.com/khsagehorn/Unit1-Project                                         |
-| Kyle       | Maxwell       | https://github.com/KyleJayMaxwell/local-Co                                         |
+| Kyle       | Maxwell       | https://github.com/KyleJayMaxwell/local-Co  |  Local-CO | https://github.com/KyleJayMaxwell/local-Co | http://kylejaymaxwell.tk/local-Fashion/ |                                
 | Lina       | Sachuk   |  https://github.com/1linasachuk/g19-LinaSachuk-Unit1-Project                                        |
 | Louisa     | Reese         | https://github.com/weezy93/unit-1-personal-project/blob/master/proposal.md | Spare Change | https://github.com/weezy93/unit-1-personal-project | https://spare00change.firebaseapp.com                                         |
 | Michael    | DiGuiseppi    | https://github.com/michaeldiguiseppi/front-end-personal-project | MMDB | https://github.com/michaeldiguiseppi/front-end-personal-project | https://mmdb-movie-database.firebaseapp.com/ |
