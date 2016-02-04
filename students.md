@@ -26,10 +26,6 @@
 | Mills      | McIlroy       | https://github.com/millsmcilroy/personalProject1 | Dodger | https://github.com/millsmcilroy/personalProject1 | https://dodger.firebaseapp.com/
 | Rachel     | Koldenhoven   | https://github.com/RachelKoldenhoven/g19-RKoldenhoven-Unit1-Project                                         |
 | Robert     | Gaines        | https://github.com/rlgaines/proj-proposal            | Not So Fifa | https://github.com/rlgaines/Soccer-Game | https://notsofifa.firebaseapp.com/
-| Thomas     | Bealer        |https://github.com/tbealer/personalProject1.git|
-| Todd       | Adelman       | https://github.com/toddadelman/ | 3x                                         | https://github.com/toddadelman/persoproj1 | http://toddadelman.github.io/persoproj1/src/
-| Tyler      | Rozboril      |                                          |
-=======
-| Tyler      | Rozboril      |https://github.com/trozboril/rockOnKeyboard                                      |
-| Valerie    | Kraucunas     | https://github.com/vkraucunas/dinkKitchen                                         | Dink Kitchen |https://github.com/vkraucunas/dinkKitchen|https://dinkkitchen.firebaseapp.com/index.html
-
+| Thomas     | Bealer        |https://github.com/tbealer/personalProject1.git
+| Todd       | Adelman       | https://github.com/toddadelman/ | 3x                                         | https://github.com/toddadelman/persoproj1 | http://toddadelman.github.io/persoproj1/src/ | Tyler      | Rozboril      | https://github.com/trozboril/rockOnKeyboard                                   |
+Valerie    | Kraucunas     | https://github.com/vkraucunas/dinkKitchen                                         | Dink Kitchen | https://github.com/vkraucunas/dinkKitchen|https://dinkkitchen.firebaseapp.com/index.html
