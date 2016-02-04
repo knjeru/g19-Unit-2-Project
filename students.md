@@ -8,7 +8,7 @@
 | Ben        | Hernandez     | https://github.com/BenAychh/Calculator-G19-BenHernandez |
 | Caleb      | Pollman       | https://github.com/cpollman1/Personal-Project-One.git                                         |
 | Daniel     | Klein         | https://github.com/danhklein/godwin                                         |
-| Danny      | Robinson      |https://github.com/djrobinson/campaign_finance|
+| Danny      | Robinson      |https://github.com/djrobinson/campaign_finance|Campaign Finance Explorer |https://github.com/djrobinson/campaign_finance |https://blinding-heat-4630.firebaseapp.com/|
 | David      | Schwartz      | https://github.com/Mavs212/g19-unit-1-personal-project/blob/master/proposal.md                                         |
 | David      | Sudia         | https://github.com/dsudia/G19-DavidSudia | Welcome to HQ | https://github.com/dsudia/G19-DavidSudia | https://dsudia.github.io/G19-DavidSudia |
 | Dennis     | Bailey        | https://github.com/dennisbailey/unit-1-personal-project/blob/master/proposal.md                                         |
