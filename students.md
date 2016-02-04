@@ -1,7 +1,7 @@
 # Projects!
 
-| First Name |   Last Name   | Proposal                                 |
-|------------|---------------|------------------------------------------|
+| First Name |   Last Name   | Proposal                                 | Project Name | Github URL | Live Site URL |
+|------------|---------------|------------------------------------------|--------------|------------|---------------|
 | Aaron      | Toys          |https://github.com/aarontoys/predictive_shopping_list                                          |
 | Adam       | Poulsen       |https://github.com/amp0024/G19-AdamPoulsen|
 | Andy       | Gross         | https://github.com/andogro/personal-project-1|
