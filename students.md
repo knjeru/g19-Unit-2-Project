@@ -7,7 +7,7 @@
 | Andy       | Gross         | https://github.com/andogro/personal-project-1| Slots for Dinner| https://github.com/andogro/personal-project-1/tree/master/public| https://slotsfordinner.firebaseapp.com/ |
 | Ben        | Hernandez     | https://github.com/BenAychh/Calculator-G19-BenHernandez | Calculator | https://github.com/BenAychh/Calculator-G19-BenHernandez | https://benaychh.github.io/Calculator-G19-BenHernandez/
 | Caleb      | Pollman       | https://github.com/cpollman1/Personal-Project-One.git |style wars = blood wars?                                       | https://github.com/cpollman1/Personal-Project-One.git | https://cpollman1-01.firebaseapp.com/                                         |
-| Daniel     | Klein         | https://github.com/danhklein/godwin                                         |
+| Daniel     | Klein         |https://github.com/danhklein/godwin | Hitler in America | https://github.com/danhklein/godwin                                    |https://godwin-project.firebaseapp.com/
 | Danny      | Robinson      |https://github.com/djrobinson/campaign_finance|Campaign Finance Explorer |https://github.com/djrobinson/campaign_finance |https://blinding-heat-4630.firebaseapp.com/|
 | David      | Schwartz      | https://github.com/Mavs212/g19-unit-1-personal-project/blob/master/proposal.md| Allergenie | https://github.com/Mavs212/personal-project | http://mavs212.github.io/personal-project/|
 | David      | Sudia         | https://github.com/dsudia/G19-DavidSudia | Welcome to HQ | https://github.com/dsudia/G19-DavidSudia | https://dsudia.github.io/G19-DavidSudia |
@@ -26,6 +26,6 @@
 | Mills      | McIlroy       | https://github.com/millsmcilroy/personalProject1 | Dodger | https://github.com/millsmcilroy/personalProject1 | https://dodger.firebaseapp.com/
 | Rachel     | Koldenhoven   | https://github.com/RachelKoldenhoven/g19-RKoldenhoven-Unit1-Project |Vocabulary Memory Game |https://github.com/RachelKoldenhoven/g19-RKoldenhoven-Unit1-Project |https://vocabmemory.firebaseapp.com/                                        |
 | Robert     | Gaines        | https://github.com/rlgaines/proj-proposal            | Not So Fifa | https://github.com/rlgaines/Soccer-Game | https://notsofifa.firebaseapp.com/
-| Thomas     | Bealer        |https://github.com/tbealer/personalProject1.git
+| Thomas     | Bealer        |https://github.com/tbealer/personalProject1.git| Bracket Buster! | https://github.com/tbealer/personalProject1 | http://tbealer.github.io/personalProject1/src/ |
 | Todd       | Adelman       | https://github.com/toddadelman/ | 3x                                         | https://github.com/toddadelman/persoproj1 | http://toddadelman.github.io/persoproj1/src/ | Tyler      | Rozboril      | https://github.com/trozboril/rockOnKeyboard                                   |
 Valerie    | Kraucunas     | https://github.com/vkraucunas/dinkKitchen                                         | Dink Kitchen | https://github.com/vkraucunas/dinkKitchen|https://dinkkitchen.firebaseapp.com/index.html
