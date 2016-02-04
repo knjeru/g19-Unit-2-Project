@@ -16,7 +16,7 @@
 | James      | Volmert       | https://github.com/jamesv28/mlbPlayer                                        |
 | Jon        | Hammond       | https://github.com/jonhammond/Unit-1/tree/master/Personal-Project                                         |
 | Kathleen   | Dieser        | https://github.com/katdiese/sentences                                         |
-| Kaylyn     | Van Norstrand | https://github.com/KayTV/pokemon-app                      | Pokemon Battle! | https://github.com/KayTV/pokemon-app | http://kaytv.github.io/pokemon-app/ 
+| Kaylyn     | Van Norstrand | https://github.com/KayTV/pokemon-app                      | Pokemon Battle! | https://github.com/KayTV/pokemon-app | http://kaytv.github.io/pokemon-app/
 | Kevin      | Njeru         | https://github.com/knjeru/U1_caloriecounter_proj                                        |
 | Klaus      | Sagehorn      | https://github.com/khsagehorn/Unit1-Project                                         |
 | Kyle       | Maxwell       | https://github.com/KyleJayMaxwell/local-Co                                         |
@@ -29,4 +29,5 @@
 | Thomas     | Bealer        |https://github.com/tbealer/personalProject1.git|
 | Todd       | Adelman       | https://github.com/toddadelman/persoproj1                                         |
 | Tyler      | Rozboril      |https://github.com/trozboril/rockOnKeyboard                                      |
-| Valerie    | Kraucunas     | https://github.com/vkraucunas/dinkKitchen                                         |
+| Valerie    | Kraucunas     | https://github.com/vkraucunas/dinkKitchen                                         | Dink Kitchen |https://github.com/vkraucunas/dinkKitchen|https://dinkkitchen.firebaseapp.com/index.html
+
