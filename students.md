@@ -1,10 +1,10 @@
 # Projects!
 
-| First Name |   Last Name   | Repo                                 | Live Site |
-|------------|---------------|--------------------------------------|-----------|
-| Aaron | Toys | [link](https://github.com/aarontoys/predictive_shopping_list) | [Not-So-Predictive Shopping List](https://aarontoys-psl.firebaseapp.com/) | 
-| Adam       | Poulsen       |https://github.com/amp0024/G19-AdamPoulsen|
-| Andy       | Gross         | https://github.com/andogro/personal-project-1| Slots for Dinner| https://github.com/andogro/personal-project-1/tree/master/public| https://slotsfordinner.firebaseapp.com/ |
+| First Name |   Last Name   | Repo | Live Site |
+|------------|---------------|------|-----------|
+| Aaron | Toys | [link](https://github.com/aarontoys/predictive_shopping_list) | [Not-So-Predictive Shopping List](https://aarontoys-psl.firebaseapp.com/) |
+| Adam | Poulsen | [link](https://github.com/amp0024/G19-AdamPoulsen) | TBA |
+| Andy | Gross | [link](https://github.com/andogro/personal-project-1) | [Slots for Dinner](https://slotsfordinner.firebaseapp.com/) |
 | Ben        | Hernandez     | https://github.com/BenAychh/Calculator-G19-BenHernandez | Calculator | https://github.com/BenAychh/Calculator-G19-BenHernandez | https://benaychh.github.io/Calculator-G19-BenHernandez/
 | Caleb      | Pollman       | https://github.com/cpollman1/Personal-Project-One.git |style wars = blood wars?                                       | https://github.com/cpollman1/Personal-Project-One.git | https://cpollman1-01.firebaseapp.com/                                         |
 | Daniel     | Klein         |https://github.com/danhklein/godwin | Hitler in America | https://github.com/danhklein/godwin                                    |https://godwin-project.firebaseapp.com/
