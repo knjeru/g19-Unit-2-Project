@@ -17,7 +17,7 @@
 | Jon        | Hammond       | [link](https://github.com/jonhammond/Unit-1/tree/master/Personal-Project ) | [Ants In Mah Pants](https://antsinmahpants.firebaseapp.com/) |
 | Kathleen   | Dieser        | [link](https://github.com/katdiese/sentences) | [Sentences](https://sentences.firebaseapp.com/) |
 | Kaylyn     | Van Norstrand | [link](https://github.com/KayTV/pokemon-app) | [Pokemon Battle!](http://kaytv.github.io/pokemon-app/) |
-| Kevin      | Njeru         | [link](https://github.com/knjeru/U1_caloriecounter_proj) | [Calorie Counter](http://knjeru.github.io/U1_caloriecounter_proj)  |
+| Kevin      | Njeru         | [link](https://github.com/knjeru/U1_caloriecounter_proj) | [Calorie Counter](http://knjeru.github.io/)  |
 | Klaus      | Sagehorn      | [link](https://github.com/khsagehorn/Unit1-Project) |[Whazzat?! Sentiment Analysis App](https://whazzat.firebaseapp.com/) |
 | Kyle       | Maxwell       | [link](https://github.com/KyleJayMaxwell/local-Co) | [Local Fashion](http://kylejaymaxwell.tk/local-Fashion/) |
 | Lina       | Sachuk   |  [link](https://github.com/1linasachuk/g19-LinaSachuk-Unit1-Project) | [Who's Higher?]( http://1linasachuk.github.io/g19-LinaSachuk-Unit1-Project/src/index.html) |
