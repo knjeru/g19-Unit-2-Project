@@ -9,7 +9,7 @@ exports.up = function(knex, Promise) {
     table.string('weight');
     table.string('allergies');
     table.string('illnesses');
-    table.date('last_vet_visit');
+    table.string('last_vet_visit'); //This needs to change to date type
     table.text('tendencies');
     table.text('favorites');
     table.integer('owner_id');
