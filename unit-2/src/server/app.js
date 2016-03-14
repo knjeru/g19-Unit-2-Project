@@ -44,7 +44,7 @@ app.get('/', function(req, res, next) {
 app.use('/', routes);
 >>>>>>> a23354a3c7b7f4c794b2b01bf8aad27c87cf33cf
 app.use('/api/pets', petRoutes);
-app.use('/api/profiles', ownerRoutes);
+app.use('/api/profile', ownerRoutes);
 app.use('/api/vets', vetRoutes);
 app.use('/api/vet_visits', vetVisits);
 
@@ -62,6 +62,7 @@ app.use('/api/vet_visits', vetVisits);
 
 // development error handler
 // will print stacktrace
+<<<<<<< HEAD
 // if (app.get('env') === 'development') {
 //   app.use(function(err, req, res, next) {
 //     res.status(err.status || 500);
@@ -81,6 +82,27 @@ app.use('/api/vet_visits', vetVisits);
 //     error: {}
 //   });
 // });
+=======
+if (app.get('env') === 'development') {
+  app.use(function(err, req, res, next) {
+    res.status(err.status || 500);
+    res.json({
+      message: err.message,
+      error: err
+    });
+  });
+}
+
+// production error handler
+// no stacktraces leaked to user
+app.use(function(err, req, res, next) {
+  res.status(err.status || 500);
+  res.json({
+    message: err.message,
+    error: {}
+  });
+});
+>>>>>>> upstream/master
 
 
 module.exports = app;

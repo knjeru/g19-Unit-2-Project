@@ -14,32 +14,10 @@ module.exports = {
   deleteVet: function(id){
   	return Vets().del().where('id',id);
   },
-  updateVet: function(){
-  	return Vets().update({
-  		name: name,
-  		email: email,
-  		password: password,
-  		streetAddress: location,
-      city: city,
-      state: state,
-      zipcode: zipcode,
-  		phone: phone,
-  		website: website,
-  		licenses: licenses
-  	}).where('id',id);
+  updateVet: function(vet, id){
+  	return Vets().update(vet,'id').where('id',id);
   },
-  addVet: function(){
-    return Vets().insert({
-      name: name,
-      email: email,
-      password: password,
-      streetAddress: location,
-      city: city,
-      state: state,
-      zipcode: zipcode,
-      phone: phone,
-      website: website,
-      licenses: licenses
-    });
+  addVet: function(vet){
+    return Vets().insert(vet,'id');
   }
 }
