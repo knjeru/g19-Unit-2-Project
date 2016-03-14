@@ -94,4 +94,45 @@ describe('Vet Visit API routes', function() {
     });
   });
 
+  describe('Get all information from specific vet visit', function() {
+    it('Should return all information from specific pet visit', function(done) {
+      chai.request(server)
+      .get('/api/vet_visits/1/1')
+      .end(function(err, res) {
+        res.should.have.status(200);
+        res.should.be.json;
+        done();
+      })
+    });
+  });
+
+  describe('Delete vet visit', function() {
+    it('should delete a single vet visit', function(done) {
+      chai.request(server)
+      .delete('/api/vet_visits/1/delete')
+      .end(function(err, res) {
+        res.should.have.status(200);
+        done();
+      })
+    });
+  });
+
+  describe('Update vet visit details', function() {
+    it('should update a single vet visit', function(done) {
+      chai.request(server)
+      .put('/api/vet_visits/1/update')
+      .send({
+        visit_date: '2016/2/14',
+        vaccines: 'chicken pox',
+        procedures: 'General Checkup',
+        medications: 'none',
+        pdf: 'none',
+        personal_notes: 'all good',
+        vet_id: 1,
+        pet_id: 2
+      })
+      .end(function(err))
+    })
+  })
+
 });
