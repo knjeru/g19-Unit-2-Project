@@ -13,5 +13,21 @@ module.exports = {
   },
   getVisitById: function(visitId) {
     return VetVisit().where('id', visitId);
+  },
+  deleteVisit: function(visitId) {
+    return VetVisit().where('id', visitId).delete();
+  },
+  updateVisit: function(visitId, date, vaccines, procedures, medications, pdf, personal_notes, vet_id, pet_id) {
+    return VetVisit().where('id', visitId)
+    .update({
+      visit_date: date,
+      vaccines: vaccines,
+      procedures: procedures,
+      medications: medications,
+      pdf: pdf,
+      personal_notes: personal_notes,
+      vet_id: vet_id,
+      pet_id: pet_id
+    })
   }
 }

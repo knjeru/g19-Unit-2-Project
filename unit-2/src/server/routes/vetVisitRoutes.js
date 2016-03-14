@@ -27,4 +27,23 @@ router.post('/:id/new_visit', function(req, res, next) {
   })
 })
 
+router.delete('/:id/delete', function(req, res, next) {
+  query.deleteVisit(req.params.id)
+  .then(function() {
+    res.json({
+      message: 'success'
+    })
+  });
+});
+
+router.put('/:id/update', function(req, res, next) {
+  var updateVisit = req.body;
+  query.updateVisit(req.params.id, updateVisit.date, updateVisit.vaccines, updateVisit.procedures, updateVisit.medications, updateVisit.pdf, updateVisit.personal_notes, updateVisit.vet_id, updateVisit.pet_id)
+  .then(function() {
+    res.json({
+      message: 'success'
+    })
+  })
+})
+
 module.exports = router;
