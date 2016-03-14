@@ -28,7 +28,7 @@ describe('Pet API routes', function() {
   describe('Add a single pet', function() {
       it('should add a single pet into the db', function(done){
         chai.request(server)
-        .post('/pets/new')
+        .post('/api/pets/new')
         .send({
                 name: 'Archibald',
                 type: 'Dog',
@@ -45,7 +45,7 @@ describe('Pet API routes', function() {
         .end(function(error, response){
           console.log("pet id? ", response.body);
           chai.request(server)
-          .get('/pets/' +response.body)
+          .get('/api/pets/' +response.body)
           .end(function(err, res){
             res.should.have.status(200);
                 res.should.be.json;
@@ -81,7 +81,7 @@ describe('Pet API routes', function() {
 
         it('should get all pets', function(done) {
             chai.request(server)
-            .get('/pets')
+            .get('/api/pets')
             .end(function(err, res) {
                 res.should.have.status(200);
                 res.should.be.json;
@@ -116,7 +116,7 @@ describe('Pet API routes', function() {
 
       it('should get one pet corresponding to a single id', function(done) {
           chai.request(server)
-          .get('/pets/1')
+          .get('/api/pets/1')
           .end(function(err, res) {
                 res.should.have.status(200);
                 res.should.be.json;
@@ -149,7 +149,7 @@ describe('Pet API routes', function() {
     describe('Update a single pet', function() {
       it('should update a single pet in the db', function(done){
         chai.request(server)
-        .put('/pets/1/update')
+        .put('/api/pets/1/update')
         .send({
                 name: 'Archibald2',
                 type: 'Dog',
@@ -166,7 +166,7 @@ describe('Pet API routes', function() {
         .end(function(error, response){
           console.log("pet id? ", response.body);
           chai.request(server)
-          .get('/pets/' +response.body)
+          .get('api/pets/' +response.body)
           .end(function(err, res){
             res.should.have.status(200);
                 res.should.be.json;
@@ -192,10 +192,23 @@ describe('Pet API routes', function() {
                 res.body[0].should.have.property('favorites');
                 res.body[0].favorites.should.equal('yapping');
                 done();
+            });
           });
         });
-      });
-    }
-  );
+      }
+    );
+
+    describe('Delete a single pet', function(){
+      it('should delete a pet', function(done) {
+            chai.request(server)
+            .delete('/api/pets/1')
+            .end(function(err, res) {
+                res.should.have.status(200);
+                res.should.be.json;
+                res.body.status.should.equal('Deleted');
+                done();
+            });
+        });
+    });
 
 });
