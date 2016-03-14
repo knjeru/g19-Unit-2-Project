@@ -11,23 +11,23 @@ router.get('/', function(req, res, next){
 
 // add new vet
 router.post('/new', function(req, res, next){
-  query.addVet().then(function(vet){
-    res.redirect('/');
+  query.addVet(req.body).then(function(vet){
+    // res.redirect('/');
+    res.json(vet[0]);
   });
 });
 
 // delete vet by id
 router.delete('/:id/delete', function(req, res, next){
-  query.deleteVet(req.params.id).then(function(vet){
-    res.redirect('/');
+  query.deleteVet(req.params.id).then(function(){
+    res.json('Deleted');
   });
 });
 
 // update vedt by id
 router.put('/:id/edit', function(req, res, next){
-	var id = req.body.id;
-  query.updateVet(req.params.id).then(function(vet){
-    res.redirect(`/${id}`);
+  query.updateVet(req.body, req.params.id).then(function(vet){
+    res.json(vet[0]);
   });
 });
 

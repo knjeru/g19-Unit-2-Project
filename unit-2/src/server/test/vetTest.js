@@ -25,80 +25,192 @@ describe('Vet API routes', function() {
       });
   });
 
-  // describe('Get all vets', function() {
+  describe('Get all vets', function() {
 
-  //       it('should get all pets', function(done) {
-  //           chai.request(server)
-  //           .get('/pets')
-  //           .end(function(err, res) {
-  //               res.should.have.status(200);
-  //               res.should.be.json;
-  //               res.body.should.be.a('array');
-  //               res.body[0].should.have.property('name');
-  //               res.body[0].name.should.equal('Leopold');
-  //               res.body[0].should.have.property('type');
-  //               res.body[0].type.should.equal('Dog');
-  //               res.body[0].should.have.property('breed');
-  //               res.body[0].breed.should.equal('Dingo')
-  //               res.body[0].should.have.property('picture_url');
-  //               res.body[0].picture_url.should.equal('http://ichef-1.bbci.co.uk/news/660/media/images/58682000/jpg/_58682918_wild_dog_screz.jpg')
-  //               res.body[0].should.have.property('weight');
-  //               res.body[0].weight.should.equal('100');
-  //               res.body[0].should.have.property('allergies');
-  //               res.body[0].allergies.should.equal('none');
-  //               res.body[0].should.have.property('illnesses');
-  //               res.body[0].illnesses.should.equal('none');
-  //               res.body[0].should.have.property('last_vet_visit');
-  //               res.body[0].last_vet_visit.should.equal('Sat Mar 12 2016 22:59:15Z')
-  //               res.body[0].should.have.property('tendencies');
-  //               res.body[0].tendencies.should.equal('eats');
-  //               res.body[0].should.have.property('favorites');
-  //               res.body[0].favorites.should.equal('food');
-  //               // res.body[0].should.have.property('owner_id');  //Need to add ref
-  //               done();
-  //           });
-  //       });
-  //   });
+        it('should get all vets', function(done) {
+            chai.request(server)
+            .get('/api/vets')
+            .end(function(err, res) {
+                res.should.have.status(200);
+                res.should.be.json;
+                res.body.should.be.a('array');
+                res.body[0].should.have.property('name');
+                res.body[0].name.should.equal('Highlands Animal Clinic');
+                res.body[0].should.have.property('email');
+                res.body[0].email.should.equal('info@highlandsanimalclinic.com');
+                res.body[0].should.have.property('password');
+                res.body[0].password.should.equal('$2a$08$0Frk5C/SlWvCjMxfUjkRKOBylTDEVMwDXASj6Cp.i5ctgk/xM95Aa');
+                res.body[0].should.have.property('streetAddress');
+                res.body[0].streetAddress.should.equal('3727 W32nd Ave');
+                res.body[0].should.have.property('city');
+                res.body[0].city.should.equal('Denver');
+                res.body[0].should.have.property('state');
+                res.body[0].state.should.equal('CO');
+                res.body[0].should.have.property('zipcode');
+                res.body[0].zipcode.should.equal(80211);
+                res.body[0].should.have.property('phone');
+                res.body[0].phone.should.equal('303-455-7387');
+                res.body[0].should.have.property('website');
+                res.body[0].website.should.equal('highlandsanimalclinic.com');
+                res.body[0].should.have.property('licenses');
+                res.body[0].licenses.should.equal('Academic Veterinarian');
+                done();
+            });
+        });
+    });
 
   describe('Get one vet by id', function() {
 
-      it('should get one pet corresponding to a single id', function(done) {
+      it('should get one vet corresponding to a single id', function(done) {
           chai.request(server)
-          .get('/pets/1')
+          .get('/api/vets/1')
           .end(function(err, res) {
               res.should.have.status(200);
               res.should.be.json;
               res.body.should.be.a('array');
               res.body[0].should.have.property('name');
-              res.body[0].name.should.equal('Leopold');
-              res.body[0].should.have.property('type');
-              res.body[0].type.should.equal('Dog');
-              res.body[0].should.have.property('breed');
-              res.body[0].breed.should.equal('Dingo')
-              res.body[0].should.have.property('picture_url');
-              res.body[0].picture_url.should.equal('http://ichef-1.bbci.co.uk/news/660/media/images/58682000/jpg/_58682918_wild_dog_screz.jpg')
-              res.body[0].should.have.property('weight');
-              res.body[0].weight.should.equal('100');
-              res.body[0].should.have.property('allergies');
-              res.body[0].allergies.should.equal('none');
-              res.body[0].should.have.property('illnesses');
-              res.body[0].illnesses.should.equal('none');
-              res.body[0].should.have.property('last_vet_visit');
-              res.body[0].last_vet_visit.should.equal('Sat Mar 12 2016 22:59:15Z')
-              res.body[0].should.have.property('tendencies');
-              res.body[0].tendencies.should.equal('eats');
-              res.body[0].should.have.property('favorites');
-              res.body[0].favorites.should.equal('food');
+              res.body[0].name.should.equal('Highlands Animal Clinic');
+              res.body[0].should.have.property('email');
+              res.body[0].email.should.equal('info@highlandsanimalclinic.com');
+              res.body[0].should.have.property('password');
+              res.body[0].password.should.equal('$2a$08$0Frk5C/SlWvCjMxfUjkRKOBylTDEVMwDXASj6Cp.i5ctgk/xM95Aa');
+              res.body[0].should.have.property('streetAddress');
+              res.body[0].streetAddress.should.equal('3727 W32nd Ave');
+              res.body[0].should.have.property('city');
+              res.body[0].city.should.equal('Denver');
+              res.body[0].should.have.property('state');
+              res.body[0].state.should.equal('CO');
+              res.body[0].should.have.property('zipcode');
+              res.body[0].zipcode.should.equal(80211);
+              res.body[0].should.have.property('phone');
+              res.body[0].phone.should.equal('303-455-7387');
+              res.body[0].should.have.property('website');
+              res.body[0].website.should.equal('highlandsanimalclinic.com');
+              res.body[0].should.have.property('licenses');
+              res.body[0].licenses.should.equal('Academic Veterinarian');
               done();
               });
         });
     });
 
-    // describe('Add a single pet', function() {
-    //   it('should add a single pet into the db', function(done){
-    //     chai.request(server);
-    //     .post('/pets/')
-    //   });
-    // }
+  describe('Add one vet', function() {
+
+      it('should add one vet into the db', function(done) {
+          chai.request(server)
+          .post('/api/vets/new')
+          .send({
+                name: 'Tender Touch Animal Hospital',
+                email: 'info@tendertouchvet.com',
+                password: '',
+                streetAddress: '350 Kalamath Street',
+                city: 'Denver',
+                state: 'CO',
+                zipcode: '80223',
+                phone: '303-733-2728',
+                website: 'www.tendertouchvet.com',
+                licenses: 'Academic Veterinarian'
+              })
+          .end(function(error, response){
+            console.log("vet id? ", response.body);
+            chai.request(server)
+            .get('/api/vets/' +response.body)
+
+          .end(function(err, res) {
+              res.should.have.status(200);
+              res.should.be.json;
+              res.body.should.be.a('array');
+              res.body[0].should.have.property('name');
+              res.body[0].name.should.equal('Tender Touch Animal Hospital');
+              res.body[0].should.have.property('email');
+              res.body[0].email.should.equal('info@tendertouchvet.com');
+              res.body[0].should.have.property('password');
+              res.body[0].password.should.equal('');
+              res.body[0].should.have.property('streetAddress');
+              res.body[0].streetAddress.should.equal('350 Kalamath Street');
+              res.body[0].should.have.property('city');
+              res.body[0].city.should.equal('Denver');
+              res.body[0].should.have.property('state');
+              res.body[0].state.should.equal('CO');
+              res.body[0].should.have.property('zipcode');
+              res.body[0].zipcode.should.equal(80223);
+              res.body[0].should.have.property('phone');
+              res.body[0].phone.should.equal('303-733-2728');
+              res.body[0].should.have.property('website');
+              res.body[0].website.should.equal('www.tendertouchvet.com');
+              res.body[0].should.have.property('licenses');
+              res.body[0].licenses.should.equal('Academic Veterinarian');
+              done();
+              });
+        });
+    });
+  });
+
+  describe('Update a vet', function() {
+
+      it('should update one vet in the db', function(done) {
+          chai.request(server)
+          .put('/api/vets/1/edit')
+          .send({
+                name: 'Highlands Animal Clinic',
+                email: 'info@highlandsanimalclinic.com',
+                password: '$2a$08$0Frk5C/SlWvCjMxfUjkRKOBylTDEVMwDXASj6Cp.i5ctgk/xM95Aa',
+                streetAddress: '3727 W32nd Ave',
+                city: 'Denver',
+                state: 'CO',
+                zipcode: '80211',
+                phone: '303-455-7387',
+                website: 'www.highlandsanimalclinic.com',
+                licenses: 'Academic Veterinarian'
+              })
+          .end(function(error, response){
+            console.log("vet id? ", response.body);
+            chai.request(server)
+            .get('/api/vets/' +response.body)
+
+          .end(function(err, res) {
+              res.should.have.status(200);
+              res.should.be.json;
+              res.body.should.be.a('array');
+              res.body[0].should.have.property('name');
+              res.body[0].name.should.equal('Highlands Animal Clinic');
+              res.body[0].should.have.property('email');
+              res.body[0].email.should.equal('info@highlandsanimalclinic.com');
+              res.body[0].should.have.property('password');
+              res.body[0].password.should.equal('$2a$08$0Frk5C/SlWvCjMxfUjkRKOBylTDEVMwDXASj6Cp.i5ctgk/xM95Aa');
+              res.body[0].should.have.property('streetAddress');
+              res.body[0].streetAddress.should.equal('3727 W32nd Ave');
+              res.body[0].should.have.property('city');
+              res.body[0].city.should.equal('Denver');
+              res.body[0].should.have.property('state');
+              res.body[0].state.should.equal('CO');
+              res.body[0].should.have.property('zipcode');
+              res.body[0].zipcode.should.equal(80211);
+              res.body[0].should.have.property('phone');
+              res.body[0].phone.should.equal('303-455-7387');
+              res.body[0].should.have.property('website');
+              res.body[0].website.should.equal('www.highlandsanimalclinic.com');
+              res.body[0].should.have.property('licenses');
+              res.body[0].licenses.should.equal('Academic Veterinarian');
+              done();
+              });
+        });
+    });
+  });
+
+
+  describe('Delete a vet', function(){
+    it('should delete a vet', function(done) {
+          chai.request(server)
+          .delete('/api/vets/1/delete')
+          .end(function(err, res) {
+              res.should.have.status(200);
+              res.should.be.json;
+              done();
+          });
+      });
+  });
+
 
 });
+
+
