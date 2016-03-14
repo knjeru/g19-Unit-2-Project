@@ -15,7 +15,8 @@ module.exports = {
     return Pets().insert(pet, 'id');
   },
   updatePet: function(pet, id){
-    return Pets().where('id', id).update(pet);
+    console.log(pet);
+    return Pets().where('id', id).update(pet, 'id');
   },
   deletePet: function(id){
     return Pets().where('id', id).delete();

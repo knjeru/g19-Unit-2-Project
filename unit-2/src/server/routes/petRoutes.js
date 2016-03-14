@@ -15,20 +15,21 @@ router.get('/:id', function(req, res, next){
 });
 
 router.post('/new', function(req, res, next){
-  console.log(req.body);
   query.createPet(req.body).then(function(pet){
     res.json(pet[0]);
   });
 });
 
-router.put('/pets/:id/edit', function(req, res, next){
-  query.updatePet(req.params.id, req.body).then(function(pet){
+router.put('/:id/edit', function(req, res, next){
+  query.updatePet(req.body, req.params.id).then(function(pet){
     res.json(pet[0]);
   });
 });
 
-router.post('/pets/:id/delete', function(req, res, next){
-  res.json('TODO');
+router.delete('/:id/delete', function(req, res, next){
+  query.deletePet(req.params.id).then(function(){
+    res.json('Deleted');
+  });
 });
 
 module.exports = router;

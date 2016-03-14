@@ -149,7 +149,7 @@ describe('Pet API routes', function() {
     describe('Update a single pet', function() {
       it('should update a single pet in the db', function(done){
         chai.request(server)
-        .put('/api/pets/1/update')
+        .put('/api/pets/1/edit')
         .send({
                 name: 'Archibald2',
                 type: 'Dog',
@@ -166,7 +166,7 @@ describe('Pet API routes', function() {
         .end(function(error, response){
           console.log("pet id? ", response.body);
           chai.request(server)
-          .get('api/pets/' +response.body)
+          .get('/api/pets/' +response.body)
           .end(function(err, res){
             res.should.have.status(200);
                 res.should.be.json;
@@ -180,7 +180,7 @@ describe('Pet API routes', function() {
                 res.body[0].should.have.property('picture_url');
                 res.body[0].picture_url.should.equal('https://upload.wikimedia.org/wikipedia/commons/c/ca/Pomeranian.JPG');
                 res.body[0].should.have.property('weight');
-                res.body[0].weight.should.equal('8');
+                res.body[0].weight.should.equal('8.00');
                 res.body[0].should.have.property('allergies');
                 res.body[0].allergies.should.equal('Everything');
                 res.body[0].should.have.property('illnesses');
@@ -201,11 +201,10 @@ describe('Pet API routes', function() {
     describe('Delete a single pet', function(){
       it('should delete a pet', function(done) {
             chai.request(server)
-            .delete('/api/pets/1')
+            .delete('/api/pets/1/delete')
             .end(function(err, res) {
                 res.should.have.status(200);
                 res.should.be.json;
-                res.body.status.should.equal('Deleted');
                 done();
             });
         });
