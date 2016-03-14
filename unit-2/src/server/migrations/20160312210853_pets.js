@@ -6,10 +6,10 @@ exports.up = function(knex, Promise) {
     table.string('type').notNullable();
     table.string('breed');
     table.string('picture_url');
-    table.string('weight');
+    table.decimal('weight');
     table.string('allergies');
     table.string('illnesses');
-    table.string('last_vet_visit'); //This needs to change to date type
+    table.date('last_vet_visit');
     table.text('tendencies');
     table.text('favorites');
     table.integer('owner_id');

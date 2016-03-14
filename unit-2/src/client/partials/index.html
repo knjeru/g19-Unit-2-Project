@@ -1,15 +1,22 @@
-{% extends 'layout.html' %}
-
-{% block title %}{% endblock %}
-
-
-{% block content %}
-
-  <div class="container">
-
-    <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
-
-  </div>
-
-{% endblock %}
+<!DOCTYPE html>
+<html ng-app="petApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Boilerplate</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.0/angular-route.min.js"></script>
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-static-top">
+        <a href="/">Current Pets</a>
+    </nav>
+    <div ng-view>
+        <!-- partials load here -->
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/samplePetApp.js"></script>
+  </body>
+</html>
