@@ -11,7 +11,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index.js');
 var petRoutes = require('./routes/petRoutes.js');
 var vetRoutes = require('./routes/vetRoutes.js');
-var vetVisits = require('./routes/vetVisitRoutes.js');
+// var vetVisits = require('./routes/vetVisitRoutes.js');
 var ownerRoutes = require('./routes/ownerRoutes.js');
 
 
@@ -38,9 +38,9 @@ app.use(express.static(path.join(__dirname, '../client/')));
 // *** main routes *** //
 app.use('/', routes);
 app.use('/api/pets', petRoutes);
-app.use('/api/profiles', ownerRoutes);
+app.use('/api/profile', ownerRoutes);
 app.use('/api/vets', vetRoutes);
-app.use('/api/vet_visits', vetVisits);
+// app.use('/api/vet_visits', vetVisits);
 
 
 
@@ -59,7 +59,7 @@ app.use(function(req, res, next) {
 if (app.get('env') === 'development') {
   app.use(function(err, req, res, next) {
     res.status(err.status || 500);
-    res.render('error', {
+    res.json({
       message: err.message,
       error: err
     });
@@ -70,7 +70,7 @@ if (app.get('env') === 'development') {
 // no stacktraces leaked to user
 app.use(function(err, req, res, next) {
   res.status(err.status || 500);
-  res.render('error', {
+  res.json({
     message: err.message,
     error: {}
   });
