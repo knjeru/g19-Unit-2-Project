@@ -12,7 +12,7 @@ var routes = require('./routes/index.js');
 var petRoutes = require('./routes/petRoutes.js');
 var vetRoutes = require('./routes/vetRoutes.js');
 var vetVisits = require('./routes/vetVisitRoutes.js');
-var ownerRoutes = require('./routes/ownerRoutes.js')
+var ownerRoutes = require('./routes/ownerRoutes.js');
 
 
 // *** express instance *** //
@@ -24,7 +24,7 @@ app.set('view engine', 'html');
 
 
 // *** static directory *** //
-// app.set('views', path.join(__dirname, 'views'));
+
 
 
 // *** config middleware *** //
@@ -32,16 +32,13 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, '../client')));
+app.use(express.static(path.join(__dirname, '../client/')));
 
 
 // *** main routes *** //
 app.use('/', routes);
-app.get('/', function(req, res, next) {
-  res.sendFile(path.join(__dirname, '../client/partials/', 'index.html'));
-});
 app.use('/api/pets', petRoutes);
-app.use('/api/profile', ownerRoutes)
+app.use('/api/profiles', ownerRoutes);
 app.use('/api/vets', vetRoutes);
 app.use('/api/vet_visits', vetVisits);
 
