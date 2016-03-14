@@ -4,7 +4,7 @@ exports.up = function(knex, Promise) {
     table.increments();
     table.date('visit_date');
     table.string('name');
-    table.string('vaccines');
+    table.string('vaccines').defaultTo('none');
     table.string('procedures');
     table.string('medications');
     table.string('pdf');

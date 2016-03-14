@@ -5,10 +5,13 @@ exports.up = function(knex, Promise) {
     table.string('name').notNullable();
     table.string('email').unique().notNullable();
     table.string('password').notNullable();
-    table.string('location').notNullable();
+    table.string('street address').notNullable();
+    table.string('city').notNullable();
+    table.string('state').notNullable();
+    table.integer('zipcode').notNullable();
     table.string('phone').notNullable();
-    table.string('website');
-    table.string('licenses');
+    table.string('website').defaultTo('none');
+    table.string('licenses').defaultTo('none');
   });
 };
 
