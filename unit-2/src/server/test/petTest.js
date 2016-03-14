@@ -59,13 +59,13 @@ describe('Pet API routes', function() {
                 res.body[0].should.have.property('picture_url');
                 res.body[0].picture_url.should.equal('https://upload.wikimedia.org/wikipedia/commons/c/ca/Pomeranian.JPG');
                 res.body[0].should.have.property('weight');
-                res.body[0].weight.should.equal('8');
+                res.body[0].weight.should.equal('8.00');
                 res.body[0].should.have.property('allergies');
                 res.body[0].allergies.should.equal('Everything');
                 res.body[0].should.have.property('illnesses');
                 res.body[0].illnesses.should.equal('Everyting');
                 res.body[0].should.have.property('last_vet_visit');
-                res.body[0].last_vet_visit.should.equal('Sat Mar 12 2016 22:59:15Z')
+                res.body[0].last_vet_visit.should.equal('2016-03-12T00:00:00.000Z')
                 res.body[0].should.have.property('tendencies');
                 res.body[0].tendencies.should.equal('Is tiny');
                 res.body[0].should.have.property('favorites');
@@ -95,13 +95,13 @@ describe('Pet API routes', function() {
                 res.body[0].should.have.property('picture_url');
                 res.body[0].picture_url.should.equal('http://ichef-1.bbci.co.uk/news/660/media/images/58682000/jpg/_58682918_wild_dog_screz.jpg')
                 res.body[0].should.have.property('weight');
-                res.body[0].weight.should.equal('100');
+                res.body[0].weight.should.equal('100.00');
                 res.body[0].should.have.property('allergies');
                 res.body[0].allergies.should.equal('none');
                 res.body[0].should.have.property('illnesses');
                 res.body[0].illnesses.should.equal('none');
                 res.body[0].should.have.property('last_vet_visit');
-                res.body[0].last_vet_visit.should.equal('Sat Mar 12 2016 22:59:15Z')
+                res.body[0].last_vet_visit.should.equal('2016-03-12T00:00:00.000Z')
                 res.body[0].should.have.property('tendencies');
                 res.body[0].tendencies.should.equal('eats');
                 res.body[0].should.have.property('favorites');
@@ -130,13 +130,13 @@ describe('Pet API routes', function() {
                 res.body[0].should.have.property('picture_url');
                 res.body[0].picture_url.should.equal('http://ichef-1.bbci.co.uk/news/660/media/images/58682000/jpg/_58682918_wild_dog_screz.jpg')
                 res.body[0].should.have.property('weight');
-                res.body[0].weight.should.equal('100');
+                res.body[0].weight.should.equal('100.00');
                 res.body[0].should.have.property('allergies');
                 res.body[0].allergies.should.equal('none');
                 res.body[0].should.have.property('illnesses');
                 res.body[0].illnesses.should.equal('none');
                 res.body[0].should.have.property('last_vet_visit');
-                res.body[0].last_vet_visit.should.equal('Sat Mar 12 2016 22:59:15Z')
+                res.body[0].last_vet_visit.should.equal('2016-03-12T00:00:00.000Z')
                 res.body[0].should.have.property('tendencies');
                 res.body[0].tendencies.should.equal('eats');
                 res.body[0].should.have.property('favorites');
@@ -158,7 +158,7 @@ describe('Pet API routes', function() {
                 weight: '8',
                 allergies: 'Everything',
                 illnesses: 'Everyting',
-                last_vet_visit: 'Sat Mar 12 2016 22:59:15Z',
+                last_vet_visit: '2016-03-12T00:00:00.000Z',
                 tendencies: 'Is tiny',
                 favorites: 'yapping',
                 owner_id: 1
@@ -186,7 +186,7 @@ describe('Pet API routes', function() {
                 res.body[0].should.have.property('illnesses');
                 res.body[0].illnesses.should.equal('Everyting');
                 res.body[0].should.have.property('last_vet_visit');
-                res.body[0].last_vet_visit.should.equal('Sat Mar 12 2016 22:59:15Z')
+                res.body[0].last_vet_visit.should.equal('2016-03-12T00:00:00.000Z')
                 res.body[0].should.have.property('tendencies');
                 res.body[0].tendencies.should.equal('Is tiny');
                 res.body[0].should.have.property('favorites');
