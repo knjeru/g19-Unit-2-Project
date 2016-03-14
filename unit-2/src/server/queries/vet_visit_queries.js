@@ -5,7 +5,13 @@ function VetVisit() {
 }
 
 module.exports = {
-  getVetVisits: function(){
-    return VetVisits().select();
+  getVetVisits: function(id){
+    return VetVisit().where('pet_id', id);
+  },
+  newVetVisit: function(visit) {
+    return VetVisit().insert( visit, 'id');
+  },
+  getVisitById: function(visitId) {
+    return VetVisit().where('id', visitId);
   }
 }
