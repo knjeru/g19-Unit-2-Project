@@ -7,5 +7,8 @@ function Pets() {
 module.exports = {
   getPets: function(){
     return Pets().select();
+  },
+  getOnePet: function(id){
+    return Pets().where('id', id);
   }
-}
+};
