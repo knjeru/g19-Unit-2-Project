@@ -15,7 +15,7 @@ angular.module('petApp', ['ngRoute'])
     // next we'll define which view will be served to the user when they hit a route
     .when('/', {
         // here we'll link to the location of the view.html on our server
-        templateUrl: '../partials/petTest',
+        templateUrl: '../partials/petTest.html',
         // next we'll define the controller we'll be using to the requested data to the user
         controller: 'petCtrl'
     })
@@ -29,11 +29,19 @@ angular.module('petApp', ['ngRoute'])
 .controller('petCtrl', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams){
     // first we'll make our get request for when the user hits the getAll route
     
+<<<<<<< HEAD
+    // $http.get('/api/pet/:id')
+    // .success(function(data) {
+    //     $scope.pet = data
+    // });
+    
+=======
     $scope.test = "test"
     // $http.get('/api/pets')
     // .success(function(data) {
     //     // then we'll attach the data to the intended $scope variable we want to use in the view
     //     $scope.pets = data;
     // });
+>>>>>>> a23354a3c7b7f4c794b2b01bf8aad27c87cf33cf
     
 }]);
