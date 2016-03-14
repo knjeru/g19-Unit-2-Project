@@ -14,4 +14,22 @@ router.get('/:id', function(req, res, next){
   });
 });
 
+router.post('/new', function(req, res, next){
+  query.createPet(req.body).then(function(pet){
+    res.json(pet[0]);
+  });
+});
+
+router.put('/:id/edit', function(req, res, next){
+  query.updatePet(req.body, req.params.id).then(function(pet){
+    res.json(pet[0]);
+  });
+});
+
+router.delete('/:id/delete', function(req, res, next){
+  query.deletePet(req.params.id).then(function(){
+    res.json('Deleted');
+  });
+});
+
 module.exports = router;

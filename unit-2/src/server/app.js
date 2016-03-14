@@ -11,6 +11,8 @@ var swig = require('swig');
 // *** routes *** //
 var routes = require('./routes/index.js');
 var petRoutes = require('./routes/petRoutes.js');
+var vetRoutes = require('./routes/vetRoutes.js');
+var vetVisits = require('./routes/vetVisitRoutes.js');
 
 
 // *** express instance *** //
@@ -37,7 +39,9 @@ app.use(express.static(path.join(__dirname, '../client')));
 
 // *** main routes *** //
 app.use('/', routes);
-app.use('/pets', petRoutes);
+app.use('/api/pets', petRoutes);
+app.use('/api/vets', vetRoutes);
+app.use('/api/vet_visits', vetVisits);
 
 
 
