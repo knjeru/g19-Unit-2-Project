@@ -37,7 +37,7 @@ describe('Pet API routes', function() {
                 weight: '8',
                 allergies: 'Everything',
                 illnesses: 'Everyting',
-                last_vet_visit: 'Sat Mar 12 2016 22:59:15Z',
+                last_vet_visit: '2016-03-12T00:00:00.000Z',
                 tendencies: 'Is tiny',
                 favorites: 'yapping',
                 owner_id: 1
