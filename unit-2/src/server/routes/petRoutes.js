@@ -8,4 +8,10 @@ router.get('/', function(req, res, next){
   });
 });
 
+router.get('/:id', function(req, res, next){
+  query.getOnePet(req.params.id).then(function(pet){
+    res.json(pet);
+  });
+});
+
 module.exports = router;
