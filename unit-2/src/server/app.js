@@ -5,7 +5,6 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var swig = require('swig');
 
 
 // *** routes *** //
@@ -13,6 +12,7 @@ var routes = require('./routes/index.js');
 var petRoutes = require('./routes/petRoutes.js');
 var vetRoutes = require('./routes/vetRoutes.js');
 var vetVisits = require('./routes/vetVisitRoutes.js');
+var ownerRoutes = require('./routes/ownerRoutes.js')
 
 
 // *** express instance *** //
@@ -20,8 +20,6 @@ var app = express();
 
 
 // *** view engine *** //
-var swig = new swig.Swig();
-app.engine('html', swig.renderFile);
 app.set('view engine', 'html');
 
 
@@ -39,7 +37,11 @@ app.use(express.static(path.join(__dirname, '../client')));
 
 // *** main routes *** //
 app.use('/', routes);
+app.get('/', function(req, res, next) {
+  res.sendFile(path.join(__dirname, '../client/partials/', 'index.html'));
+});
 app.use('/api/pets', petRoutes);
+app.use('/api/profile', ownerRoutes)
 app.use('/api/vets', vetRoutes);
 app.use('/api/vet_visits', vetVisits);
 
