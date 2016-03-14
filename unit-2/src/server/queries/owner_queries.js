@@ -19,5 +19,8 @@ module.exports = {
   },
   deleteOwner: function(id){
     return Owners().where('id', id).delete();
+  },
+  getLoginInfo: function(email){
+    return Owners().select('email', 'password').where('email', email);
   }
 };
