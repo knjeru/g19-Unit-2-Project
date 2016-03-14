@@ -6,6 +6,7 @@
     "start": "node ./src/server/bin/www"
   },
   "dependencies": {
+    "bcrypt": "^0.8.5",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "~1.13.2",
     "chai": "^3.5.0",
@@ -16,6 +17,7 @@
     "express": "~4.13.1",
     "express-session": "^1.13.0",
     "knex": "^0.10.0",
+    "knex-csv-seeder": "^0.3.4",
     "mocha": "^2.4.5",
     "morgan": "~1.6.1",
     "passport": "^0.3.2",
