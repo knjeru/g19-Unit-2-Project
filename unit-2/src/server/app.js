@@ -11,7 +11,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index.js');
 var petRoutes = require('./routes/petRoutes.js');
 var vetRoutes = require('./routes/vetRoutes.js');
-// var vetVisits = require('./routes/vetVisitRoutes.js');
+var vetVisits = require('./routes/vetVisitRoutes.js');
 var ownerRoutes = require('./routes/ownerRoutes.js');
 
 
@@ -40,7 +40,7 @@ app.use('/', routes);
 app.use('/api/pets', petRoutes);
 app.use('/api/profile', ownerRoutes);
 app.use('/api/vets', vetRoutes);
-// app.use('/api/vet_visits', vetVisits);
+app.use('/api/vet_visits', vetVisits);
 
 
 
