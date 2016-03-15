@@ -36,9 +36,10 @@ router.delete('/:id/delete', function(req, res, next) {
   });
 });
 
-router.put('/:id/update', function(req, res, next) {
+router.put('/:id/edit', function(req, res, next) {
   var updateVisit = req.body;
-  query.updateVisit(req.params.id, updateVisit.date, updateVisit.vaccines, updateVisit.procedures, updateVisit.medications, updateVisit.pdf, updateVisit.personal_notes, updateVisit.vet_id, updateVisit.pet_id)
+  console.log(updateVisit);
+  query.updateVisit(req.params.id, updateVisit.visit_date, updateVisit.vaccines, updateVisit.procedures, updateVisit.medications, updateVisit.pdf, updateVisit.personal_notes, updateVisit.vet_id, updateVisit.pet_id)
   .then(function() {
     res.json({
       message: 'success'
