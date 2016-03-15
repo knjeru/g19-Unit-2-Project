@@ -1,0 +1,24 @@
+
+<div style="text-align: center">
+
+
+    {{hello}}
+    <h2>Login</h2>
+    Email: <input ng-model="loginEmail" type="text"><br>
+    Password: <input ng-model="loginPassword" type="text"><br>
+
+    <form ng-click="login()">
+      <button type="submit">Login</button>
+    </form>
+
+
+    <h2>Register</h2>
+    First: <input type="text" ng-model="firstName"><br>
+    Last: <input type="text" ng-model="lastName"><br>
+    Email: <input type="text" ng-model="registerEmail"><br>
+    Password: <input type="text" ng-model="registerPassword"><br>
+
+    <form ng-click="register()">
+      <button type="submit">Register</button>
+    </form>
+</div>
