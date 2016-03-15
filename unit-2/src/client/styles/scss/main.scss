@@ -1,6 +1,21 @@
-$blue: #593A6A;
-
 body {
-  background-color: $blue;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.test {
+    border: 1px solid green;
+}
+
+.right-align {
+  float: right;
+}
+
+.left-align {
+  float: left;
 }
 
