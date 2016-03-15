@@ -1,0 +1,114 @@
+html {
+	font-size: 16px;
+}
+
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+
+/*body {
+  background: url("https://images.unsplash.com/photo-1433162653888-a571db5ccccf?crop=entropy&amp;dpr=2&amp;fit=crop&amp;fm=jpg&amp;h=475&amp;ixjsv=2.1.0&amp;ixlib=rb-0.3.5&amp;q=50&amp;w=1100");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 200vh;
+}*/
+
+/*body {
+  background: url("https://images.unsplash.com/photo-1455757618770-0a58b0b28ebd?crop=entropy&amp;dpr=2&amp;fit=crop&amp;fm=jpg&amp;h=1950&amp;ixjsv=2.1.0&amp;ixlib=rb-0.3.5&amp;q=50&amp;w=1100");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  min-height: 100vh;
+}*/
+
+/*#jumbo {
+	background: url("https://images.unsplash.com/photo-1433162653888-a571db5ccccf?crop=entropy&amp;dpr=2&amp;fit=crop&amp;fm=jpg&amp;h=475&amp;ixjsv=2.1.0&amp;ixlib=rb-0.3.5&amp;q=50&amp;w=1100");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	min-height: 50vh;
+}*/
+
+#login-signup {
+	margin-top: 0;
+}
+
+#login-signup a {
+	color: black;
+	float: right;
+	font-size: 1rem;
+	margin-right: 0.5rem;
+}
+
+#login-signup a:hover {
+	color: lightgreen;
+}
+
+
+div#app-intro {
+	color: black;
+	font-size: 2rem;
+	text-align: center;
+}
+
+div#app-intro p {
+	margin-bottom: 0px;
+}
+
+div#app-hero {
+	background: url("https://images.unsplash.com/photo-1433162653888-a571db5ccccf?crop=entropy&amp;dpr=2&amp;fit=crop&amp;fm=jpg&amp;h=475&amp;ixjsv=2.1.0&amp;ixlib=rb-0.3.5&amp;q=50&amp;w=1100");
+	background-size: cover;
+	color: white;
+	font-size: 1.5rem;
+	height: 60vh;
+	text-align: center;
+}
+
+div#app-explaination {
+	color: black;
+	font-size: 2rem;
+	text-align: center;
+}
+
+div#app-explaination p {
+	font-size: 1.5rem;
+	margin: 1rem 0;
+}
+
+div#app-explaination h4 {
+	margin-bottom: -1rem;
+}
+
+div#features {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+div#features h5 {
+	text-align: center;
+}
+
+div#features div {
+	color: black;
+	flex: 1;
+	max-width: 33%;
+}
+
+div#app-tour {
+	text-align: center;
+}
+
+
+
+
+
