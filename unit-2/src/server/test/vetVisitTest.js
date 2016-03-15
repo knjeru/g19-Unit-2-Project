@@ -120,7 +120,7 @@ describe('Vet Visit API routes', function() {
   describe('Update vet visit details', function() {
     it('should update a single vet visit', function(done) {
       chai.request(server)
-      .put('/api/vet_visits/1/update')
+      .put('/api/vet_visits/1/edit')
       .send({
         visit_date: '2016/2/14',
         vaccines: 'chicken pox',
@@ -129,9 +129,33 @@ describe('Vet Visit API routes', function() {
         pdf: 'none',
         personal_notes: 'all good',
         vet_id: 1,
-        pet_id: 2
+        pet_id: 1
       })
-      .end(function(err))
+      .end(function(error, response) {
+        chai.request(server)
+        .get('/api/vet_visits/1/1')
+        .end(function(err, res) {
+          res.should.be.json;
+          res.body.should.be.a('array');
+          res.body[0].should.have.property('visit_date');
+          res.body[0].visit_date.should.equal('2016-02-14T00:00:00.000Z');
+          res.body[0].should.have.property('vaccines');
+          res.body[0].vaccines.should.equal('chicken pox');
+          res.body[0].should.have.property('procedures');
+          res.body[0].procedures.should.equal('General Checkup');
+          res.body[0].should.have.property('medications');
+          res.body[0].medications.should.equal('none');
+          res.body[0].should.have.property('pdf');
+          res.body[0].pdf.should.equal('none');
+          res.body[0].should.have.property('personal_notes');
+          res.body[0].personal_notes.should.equal('all good');
+          res.body[0].should.have.property('vet_id');
+          res.body[0].vet_id.should.equal(1)
+          res.body[0].should.have.property('pet_id');
+          res.body[0].pet_id.should.equal(1);
+          done();
+        })
+      })
     })
   })
 
