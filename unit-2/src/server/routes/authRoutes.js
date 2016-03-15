@@ -10,11 +10,11 @@ var query = require('../queries/owner_queries');
 router.post('/login', function(req, res, next) {
   passport.authenticate('local', function(err, user) {
     if (err) {
-      return next(err);
+      return res.json(err);
     } else {
       req.logIn(user, function(err) {
         if (err) {
-          return next(err);
+          return res.json(err);
         } else {
           return res.json('You\'re logged in!');
         }
@@ -24,6 +24,7 @@ router.post('/login', function(req, res, next) {
 });
 
 router.post('/register', function(req, res, next) {
+  console.log(req.body);
   var firstName = req.body.firstName;
   var lastName = req.body.lastName;
   var email = req.body.email;
@@ -64,6 +65,16 @@ router.post('/register', function(req, res, next) {
       return next(err);
     });
 });
+
+router.get('/auth/facebook',
+  passport.authenticate('facebook'));
+
+router.get('/auth/facebook/callback',
+  passport.authenticate('facebook', { failureRedirect: '/login' }),
+  function(req, res) {
+    // Successful authentication, redirect home.
+    res.redirect('/');
+  });
 
 router.get('/logout', helpers.ensureAuthenticated, function(req, res, next) {
   req.logout();

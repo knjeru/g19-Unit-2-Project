@@ -9,7 +9,7 @@ exports.up = function(knex, Promise) {
     table.string('street_address');
     table.string('city');
     table.string('state');
-    table.string('zipcode')
+    table.string('zipcode');
     table.string('phone');
   });
 };

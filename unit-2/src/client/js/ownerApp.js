@@ -3,15 +3,14 @@
 angular.module('petApp', ['ngRoute', 'door3.css'])
 .config(function($routeProvider) {
     $routeProvider
-    .when('/', {
-        templateUrl: '[view html]',
-        css: '[view css stylesheet]',
+    .when('/profile', {
+        templateUrl: '../partials/single_user.html',
         controller: 'profCtrl'
     })
     .when('/:id', {
         templateUrl: '[view html]',
-        css: '[view css stylesheet]',
-        controller: 'singleProfCtrl'
+        // css: '[view css stylesheet]',
+        controller: 'profCtrl'
     })
     .when('/post', {
         templateUrl: '[view html]',
