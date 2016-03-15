@@ -6,27 +6,27 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
     .when('/', {
         templateUrl: '[view html]',
         css: '[view css stylesheet]',
-        controller: '[view controller]'
+        controller: 'vetCtrl'
     })
     .when('/:id', {
         templateUrl: '[view html]',
         css: '[view css stylesheet]',
-        controller: '[view controller]'
+        controller: 'singleVetCtrl'
     })
     .when('/post', {
         templateUrl: '[view html]',
         css: '[view css stylesheet]',
-        controller: '[view controller]'
+        controller: 'vetCtrl'
     })
     .when('/put', {
         templateUrl: '[view html]',
         css: '[view css stylesheet]',
-        controller: '[view controller]'
+        controller: 'vetCtrl'
     })
     .when('/delete', {
         templateUrl: '[view html]',
         css: '[view css stylesheet]',
-        controller: '[view controller]'
+        controller: 'vetCtrl'
     })
 })
 .controller('vetCtrl', ['$scope', '$http', function($scope,$http) {

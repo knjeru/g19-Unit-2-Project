@@ -9,7 +9,7 @@ passport.use(new LocalStrategy({
   usernameField: 'email'
 }, function(email, password, done) {
     // does the email exist?
-    knex('users').where('email', email)
+    knex('owners').where('email', email)
     .then(function(data) {
       // email does not exist. return error.
       if (!data.length) {
@@ -33,13 +33,13 @@ passport.use(new LocalStrategy({
 ));
 
 // sets the user to 'req.user' and establishes a session via a cookie
-passport.serializeUser(function(user, done) {
-  done(null, user.id);
+passport.serializeUser(function(owner, done) {
+  done(null, owner.id);
 });
 
 // used on subsequent requests to update 'req.user' and updates session
 passport.deserializeUser(function(id, done) {
-  knex('users').where('id', id)
+  knex('owners').where('id', id)
   .then(function(data) {
     return done(null, data[0]);
   })
