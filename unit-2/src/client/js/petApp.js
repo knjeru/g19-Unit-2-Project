@@ -13,7 +13,7 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
     // we can now use $routeProvider to serve up our views
     $routeProvider
     // next we'll define which view will be served to the user when they hit a route
-    .when('/', {
+    .when('/pets', {
         // here we'll link to the location of the view.html on our server
         templateUrl: '../partials/petTest.html',
         // inject specific style sheets for each view
@@ -21,9 +21,9 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
         // next we'll define the controller we'll be using to the requested data to the user
         controller: 'petCtrl'
     })
-    .when('/:id', {
-        templateURL: '../partials/pet',
-        css: '[view css stylesheet]',
+    .when('/pet2', {
+        templateURL: '../partials/petTest.html',
+
         controller: 'singlePetCtrl'
     })
     .when('/post', {
@@ -51,6 +51,7 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
     .success(function(data) {
         // then we'll attach the data to the intended $scope variable we want to use in the view
         $scope.pets = data;
+        console.log($scope.pets);
     });
     
     $http.post('/api/pets/new')
@@ -68,9 +69,12 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
         // we can set an action to the let the user know the request went through
     });
 }])
-.controller('singlePetCtrl', ['$scope','$http','$routeParams',function($scope, $http, $routeParams){
-    $http.get('/api/pets/:id')
-    .success(function(data) {
-        $scope.pet = data;
-    });
+.controller('singlePetCtrl', ['$scope', '$http', '$routeParams', function($scope, $http,$routeParams){
+    console.log('outside of the get');
+    // $http.get('/api/pets/:id')
+    // .success(function(data) {
+    //     console.log('This should be the id: ', $routeParams.id);
+    //     // $scope.pet = data;
+    //     // console.log($scope.pet)
+    // });
 }]);
