@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Pet Store</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../styles/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="../styles/css/skeleton.css">
     <link rel="stylesheet" type="text/css" href="../styles/css/main.css">
@@ -13,8 +14,15 @@
     <link rel="stylesheet" ng-href="{{ css }}">
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-static-top">
-        <a href="/">Current Pets</a>
+    <nav class="main-nav">
+        <a class="left-align" href=""><img src=""></a>
+        <a class="left-align" href="">Your Name</a>
+        <a class="right-align"><i class="fa fa-tachometer"></i></a>
+        <a class="right-align" href="">+ Pet</a>
+        <a class="right-align" href="">+ Vet</a>
+        <a class="right-align" href=""><i class="fa fa-envelope-o"></i></a>
+        <a class="right-align" href=""><i class="fa fa-cog"></i></a>
+        <a class="right-align" href="">Logout</a>
     </nav>
     <div ng-view>
         <!-- views load here -->
