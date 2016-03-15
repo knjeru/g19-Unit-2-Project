@@ -66,17 +66,9 @@ router.post('/register', function(req, res, next) {
     });
 });
 
-router.get('/auth/facebook',
-  passport.authenticate('facebook'));
-
-router.get('/auth/facebook/callback',
-  passport.authenticate('facebook', { failureRedirect: '/login' }),
-  function(req, res) {
-    // Successful authentication, redirect home.
-    res.redirect('/');
-  });
 
 router.get('/logout', helpers.ensureAuthenticated, function(req, res, next) {
+  req.session = null;
   req.logout();
   res.redirect('/');
 });

@@ -38,28 +38,47 @@ passport.use(new FacebookStrategy({
     clientSecret: process.env.FACEBOOK_APP_SECRET,
     callbackURL: process.env.FACEBOOK_CALLBACK
   },
-  function(accessToken, refreshToken, profile, cb) {
-    User.findOrCreate({ facebookId: profile.id }, function (err, user) {
-      return cb(err, user);
+  function(accessToken, refreshToken, profile, done) {
+    knex('owners').select().where('facebookId', profile.id).then(function (data) {
+      console.log(data);
+      if (data.length){
+        process.nextTick(function(){
+          return done(null, {user: profile.firstName});
+        });
+      } else {
+          console.log("inserting!!!");
+          knex('owners').insert({facebookId: profile.id, firstName: profile.displayName}).then(
+            function(data){
+              process.nextTick(function(){
+              console.log("data is ", data);
+              console.log("profile is ", profile);
+              return done(null, profile.id);
+            });
+          });
+        }
     });
   }
 ));
 
 // sets the user to 'req.user' and establishes a session via a cookie
 passport.serializeUser(function(owner, done) {
-  console.log(owner);
-  done(null, owner.id);
+  console.log("owner: ", owner);
+  done(null, owner);
 });
 
 // used on subsequent requests to update 'req.user' and updates session
 passport.deserializeUser(function(id, done) {
-  knex('owners').where('id', id)
-  .then(function(data) {
-    return done(null, data[0]);
-  })
-  .catch(function(err) {
-    return done(err);
-  });
+  done(null, id);
+  //The above code is a placeholder for what is below.  Req.user is not being saved
+  //in the session
+  // console.log("Id is ", id);
+  // knex('owners').where('id', id)
+  // .then(function(data) {
+  //   return done(null, data[0]);
+  // })
+  // .catch(function(err) {
+  //   return done(err);
+  // });
 });
 
 

@@ -9,8 +9,9 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 var flash = require('connect-flash');
 
+var cookieSession = require('cookie-session');
 var passport = require('./lib/auth');
-
+var FacebookStrategy = require('passport-facebook').Strategy;
 
 // *** routes *** //
 var routes = require('./routes/index.js');
@@ -33,6 +34,10 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(cookieSession({
+  name: 'oauth-session',
+  keys: [process.env.COOKIE_KEY1, process.env.COOKIE_KEY2]
+}));
 app.use(session({
   secret: process.env.SECRET_KEY || 'change_me',
   resave: false,
@@ -47,6 +52,7 @@ app.use(express.static(path.join(__dirname, '../client/')));
 app.get('/', function(req, res, next) {
   res.sendFile(path.join(__dirname, '../client/partials/', 'index.html'));
 });
+app.use('/', routes);
 app.use('/api/pets', petRoutes);
 app.use('/api/profile', ownerRoutes);
 app.use('/api/vets', vetRoutes);
