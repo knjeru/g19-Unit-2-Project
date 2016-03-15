@@ -40,7 +40,7 @@ app.use(session({
 app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());
-app.use(express.static(path.join(__dirname, '../client')));
+app.use(express.static(path.join(__dirname, '../client/')));
 
 // *** main routes *** //
 app.get('/', function(req, res, next) {

@@ -5,21 +5,7 @@ var knex = require('../db/knex');
 var passport = require('../lib/auth');
 var helpers = require('../lib/helpers');
 
-function Owners() {
-  return knex('owners');
-}
-
-function Vets() {
-  return knex('vets');
-}
-
-// router.get('/', helpers.ensureAuthenticated, function(req, res, next) {
-//   res.render('index', {user: req.user});
-// });
-
-// router.get('/login', helpers.loginRedirect, function(req, res, next) {
-//   res.render('login', {message: req.flash('message')});
-// });
+var query = require('../queries/owner_queries');
 
 router.post('/login', function(req, res, next) {
   passport.authenticate('local', function(err, user) {
@@ -30,22 +16,20 @@ router.post('/login', function(req, res, next) {
         if (err) {
           return next(err);
         } else {
-          return res.redirect('/');
+          return res.json('You\'re logged in!');
         }
       });
     }
   })(req, res, next);
 });
 
-// router.get('/register', helpers.loginRedirect, function(req, res, next) {
-//   res.render('register', {message: req.flash('message')});
-// });
-
 router.post('/register', function(req, res, next) {
+  var firstName = req.body.firstName;
+  var lastName = req.body.lastName;
   var email = req.body.email;
   var password = req.body.password;
   // check if email is unique
-  Owners().where('email', email)
+  query.getLoginInfo(email)
     .then(function(data){
       // if email is in the database send an error
       if(data.length) {
@@ -53,12 +37,14 @@ router.post('/register', function(req, res, next) {
             status: 'danger',
             message: 'Email already exists.!'
           });
-          return res.redirect('/register');
+          return res.json('Email already exists');
       } else {
         // hash and salt the password
         var hashedPassword = helpers.hashing(password);
         // if email is not in the database insert it
-        Owners().insert({
+        query.createOwner({
+          firstName: firstName,
+          lastName: lastName,
           email: email,
           password: hashedPassword
         })
@@ -67,10 +53,10 @@ router.post('/register', function(req, res, next) {
             status: 'success',
             message: 'Welcome!'
           });
-          return res.redirect('/login');
+          return res.json('You\'ve registered!');
         })
         .catch(function(err) {
-          return res.send('Didn\'t work');
+          return res.send(err);
         });
       }
     })
