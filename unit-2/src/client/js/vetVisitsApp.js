@@ -6,52 +6,56 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
     .when('/', {
         templateUrl: '[view html]',
         css: '[view css stylesheet]',
-        controller: 'vetCtrl'
+        controller: 'vetVisitCtrl'
     })
     .when('/:id', {
         templateUrl: '[view html]',
         css: '[view css stylesheet]',
-        controller: 'singleVetCtrl'
+        controller: 'singleVetVisitCtrl'
     })
     .when('/post', {
         templateUrl: '[view html]',
         css: '[view css stylesheet]',
-        controller: 'vetCtrl'
+        controller: 'vetVisitCtrl'
     })
     .when('/put', {
         templateUrl: '[view html]',
         css: '[view css stylesheet]',
-        controller: 'vetCtrl'
+        controller: 'vetVisitCtrl'
     })
     .when('/delete', {
         templateUrl: '[view html]',
         css: '[view css stylesheet]',
-        controller: 'vetCtrl'
+        controller: 'vetVisitCtrl'
     })
 })
-.controller('vetCtrl', ['$scope', '$http', function($scope,$http) {
-    $http.get('/api/vets')
+.controller('vetVisitCtrl', ['$scope', '$http', '$routeParams', function($scope,$http,$routeParams) {
+    
+    $http.get('/api/vet_visits/:id')
     .success(function(data) {
         // return ALL vet data
-        $scope.vets = data;
-    })
-    $http.post('/api/vets/new')
+        $scope.vetVisits = data;
+    });
+    
+    $http.post('/api/vet_visits/:id/new_visit')
     .success(function(data) {
         // we can set an action to the let the user know the request went through
-    })
-    $http.put('/api/:id/edit')
+    });
+    
+    $http.put('/api/vet_visits/:id/edit')
     .success(function(data) {
         // we can set an action to the let the user know the request went through
-    })
-    $http.delete('/api/:id')
+    });
+    
+    $http.delete('/api/vet_visits/:id/delete')
     .success(function(data) {
         // we can set an action to the let the user know the request went through
-    })
+    });
 }])
-.controller('singleVetCtrl', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
-    $http.get('/api/vet')
+.controller('singleVetVisitCtrl', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+    $http.get('/api/vet_visits/:id/:visitId')
     .success(function(data) {
-        // return information for single vet
-        $scope.vet = data;
+        // return information for single vet visit
+        $scope.vetVisit = data;
     })
 }])
