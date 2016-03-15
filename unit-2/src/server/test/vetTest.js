@@ -111,7 +111,6 @@ describe('Vet API routes', function() {
                 licenses: 'Academic Veterinarian'
               })
           .end(function(error, response){
-            console.log("vet id? ", response.body);
             chai.request(server)
             .get('/api/vets/' +response.body)
 
