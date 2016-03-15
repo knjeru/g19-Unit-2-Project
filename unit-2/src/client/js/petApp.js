@@ -23,25 +23,54 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
     })
     .when('/:id', {
         templateURL: '../partials/pet',
+        css: '[view css stylesheet]',
         controller: 'singlePetCtrl'
     })
+    .when('/post', {
+        templateUrl: '[view html]',
+        css: '[view css stylesheet]',
+        controller: 'petCtrl'
+    })
+    .when('/put', {
+        templateUrl: '[view html]',
+        css: '[view css stylesheet]',
+        controller: 'petCtrl'
+    })
+    .when('/delete', {
+        templateUrl: '[view html]',
+        css: '[view css stylesheet]',
+        controller: 'petCtrl'
+    });
 })
 // By using the controller we'll handle the logic of the data that is returned by hitting that route
     // we'll need to "require" in the dependencies that we want to use in the controller
         // We'll start by using the $http service to handle requests and $scope to handle the $scope of the controller
-.controller('petCtrl', ['$scope', '$http', function($scope, $http){
+.controller('petCtrl', ['$scope', '$http', '$routeParams', function($scope, $http,$routeParams){
     // first we'll make our get request for when the user hits the getAll route
-      
     $http.get('/api/pets')
     .success(function(data) {
         // then we'll attach the data to the intended $scope variable we want to use in the view
         $scope.pets = data;
     });
     
+    $http.post('/api/pets/new')
+    .success(function(data) {
+        // we can set an action to the let the user know the request went through
+    });
+    
+    $http.put('/api/pets/:id/edit')
+    .success(function(data) {
+        // we can set an action to the let the user know the request went through
+    });
+    
+    $http.delete('/api/pets/:id/delete')
+    .success(function(data) {
+        // we can set an action to the let the user know the request went through
+    });
 }])
 .controller('singlePetCtrl', ['$scope','$http','$routeParams',function($scope, $http, $routeParams){
     $http.get('/api/pets/:id')
     .success(function(data) {
         $scope.pet = data;
     });
-}])
+}]);
