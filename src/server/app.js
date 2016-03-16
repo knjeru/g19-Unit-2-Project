@@ -21,6 +21,7 @@ var vetVisits = require('./routes/vetVisitRoutes.js');
 var ownerRoutes = require('./routes/ownerRoutes.js');
 var authRoutes = require('./routes/authRoutes.js');
 var imageUpload = require('./routes/imageUpload.js');
+var reminderRoutes = require('./routes/reminderRoutes.js');
 
 
 
@@ -61,6 +62,7 @@ app.use('/api/vets', vetRoutes);
 app.use('/api/vet_visits', vetVisits);
 app.use('/api/auth', authRoutes);
 app.use('/img', imageUpload);
+app.use('/reminders', reminderRoutes);
 
 
 
