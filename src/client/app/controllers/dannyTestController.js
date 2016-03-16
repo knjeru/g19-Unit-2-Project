@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('petApp')
-.controller('loginCtrl', ['$scope', '$http', '$routeParams', function($scope, $http,$routeParams){
+.controller('LoginCtrl', ['$scope', '$http', '$routeParams', function($scope, $http,$routeParams){
     console.log('dannyController sounding off');
      $scope.hello = "Testing";
 
