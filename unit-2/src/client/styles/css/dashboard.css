@@ -1,0 +1,13 @@
+body {
+  text-align: center; }
+
+.dashGreeting {
+  margin-top: 10vh; }
+
+.pet-image {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: #333232;
+  margin: auto;
+  margin-bottom: 4rem; }

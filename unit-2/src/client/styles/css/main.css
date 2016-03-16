@@ -2,14 +2,31 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
-a {
-  color: #00B7FF; }
+body {
+  margin: 0; }
 
-.test {
-  border: 1px solid green; }
+.main-nav {
+  background-color: #3f6f82;
+  height: 7rem;
+  width: 100%;
+  margin-top: 0; }
+  .main-nav a {
+    color: white;
+    padding: 20px;
+    font-size: 1.75rem;
+    text-decoration: none; }
 
 .right-align {
   float: right; }
 
 .left-align {
   float: left; }
+
+.single-pet-nav {
+  background-color: #333232;
+  text-align: center;
+  height: 3rem; }
+  .single-pet-nav a {
+    text-decoration: none;
+    color: white;
+    padding: 50px; }

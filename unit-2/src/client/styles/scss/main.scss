@@ -1,14 +1,28 @@
+$color: #508CA4;
+$dark: #333232;
+$darkColor: darken($color, 10%);
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+body {
+  margin: 0;
 }
 
-.test {
-    border: 1px solid green;
+.main-nav {
+  background-color: $darkColor;
+  height: 7rem;
+  width: 100%;
+  margin-top: 0;
+
+  a {
+    color: white;
+    padding: 20px;
+    font-size: 1.75rem;
+    text-decoration: none;
+  }
 }
 
 .right-align {
@@ -18,4 +32,17 @@ a {
 .left-align {
   float: left;
 }
+
+.single-pet-nav {
+  background-color: $dark;
+  text-align: center;
+  height: 3rem;
+
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 50px;
+  }
+}
+
 
