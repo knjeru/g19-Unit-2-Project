@@ -2,6 +2,10 @@ $dark: #333232;
 $purple: #593A6A;
 $light-purple: lighten($purple, 10%);
 
+img {
+    width: 100%;
+}
+
 .tab-display {
   display: block;
 }
@@ -56,7 +60,6 @@ $light-purple: lighten($purple, 10%);
 .pet-image {
   height: 200px;
   width: 100%;
-  background-color: $dark;
   border-radius: 10px;
 }
 .general-info {

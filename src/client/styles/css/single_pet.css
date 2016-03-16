@@ -1,3 +1,6 @@
+img {
+  width: 100%; }
+
 .tab-display {
   display: block; }
 
@@ -51,7 +54,6 @@
 .pet-image {
   height: 200px;
   width: 100%;
-  background-color: #333232;
   border-radius: 10px; }
 
 .general-info {
