@@ -1,0 +1,22 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0; }
+
+img {
+  padding-top: 15vh; }
+
+a {
+  text-decoration: none; }
+
+.addReminder {
+  text-align: right;
+  padding-right: 4rem;
+  font-size: 4rem; }
+
+.underline {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem; }
+
+.reminderCenter {
+  padding-left: 10%; }

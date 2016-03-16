@@ -1,0 +1,28 @@
+$blue: #508CA4;
+$dark: #333232;
+
+.h1vet-visit {
+  text-align: center;
+}
+
+.add {
+  margin-left: 70%;
+}
+
+.summary {
+  background-color: $blue;
+  color: white;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.expand {
+  float: right;
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.leftFloat {
+  float: left;
+}
