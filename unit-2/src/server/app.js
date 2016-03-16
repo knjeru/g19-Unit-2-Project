@@ -19,7 +19,8 @@ var petRoutes = require('./routes/petRoutes.js');
 var vetRoutes = require('./routes/vetRoutes.js');
 var vetVisits = require('./routes/vetVisitRoutes.js');
 var ownerRoutes = require('./routes/ownerRoutes.js');
-// var authRoutes = require('./routes/authRoutes.js');
+var authRoutes = require('./routes/authRoutes.js');
+var imageUpload = require('./routes/imageUpload.js')
 
 
 // *** express instance *** //
@@ -57,7 +58,8 @@ app.use('/api/pets', petRoutes);
 app.use('/api/profile', ownerRoutes);
 app.use('/api/vets', vetRoutes);
 app.use('/api/vet_visits', vetVisits);
-// app.use('/api/auth', authRoutes);
+app.use('/api/auth', authRoutes);
+app.use('/img', imageUpload);
 
 
 
