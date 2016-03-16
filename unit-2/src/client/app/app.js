@@ -8,7 +8,6 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
 .config(function($routeProvider){
     console.log('Angular Config Ready To Go!');
     $routeProvider
-
     /* THESE ARE THE USER RELATED ROUTES */
     // .when('/profile/new', {
     //     templateUrl: '[view html]',
@@ -34,15 +33,16 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
     .when('/pets/new', {
         templateUrl: '/app/views/initial_questionaire.html',
         css: '/styles/css/main.css',
-        controller: 'MainPetCtrl'
+        controller: 'genPetCtrl'
     })
     .when('/pets/main', {
-        templateUrl: '/app/views/singlePet.html',
-        css: '/styles/css/main.css',
-        controller: 'MainPetCtrl'
+        templateUrl: '/app/views/dashboard.html',
+        css: '/styles/css/dashboard.css',
+        controller: 'genPetCtrl'
     })
     .when('/pet/:id', {
-        templateUrl: '/app/views/petTest.html',
+        templateUrl: '/app/views/singlePet.html',
+        css: '/styles/css/single_pet.css',
         controller: 'SinglePetCtrl'
     })
     .when('/pet/:id/edit', {
