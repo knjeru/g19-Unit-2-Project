@@ -1,37 +1,42 @@
 'use strict';
 
 angular.module('petApp')
-.controller('userProfCtrl', ['$scope', '$http', '$routeParams', '$log', function($scope,$http,$routeParams,$log) {
-        console.log('userController 1 sounding off');
-    console.log('testy');
-    $log.info('test');
-    console.log($routeParams.id);
+.controller('usrProfCtrl', ['$scope', '$http', '$routeParams', '$log', function($scope,$http,$routeParams,$log) {
+    console.log('userController 1 sounding off');
     
-    $http.get('/api/profile/'+$routeParams.id)
+    $http.get('/api/profile'+$routeParams.id)
     .success(function(data) {
-        $scope.profile = data[0];
-        console.log($scope.profile);
+        console.log('This should be the id: ', $routeParams.id)
+        $scope.user = data[0];
+        console.log('here is my data: ', $scope.user);
     })
     
-    // $http.post('/api/profile/new')
-    // .success(function(data) {
-
-    // })
+    $scope.userFormData = {};
+    $scope.newUser = function() {
+        $http.post('/api/profile/new', $scope.userFormData)
+        .success(function(data) {
+            console.log('This user has been added');
+        });
+    }
     
-    // $http.put('/api/profile/:id/edit')
-    // .success(function(data) {
-
-    // })
+    $scope.updateUser = function() {
+        $http.put('/api/profile/'+$routeParams.id+'/edit', $scope.userFormData)
+        .success(function(data) {
+            console.log('This user has been updated');
+        });
+    }
     
-    // $http.delete('/api/profile/:id/delete')
-    // .success(function(data) {
-
-    // })
+    $scope.removeUser = function() {
+        $http.delete('/api/profile/'+$routeParams.id+'/delete')
+        .success(function(data) {
+            console.log('This user has been removed');
+        });
+    }
 }])
-.controller('singleProfCtrl', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
-    $http.get('/api/:id')
+.controller('genUsrProfCtrl', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+    $http.get('/api/profile')
     .success(function(data) {
-
-        $scope.profile = data;
+        $scope.users = data;
+        console.log('here is my data: ', $scope.users);
     })
 }]);

@@ -1,11 +1,11 @@
-<form id="myForm" ng-submit="newPet()">
+<form id="myForm" ng-submit="updatePet()">
     <div class="group">
         <label for="value1">Upload a picture of your pet!</label>
         <input type="text" id="value1" name="petImage" ng-model="petFormData.picture_url"/>
     </div>
     <div class="group">
         <label for="value2">What's your pet's name?</label>
-        <input type="text" id="value2" name="petName" ng-model="petFormData.name"/>
+        <input type="text" id="value2" name="petName" ng-model="petFormData.name" placeholder="{{pet.name}}"/>
     </div>
     <div class="group">
         <label for="value3">Any nicknames?</label>
@@ -13,11 +13,11 @@
     </div>
     <div class="group">
         <label for="value4">What type of animal is your pet?</label>
-        <input type="text" id="value4" name="petType" ng-model="petFormData.type"/>
+        <input type="text" id="value4" name="petType" ng-model="petFormData.type" placeholder="{{pet.type}}"/>
     </div>
     <div class="group">
         <label for="value5">What breed?</label>
-        <input type="text" id="value5" name="petBreed" ng-model="petFormData.breed"/>
+        <input type="text" id="value5" name="petBreed" ng-model="petFormData.breed" placeholder="{{pet.breed}}"/>
     </div>
     <div class="group">
         <label for="value6">How old?</label>
