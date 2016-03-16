@@ -1,28 +1,39 @@
 <form id="myForm" ng-submit="newPet()">
-    
+
     <div class="group">
-        <label for="value1">Upload a picture of your pet!</label>
-        <input type="file" id="value1" name="petImage" ng-model="petFormData.picture_url"/>
+        <label for="petPicture">Upload a picture of your pet!</label>
+        <input type="file" id="petPicture" name="petImage" ng-model="petFormData.picture_url"/>
     </div>
     <div class="group">
-        <label for="value2">What's your pet's name?</label>
-        <input required type="text" id="value2" name="petName" ng-model="petFormData.name"/>
+        <label for="petName">What's your pet's name?</label>
+        <input required type="text" id="petName" name="petName" ng-model="petFormData.name"/>
     </div>
     <div class="group">
-        <label required for="value4">What type of animal is your pet?</label>
-        <input type="text" id="value4" name="petType" ng-model="petFormData.type"/>
+        <label required for="petType">What type of animal is your pet?</label>
+        <select id="petType" name="pet-type">
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="small-mammal">Small mammal (gerbils, hamsters, etc)</option>
+          <option value="fish">Fish</option>
+          <option value="rabbit">Rabbit</option>
+          <option value="lizard">Lizard</option>
+          <option value="bird">Bird</option>
+          <option value="snake">Snake</option>
+          <option value="horse">Horse</option>
+          <option value="other">Other</option>
+        <select>
     </div>
     <div class="group">
-        <label for="value5">What breed?</label>
-        <input type="text" id="value5" name="petBreed" ng-model="petFormData.breed"/>
+        <label for="petBreed">What breed?</label>
+        <input type="text" id="petBreed" name="petBreed" ng-model="petFormData.breed"/>
     </div>
     <div class="group">
-        <label for="value6">How old?</label>
-        <input type="text" id="value6" name="petAge" />
+        <label for="petAge">How old?</label>
+        <input type="text" id="petAge" name="petAge" />
     </div>
     <div class="group">
-        <label for="value7">Do you remember the last time they were at the vet?</label>
-        <input type="date" id="value7" name="petVet" ng-model="petFormData.last_vet_visit"/>
+        <label for="petVet">Do you remember the last time they were at the vet?</label>
+        <input type="date" id="petVet" name="petVet" ng-model="petFormData.last_vet_visit"/>
     </div>
     <div>
       <p class="count">1/6</p>
@@ -33,6 +44,6 @@
   <div>
     <button id="btnSubmit" type="submit">Submit</button>
   </div>
-  
+
   <!--<pre>{{petFormData}}</pre>-->
 </form>
