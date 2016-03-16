@@ -1,0 +1,43 @@
+html {
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+#back {
+	color: black;
+	position: fixed;
+}
+
+#vet-form {
+	border: 1px solid black;
+	margin: auto;
+	width: 450px;
+	padding: 1rem;
+	padding-bottom: 0;
+	padding-right: 0;
+}
+
+
+#vaccines, #pdf,
+#procedures,
+#medications,
+#last_vet_visit,
+#personal_notes {
+	width: 95%;
+}
+
+#visit_date-div, #pdf-div,
+#last_vet_visit-div,
+#illnesses-div,
+#breed-div, #type-div {
+	margin-left: 0;
+}

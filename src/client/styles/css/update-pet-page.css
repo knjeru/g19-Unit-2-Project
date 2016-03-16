@@ -1,0 +1,47 @@
+html {
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+#back {
+	color: black;
+	position: fixed;
+}
+
+#pet-form {
+	border: 1px solid black;
+	margin: auto;
+	width: 450px;
+	padding: 1rem;
+	padding-bottom: 0;
+	padding-right: 0;
+}
+
+
+#name, #type,
+#breed, #weight,
+#picture_url,
+#allergies,
+#illnesses,
+#last_vet_visit,
+#tendencies, #favorites {
+	width: 95%;
+}
+
+#allergy-div, #weight-div,
+#last_vet_visit-div,
+#illnesses-div,
+#breed-div, #type-div {
+	margin-left: 0;
+}
+
+
