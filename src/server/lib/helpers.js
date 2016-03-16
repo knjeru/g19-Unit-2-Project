@@ -7,7 +7,11 @@ function ensureAuthenticated(req, res, next) {
     return next();
   } else {
     // if not -> redirect to login
-    return res.redirect('/login');
+
+    return res.status(403).json({
+      status: 403,
+      error:'Not Authenticated'
+    });
   }
 }
 

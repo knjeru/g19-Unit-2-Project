@@ -163,7 +163,6 @@ describe('Pet API routes', function() {
                 owner_id: 1
             })
         .end(function(error, response){
-          console.log("pet id? ", response.body);
           chai.request(server)
           .get('/api/pets/' +response.body)
           .end(function(err, res){

@@ -20,7 +20,7 @@ passport.use(new LocalStrategy({
       // email found but do the passwords match?
       if (helpers.comparePassword(password, user.password)) {
         // passwords match! return user
-        return done(null, user);
+        return done(null, user.id);
       } else {
         // passwords don't match! return error
         return done('Incorrect password.');

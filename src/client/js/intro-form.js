@@ -1,3 +1,5 @@
+console.log('form test js');
+
 var q = 1, qMax = 0;
 
 $(function () {

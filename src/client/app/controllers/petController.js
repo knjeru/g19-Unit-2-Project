@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('petApp')
-.controller('genPetCtrl', ['$scope', '$http', '$routeParams', function($scope, $http,$routeParams){
+.controller('GenPetCtrl', ['$scope', '$http', '$routeParams', function($scope, $http,$routeParams){
     console.log('petController 1 sounding off');
     
     $http.get('/api/pets')
@@ -19,7 +19,7 @@ angular.module('petApp')
         });
     }
 }])
-.controller('singlePetCtrl', ['$scope', '$http', '$routeParams', function($scope, $http,$routeParams){
+.controller('SinglePetCtrl', ['$scope', '$http', '$routeParams', function($scope, $http,$routeParams){
     console.log('petController 2 sounding off');
     
     $http.get('/api/pets/'+ $routeParams.id)
