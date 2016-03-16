@@ -1,0 +1,45 @@
+$blue: #508CA4;
+$lightBlue: lighten($blue, 10%);
+$darkBlue: darken($blue, 10%);
+
+body {
+  background-color: $blue;
+  font-family: sans-serif;
+}
+
+input {
+  background-color: $lightBlue;
+  border: none;
+  height: 3rem;
+  width: 100%;
+  margin: 5px;
+  font-size: 1.5rem;
+}
+.group {
+  width: 30%;
+  margin: auto;
+}
+label {
+  font-size: 1.5rem;
+}
+.count {
+  text-align: center;
+}
+#btnSubmit {
+  display: none;
+}
+button {
+  border: none;
+  background-color: $darkBlue;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  display: block;
+  width: 10%;
+  margin: auto;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
