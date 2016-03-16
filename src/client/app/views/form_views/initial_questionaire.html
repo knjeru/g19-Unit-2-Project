@@ -1,5 +1,4 @@
 <form id="myForm" ng-submit="newPet()">
-
     <div class="group">
         <label for="petPicture">Upload a picture of your pet!</label>
         <input type="file" id="petPicture" name="petImage" ng-model="petFormData.picture_url"/>
@@ -36,10 +35,10 @@
         <input type="date" id="petVet" name="petVet" ng-model="petFormData.last_vet_visit"/>
     </div>
     <div>
-      <p class="count">1/6</p>
+      <p class="count">{{step}}/7</p>
     </div>
     <div>
-        <button id="btnNext">Next</button>
+        <button id="btnNext" ng-click="nextQuestion()">Next</button>
     </div>
   <div>
     <button id="btnSubmit" type="submit">Submit</button>
