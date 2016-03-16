@@ -12,103 +12,103 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
     // .when('/profile/new', {
     //     templateUrl: '[view html]',
     //     css: '[view css stylesheet]',
-    //     controller: 'usrProfCtrl'
+    //     controller: 'UsrProfCtrl'
     // })
     .when('/profile/:id', {
         templateUrl: '/app/views/petTest.html',
         css: '/styles/css/main.css',
-        controller: 'usrProfCtrl'
+        controller: 'UsrProfCtrl'
     })
     // .when('/profile/:id/edit', {
     //     templateUrl: '[view html]',
     //     css: '[view css stylesheet]',
-    //     controller: 'usrProfCtrl'
+    //     controller: 'UsrProfCtrl'
     // })
     // .when('/profile/:id/delete', {
     //     templateUrl: '[view html]',
     //     css: '[view css stylesheet]',
-    //     controller: 'usrProfCtrl'
+    //     controller: 'UsrProfCtrl'
     // })
     /* THESE ARE THE PET RELATED ROUTES */ 
     .when('/pets/new', {
         templateUrl: '/app/views/initial_questionaire.html',
         css: '/styles/css/main.css',
-        controller: 'genPetCtrl'
+        controller: 'MainPetCtrl'
     })
     .when('/pets/main', {
         templateUrl: '/app/views/singlePet.html',
         css: '/styles/css/main.css',
-        controller: 'genPetCtrl'
+        controller: 'MainPetCtrl'
     })
     .when('/pet/:id', {
         templateUrl: '/app/views/petTest.html',
-        controller: 'singlePetCtrl'
+        controller: 'SinglePetCtrl'
     })
     .when('/pet/:id/edit', {
         templateUrl: '/app/views/putTestForm.html',
         css: '/styles/css/main.css',
-        controller: 'singlePetCtrl'
+        controller: 'SinglePetCtrl'
     })
     .when('/pet/:id/delete', {
         templateUrl: '/app/views/petTest.html',
         css: '../styles/css/main.css',
-        controller: 'singlePetCtrl'
+        controller: 'SinglePetCtrl'
     })
     /* THESE ARE THE VETERINARIAN RELATED ROUTES */
     .when('/vets', {
         templateUrl: '/app/views/petTest.html',
         css: '/styles/css/main.css',
-        controller: 'genVetCtrl'
+        controller: 'MainVetCtrl'
     })
     // .when('/vet/:id', {
     //     templateUrl: '[view html]',
     //     css: '[view css stylesheet]',
-    //     controller: 'singleVetCtrl'
+    //     controller: 'MainVetCtrl'
     // })
     // .when('/vet/new', {
     //     templateUrl: '[view html]',
     //     css: '[view css stylesheet]',
-    //     controller: 'singleVetCtrl'
+    //     controller: 'MainVetCtrl'
     // })
-    // .when('/', {
+    // .when('/vet/:id/edit', {
     //     templateUrl: '[view html]',
     //     css: '[view css stylesheet]',
-    //     controller: 'singleVetCtrl'
+    //     controller: 'SingleVetCtrl'
     // })
     // .when('/delete', {
     //     templateUrl: '[view html]',
     //     css: '[view css stylesheet]',
-    //     controller: 'singleVetCtrl'
+    //     controller: 'SingleVetCtrl'
     // })
     /* THESE ARE THE VET VISIT ROUTES */
     // .when('/vetvisit/new', {
     //     templateUrl: '/app/views/petTest.html',
     //     css: '/styles/css/main.css',
-    //     controller: 'genVetVisitCtrl'
+    //     controller: 'MainVetVisitCtrl'
     // })
     .when('/vetvisits', {
         templateUrl: '/app/views/petTest.html',
         css: '/styles/css/main.css',
-        controller: 'genVetVisitCtrl'
+        controller: 'MainVetVisitCtrl'
     })
     // .when('/vetvisit/:id', {
     //     templateUrl: '[view html]',
     //     css: '[view css stylesheet]',
-    //     controller: 'singleVetVisitCtrl'
+    //     controller: 'SingleVetVisitCtrl'
     // })
     // .when('/vetvisit/:id/edit', {
     //     templateUrl: '[view html]',
     //     css: '[view css stylesheet]',
-    //     controller: 'singleVetVisitCtrl'
+    //     controller: 'SingleVetVisitCtrl'
     // })
     // .when('/vetvisit/:id/delete', {
     //     templateUrl: '[view html]',
     //     css: '[view css stylesheet]',
-    //     controller: 'singleVetVisitCtrl'
+    //     controller: 'SingleVetVisitCtrl'
     // })
     /* DANNY LOGIN TEST AREA */
     .when('/dannytest', {
         templateUrl: '/app/views/dannyTest.html',
-        controller: 'loginCtrl'
+        controller: 'LoginCtrl'
     });
 })

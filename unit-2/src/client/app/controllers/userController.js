@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('petApp')
-.controller('usrProfCtrl', ['$scope', '$http', '$routeParams', '$log', function($scope,$http,$routeParams,$log) {
+.controller('UsrProfCtrl', ['$scope', '$http', '$routeParams', '$log', function($scope,$http,$routeParams,$log) {
     console.log('userController 1 sounding off');
     
     $http.get('/api/profile'+$routeParams.id)
@@ -33,7 +33,7 @@ angular.module('petApp')
         });
     }
 }])
-.controller('genUsrProfCtrl', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+.controller('MainUsrProfCtrl', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
     $http.get('/api/profile')
     .success(function(data) {
         $scope.users = data;
