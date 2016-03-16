@@ -6,10 +6,10 @@ $(function () {
     qMax = $('#myForm div.group').length;
     $('#myForm div.group').hide();
     $('#myForm div.group:nth-child(1)').show();
+
     $('#btnNext').on('click', function (event) {
         event.preventDefault();
         handleClick();
-
     });
 });
 
