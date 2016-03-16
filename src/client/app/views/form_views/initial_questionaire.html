@@ -2,11 +2,11 @@
 
     <div ng-show="step === 1" class="group">
         <label for="value1">Upload a picture of your pet!</label>
-        <input type="text" id="value1" name="petImage" ng-model="petFormData.picture_url"/>
+        <input type="file" id="value1" name="petImage" ng-model="petFormData.picture_url"/>
     </div>
     <div ng-show="step === 2" class="group">
         <label for="value2">What's your pet's name?</label>
-        <input type="text" id="value2" name="petName" ng-model="petFormData.name"/>
+        <input required type="text" id="value2" name="petName" ng-model="petFormData.name"/>
     </div>
     <div ng-show="step === 3" class="group">
         <label for="value3">Any nicknames?</label>

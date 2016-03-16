@@ -21,7 +21,7 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
                       lastName: $scope.lastName,
                       email: $scope.registerEmail,
                       password: $scope.registerPassword
-                    }
+                    };
         console.log(data);
         $http.post('/api/auth/register', data)
         .success(function(data) {

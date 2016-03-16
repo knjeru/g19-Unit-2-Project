@@ -1,0 +1,41 @@
+html {
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+#back {
+	color: black;
+	position: fixed;
+}
+
+#owner-form {
+	border: 1px solid black;
+	margin: auto;
+	width: 450px;
+	padding: 1rem;
+	padding-bottom: 0;
+	padding-right: 0;
+}
+
+#email, #password,
+#first-name, #last-name,
+#street_address, #city,
+#state, #zipcode, #phone {
+	width: 95%;
+}
+
+#first-name-div,
+#last-name-div,
+#city-div, #state-div{
+	margin-left: 0;
+}
+
