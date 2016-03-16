@@ -41,7 +41,7 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
         controller: 'genPetCtrl'
     })
     .when('/pet/:id', {
-        templateUrl: '/app/views/singlePet.html',
+        templateUrl: '/app/views/single_pet.html',
         css: '/styles/css/single_pet.css',
         controller: 'SinglePetCtrl'
     })
