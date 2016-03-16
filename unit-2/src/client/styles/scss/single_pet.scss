@@ -1,0 +1,68 @@
+$dark: #333232;
+$purple: #593A6A;
+$light-purple: lighten($purple, 10%);
+
+.tab-display {
+  display: block;
+}
+.pet-overview {
+  display: block;
+}
+.tabs {
+  position: relative;
+  min-height: 300px; /* This part sucks */
+  clear: both;
+  margin: 25px 0;
+  overflow: scroll;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: $purple;
+  border-radius: 10px 10px 0 0;
+  padding: 5px;
+  border: 1px solid $purple;
+  margin-left: -1px;
+  position: relative;
+  left: 1px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+.tab [type=radio] {
+  display: none;
+}
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: $light-purple;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid $light-purple;
+  height: 100%;
+}
+[type=radio]:checked ~ label {
+  background: $light-purple;
+  border: 1px $light-purple;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+.pet-image {
+  height: 200px;
+  width: 100%;
+  background-color: $dark;
+  border-radius: 10px;
+}
+.general-info {
+  padding: 1rem;
+  border: 1px solid black;
+}
+.pet-info {
+  padding: 10vh 0;
+}

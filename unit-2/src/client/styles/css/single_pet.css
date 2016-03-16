@@ -1,0 +1,62 @@
+.tab-display {
+  display: block; }
+
+.pet-overview {
+  display: block; }
+
+.tabs {
+  position: relative;
+  min-height: 300px;
+  /* This part sucks */
+  clear: both;
+  margin: 25px 0;
+  overflow: scroll; }
+
+.tab {
+  float: left; }
+
+.tab label {
+  background: #593A6A;
+  border-radius: 10px 10px 0 0;
+  padding: 5px;
+  border: 1px solid #593A6A;
+  margin-left: -1px;
+  position: relative;
+  left: 1px; }
+  .tab label:hover {
+    cursor: pointer; }
+
+.tab [type=radio] {
+  display: none; }
+
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: #754c8b;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #754c8b;
+  height: 100%; }
+
+[type=radio]:checked ~ label {
+  background: #754c8b;
+  border: 1px #754c8b;
+  z-index: 2; }
+
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1; }
+
+.pet-image {
+  height: 200px;
+  width: 100%;
+  background-color: #333232;
+  border-radius: 10px; }
+
+.general-info {
+  padding: 1rem;
+  border: 1px solid black; }
+
+.pet-info {
+  padding: 10vh 0; }
