@@ -20,7 +20,7 @@ passport.use(new LocalStrategy({
       // email found but do the passwords match?
       if (helpers.comparePassword(password, user.password)) {
         // passwords match! return user
-        return done(null, user);
+        return done(null, user.id);
       } else {
         // passwords don't match! return error
         return done('Incorrect password.');
@@ -40,7 +40,6 @@ passport.use(new FacebookStrategy({
   },
   function(accessToken, refreshToken, profile, done) {
     knex('owners').select().where('facebookId', profile.id).then(function (data) {
-      console.log("Data is ",data);
       if (data.length){
         process.nextTick(function(){
           return done(null, data[0].id );
@@ -50,8 +49,6 @@ passport.use(new FacebookStrategy({
           knex('owners').insert({facebookId: profile.id, firstName: profile.displayName}, 'id').then(
             function(data){
               process.nextTick(function(){
-              console.log("data is ", data.id);
-              console.log("profile is ", profile);
               return done(null, data[0]);
             });
           });
@@ -62,7 +59,6 @@ passport.use(new FacebookStrategy({
 
 // sets the user to 'req.user' and establishes a session via a cookie
 passport.serializeUser(function(owner, done) {
-  console.log("owner: ", owner);
   done(null, owner);
 });
 
@@ -71,7 +67,6 @@ passport.deserializeUser(function(id, done) {
   // done(null, id);
   // // The above code is a placeholder for what is below.  Req.user is not being saved
   // // in the session
-  console.log("Id is ", id);
   knex('owners').where('id', id)
   .then(function(data) {
     return done(null, data[0]);
