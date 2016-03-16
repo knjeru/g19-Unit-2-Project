@@ -10,10 +10,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
     <script src="https://code.angularjs.org/1.5.0/angular-route.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-css/1.0.7/angular-css.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-cookies.js"></script>
     <link rel="stylesheet" ng-href="{{ css }}">
   </head>
   <body>
-    <nav class="main-nav">
+    <nav class="main-nav" ng-show="users.length">
         <a class="left-align" href=""><img src=""></a>
         <a class="left-align" href="">Your Name</a>
         <a class="right-align"><i class="fa fa-tachometer"></i></a>
@@ -21,7 +22,7 @@
         <a class="right-align" href="">+ Vet</a>
         <a class="right-align" href=""><i class="fa fa-envelope-o"></i></a>
         <a class="right-align" href=""><i class="fa fa-cog"></i></a>
-        <a class="right-align" href="">Logout</a>
+        <a class="right-align" href="/api/auth/logout">Logout</a>
     </nav>
     <div ng-view>
         <!-- views load here -->
@@ -32,7 +33,7 @@
     <script type="text/javascript" src="/app/controllers/petController.js"></script>
     <script type="text/javascript" src="/app/controllers/vetController.js"></script>
     <script type="text/javascript" src="/app/controllers/vetVisitController.js"></script>
-    <!-- <script type="text/javascript" src="/app/controllers/dannyTestController.js"></script> -->
+    <script type="text/javascript" src="/app/controllers/loginController.js"></script> 
     <script type="text/javascript" src="/js/intro-form.js" charset="utf-8"></script>
   </body>
 </html>
