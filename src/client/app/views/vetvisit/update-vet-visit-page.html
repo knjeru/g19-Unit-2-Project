@@ -1,0 +1,40 @@
+
+<form id="vet-form" action="/api/profile/vet_id/pet_id" method="post">
+
+    <div class="twelve columns">
+        <label for="vaccines">Vaccines</label>
+        <input id="vaccines" name="vaccines" type="text" placeholder="Recent Vaccines">	
+    </div>
+
+    <div class="twelve columns">
+        <label for="procedures">Procedures</label>
+        <input id="procedures" name="procedures" type="text" placeholder="procedures">
+    </div>
+
+    <div class="twelve columns">
+        <label for="medications">Medications</label>
+        <input id="medications" name="medications" type="text" placeholder="medications">
+    </div>
+
+    <div class="twelve columns">
+        <label for="personal_notes">Notes</label>
+        <input id="personal_notes" name="personal_notes" type="text" placeholder="Notes">	
+    </div>
+
+    <div class="six columns" id="visit_date-div">
+        <label for="visit_date">Last Vet Visit</label>
+        <input class="button" id="visit_date" name="visit_date" type="date" placeholder="Visit Date">
+    </div>
+
+    <div class="six columns" id="pdf-div">
+        <label for="pdf">PDF</label>
+        <input id="pdf" name="pdf" type="url" placeholder="PDF goes here">	
+    </div>
+
+    <div class="twelve columns">
+        <input id="update" type="submit" value="Update">
+        <a href="/api/profile/vet_id/pet_id"><input id="cancel" type="button" value="Cancel"></a><br>
+    </div>
+        <!-- need to check href's -->
+</form>
+

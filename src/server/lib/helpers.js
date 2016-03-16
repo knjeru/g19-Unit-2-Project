@@ -6,8 +6,9 @@ function ensureAuthenticated(req, res, next) {
   // check if user is authenticated
   // Maybe check environment before this logic?
   var env = app.get('env');
-  if(req.user || env === 'development') {
+  if(req.user ) {
 
+// || env === 'development'
     // if so -> call next()
 
     return next();

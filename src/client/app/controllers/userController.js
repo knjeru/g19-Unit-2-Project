@@ -33,10 +33,11 @@ angular.module('petApp')
         });
     }
 }])
-.controller('MainUsrProfCtrl', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+.controller('MainUsrProfCtrl', ['$scope', '$http', '$routeParams', '$log', function($scope, $http, $routeParams,$log) {
     $http.get('/api/profile')
     .success(function(data) {
         $scope.users = data;
+        $log.info($scope.users);
         console.log('here is my data: ', $scope.users);
     })
 }]);
