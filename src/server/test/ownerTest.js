@@ -152,7 +152,6 @@ describe('Owner API routes', function() {
                 phone: '720-555-5555'
             })
         .end(function(error, response){
-          console.log("owner id? ", response.body);
           chai.request(server)
           .get('/api/profile/' +response.body)
           .end(function(err, res){
