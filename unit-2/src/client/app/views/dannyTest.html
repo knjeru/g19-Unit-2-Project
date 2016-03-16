@@ -23,10 +23,11 @@
     </form>
 </div>
 
-<form ng-click="initiateUpload()">
-    <input type="file" id="file_input" ng-model="file_input"/>
+
+    <input type="file" id="file_input" onchange="angular.element(this).scope().fileNameChanged(this)"/>
     <p id="status">Please select a file</p>
     <!-- <img id="preview" src="/images/default.png" /> -->
+<form ng-click="initiateUpload()">
     <button type="submit">Upload</button>
 </form>
 <form method="POST" action="/img/submit_form">

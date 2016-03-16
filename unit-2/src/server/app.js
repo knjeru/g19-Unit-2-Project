@@ -20,7 +20,7 @@ var vetRoutes = require('./routes/vetRoutes.js');
 var vetVisits = require('./routes/vetVisitRoutes.js');
 var ownerRoutes = require('./routes/ownerRoutes.js');
 var authRoutes = require('./routes/authRoutes.js');
-var imageUpload = require('./routes/imageUpload.js')
+var imageUpload = require('./routes/imageUpload.js');
 
 
 
