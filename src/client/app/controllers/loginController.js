@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('petApp')
-.controller('LoginCtrl', ['$scope', '$http', '$routeParams', function($scope, $http,$routeParams){
-    console.log('dannyController sounding off');
+.controller('LoginCtrl', ['$scope', '$http', '$routeParams', '$log',function($scope, $http,$routeParams,$log){
+    console.log('LoginController sounding off');
      $scope.hello = "Testing";
 
      $scope.register = function(){
@@ -24,11 +24,20 @@ angular.module('petApp')
                       email: $scope.loginEmail,
                       password: $scope.loginPassword
                     };
-        console.log(data);
+        // console.log(data);
         $http.post('/api/auth/login', data)
         .success(function(data) {
             $scope.hello = data;
+            // $log.info($scope.hello);
         });
+     };
+     
+     $scope.logout = function(){
+         $log.info('you are logged out');
+         $http.get('/api/auth/logout')
+         .success(function(data) {
+             $log.info('you are logged out2')
+         });
      };
 
 
