@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../../../styles/css/skeleton.css">
+		<link rel="stylesheet" href="../../../styles/css/update-reminders-page.css">
+
+	</head>
+	<body> <!-- need to check href's -->
+
+		<a href="/api/profile/:id/:pet_id"><i class="fa fa-arrow-left" id="back"></i></a>
+
+			<form id="reminders-form" action="/api/profile/:id/:pet_id" method="post">
+
+				<div class="twelve columns">
+					<label for="description">Description</label>
+					<textarea id="description" name="description" type="text" placeholder="Reminder description"></textarea>
+				</div>
+
+				<div class="six columns" id="date-div">
+					<label for="date">Reminder Date</label>
+					<input class="button" id="date" name="date" type="date" placeholder="Reminder Date">
+				</div>
+
+				<div class="twelve columns">
+					<input id="add-reminder" type="submit" value="Add Reminder">
+					<a href="/api/profile/:id/"><input id="cancel" type="button" value="Cancel"></a><br>
+				</div>
+
+					<!-- need to check href's -->
+			</form>
+
+	</body>
+</html>
+
