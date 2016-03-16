@@ -1,0 +1,63 @@
+html {
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+#back {
+	color: black;
+	position: fixed;
+}
+
+#social-register {
+	text-align: center;
+}
+
+#social-register img{
+	border-radius: 4px;
+	margin: 0 auto;
+	width: 20%;
+}
+
+#social-register p {
+	margin-bottom: 0.5rem;
+}
+
+#register-form {
+	border: 1px solid black;
+	margin: 0 auto;
+	width: 450px;
+	padding: 1rem;
+	padding-bottom: 0;
+	padding-right: 0;
+}
+
+#email, #password,
+#first-name, #last-name {
+	width: 95%;
+}
+
+#register-form #facebook-sigin {
+	text-align: center;
+	width: 60%;
+}
+
+#register-form p {
+	text-align: center;
+}
+
+#first-name-div,
+#last-name-div {
+	margin-left: 0;
+}
+
+
+
