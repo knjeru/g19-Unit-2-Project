@@ -1,12 +1,26 @@
 'use strict';
 
 angular.module('petApp', ['ngRoute', 'door3.css'])
-.config(function($routeProvider) {
-    $routeProvider
+
+.config(function($routeProvider){
+  $routeProvider
+    .when('/profile', {
+      templateUrl: '../partials/dannyTest.html',
+      css: '../styles/css/main.css',
+      controller: 'loginCtrl'
+    });
+}).controller('loginCtrl', ['$scope', '$http', '$routeParams', function($scope, $http,$routeParams){
+   console.log('hiiii');
+}]);
+
+// angular.module('petApp', ['ngRoute', 'door3.css'])
+// .config(function($routeProvider) {
+//     $routeProvider
     .when('/profile', {
         templateUrl: '../partials/single_user.html',
+        css: '../styles/css/main.css',
         controller: 'profCtrl'
-    })
+    });
     .when('/:id', {
         templateUrl: '[view html]',
         // css: '[view css stylesheet]',
@@ -28,8 +42,11 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
         controller: 'profCtrl'
     })
 })
-.controller('profCtrl', ['$scope', '$http', '$routeParams', function($scope,$http,$routeParams) {
-    $http.get('/api/profile')
+.controller('profCtrl', ['$scope', '$http', '$routeParams', '$log', function($scope,$http,$routeParams,$log) {
+    console.log('testy');
+    $log.info('test');
+    console.log($routeParams.id);
+    $http.get('/api/profile/'+$routeParams.id)
     .success(function(data) {
         // return ALL vet data
         $scope.profile = data;
@@ -46,7 +63,7 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
     .success(function(data) {
         // we can set an action to the let the user know the request went through
     })
-}])
+}]);
 .controller('singleProfCtrl', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
     $http.get('/api/:id')
     .success(function(data) {

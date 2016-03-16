@@ -4,24 +4,25 @@
 
 /* By "requiring in" ngRoute we're now able to use its methods to handle serving
    ngRoute will handle serving up the views for when a user hits a predefined route */
-    
+console.log('!!');    
 
 angular.module('petApp', ['ngRoute', 'door3.css'])
 // next we'll use the config our app with the provider we want to use
-    
+
 .config(function($routeProvider) {
+    console.log('!');
     // we can now use $routeProvider to serve up our views
     $routeProvider
     // next we'll define which view will be served to the user when they hit a route
     .when('/pets', {
         // here we'll link to the location of the view.html on our server
-        templateUrl: '../partials/petTest.html',
+        templateUrl: '../partials/single_user.html',
         // inject specific style sheets for each view
         css: '../styles/css/main.css',
         // next we'll define the controller we'll be using to the requested data to the user
         controller: 'petCtrl'
     })
-    .when('/pet2', {
+    .when('/pet/:id', {
         templateURL: '../partials/petTest.html',
 
         controller: 'singlePetCtrl'
@@ -47,6 +48,7 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
         // We'll start by using the $http service to handle requests and $scope to handle the $scope of the controller
 .controller('petCtrl', ['$scope', '$http', '$routeParams', function($scope, $http,$routeParams){
     // first we'll make our get request for when the user hits the getAll route
+    console.log('test');
     $http.get('/api/pets')
     .success(function(data) {
         // then we'll attach the data to the intended $scope variable we want to use in the view
@@ -71,10 +73,10 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
 }])
 .controller('singlePetCtrl', ['$scope', '$http', '$routeParams', function($scope, $http,$routeParams){
     console.log('outside of the get');
-    // $http.get('/api/pets/:id')
-    // .success(function(data) {
-    //     console.log('This should be the id: ', $routeParams.id);
-    //     // $scope.pet = data;
-    //     // console.log($scope.pet)
-    // });
+    $http.get('/api/pets/:id')
+    .success(function(data) {
+        console.log('This should be the id: ', $routeParams.id);
+        // $scope.pet = data;
+        // console.log($scope.pet)
+    });
 }]);

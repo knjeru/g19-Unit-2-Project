@@ -1,18 +1,8 @@
 'use strict';
 
-// console.log("Danny Test");
-
-angular.module('petApp', ['ngRoute', 'door3.css'])
-
-.config(function($routeProvider){
-  $routeProvider
-    .when('/dannytest', {
-      templateUrl: '../partials/dannyTest.html',
-      css: '../styles/css/main.css',
-      controller: 'loginCtrl'
-    });
-})
+angular.module('petApp')
 .controller('loginCtrl', ['$scope', '$http', '$routeParams', function($scope, $http,$routeParams){
+    console.log('dannyController sounding off');
      $scope.hello = "Testing";
 
      $scope.register = function(){
@@ -43,4 +33,3 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
 
 
 }]);
-
