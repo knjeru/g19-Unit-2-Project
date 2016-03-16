@@ -23,11 +23,12 @@
     </form>
 </div>
 
-
-<input type="file" id="file_input"/>
-<p id="status">Please select a file</p>
-<!-- <img id="preview" src="/images/default.png" /> -->
-
+<form ng-click="initiateUpload()">
+    <input type="file" id="file_input" ng-model="file_input"/>
+    <p id="status">Please select a file</p>
+    <!-- <img id="preview" src="/images/default.png" /> -->
+    <button type="submit">Upload</button>
+</form>
 <form method="POST" action="/img/submit_form">
     <!-- <input type="hidden" id="avatar_url" name="avatar_url" value="/public/default.png" /> -->
     <input type="text" name="username" placeholder="Username" /><br />

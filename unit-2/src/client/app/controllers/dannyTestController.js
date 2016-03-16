@@ -33,6 +33,8 @@ angular.module('petApp')
         });
      };
 
+     $scope.file_input = {};
+
 
 }]);
 
