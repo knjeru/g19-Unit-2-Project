@@ -1,9 +1,15 @@
 var bcrypt = require('bcrypt');
+var express = require('express');
+var app = express();
 
 function ensureAuthenticated(req, res, next) {
   // check if user is authenticated
-  if(req.user) {
+  // Maybe check environment before this logic?
+  var env = app.get('env');
+  if(req.user || env === 'development') {
+
     // if so -> call next()
+
     return next();
   } else {
     // if not -> redirect to login

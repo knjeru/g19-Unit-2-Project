@@ -9,6 +9,7 @@ var helpers = require('./helpers');
 passport.use(new LocalStrategy({
   usernameField: 'email'
 }, function(email, password, done) {
+    console.log(email, password);
     // does the email exist?
     knex('owners').where('email', email)
     .then(function(data) {
