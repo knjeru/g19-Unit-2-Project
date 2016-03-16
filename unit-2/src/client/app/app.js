@@ -8,112 +8,109 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
 .config(function($routeProvider){
     console.log('Angular Config Ready To Go!');
     $routeProvider
+
     /* THESE ARE THE USER RELATED ROUTES */
+    // .when('/profile/new', {
+    //     templateUrl: '[view html]',
+    //     css: '[view css stylesheet]',
+    //     controller: 'UsrProfCtrl'
+    // })
     .when('/profile/:id', {
         templateUrl: '/app/views/petTest.html',
-        css: '../../styles/css/main.css',
-        controller: 'userProfCtrl'
+        css: '/styles/css/main.css',
+        controller: 'UsrProfCtrl'
     })
-    // .when('/:id', {
-    //     templateUrl: '',
-    //     css: '../../styles/css/main.css',
-    //     controller: 'userProfCtrl'
-    // })
-    // .when('/post', {
+    // .when('/profile/:id/edit', {
     //     templateUrl: '[view html]',
     //     css: '[view css stylesheet]',
-    //     controller: 'userProfCtrl'
+    //     controller: 'UsrProfCtrl'
     // })
-    // .when('/put', {
+    // .when('/profile/:id/delete', {
     //     templateUrl: '[view html]',
     //     css: '[view css stylesheet]',
-    //     controller: 'userProfCtrl'
-    // })
-    // .when('/delete', {
-    //     templateUrl: '[view html]',
-    //     css: '[view css stylesheet]',
-    //     controller: 'userProfCtrl'
+    //     controller: 'UsrProfCtrl'
     // })
     /* THESE ARE THE PET RELATED ROUTES */
-    .when('/pets', {
-        templateUrl: '/app/views/singlePet.html',
-        css: '../styles/css/main.css',
-        controller: 'petCtrl'
-    })
-    .when('/pets/:id', {
-        templateUrl: '/app/views/petTest.html',
-        controller: 'singlePetCtrl'
-    })
     .when('/pets/new', {
-        templateUrl: '[view html]',
-        css: '[view css stylesheet]',
-        controller: 'petCtrl'
+        templateUrl: '/app/views/initial_questionaire.html',
+        css: '/styles/css/main.css',
+        controller: 'MainPetCtrl'
     })
-    // .when('/put', {
-    //     templateUrl: '[view html]',
-    //     css: '[view css stylesheet]',
-    //     controller: 'petCtrl'
-    // })
-    // .when('/delete', {
-    //     templateUrl: '[view html]',
-    //     css: '[view css stylesheet]',
-    //     controller: 'petCtrl'
-    // })
+    .when('/pets/main', {
+        templateUrl: '/app/views/singlePet.html',
+        css: '/styles/css/main.css',
+        controller: 'MainPetCtrl'
+    })
+    .when('/pet/:id', {
+        templateUrl: '/app/views/petTest.html',
+        controller: 'SinglePetCtrl'
+    })
+    .when('/pet/:id/edit', {
+        templateUrl: '/app/views/putTestForm.html',
+        css: '/styles/css/main.css',
+        controller: 'SinglePetCtrl'
+    })
+    .when('/pet/:id/delete', {
+        templateUrl: '/app/views/petTest.html',
+        css: '../styles/css/main.css',
+        controller: 'SinglePetCtrl'
+    })
     /* THESE ARE THE VETERINARIAN RELATED ROUTES */
     .when('/vets', {
         templateUrl: '/app/views/petTest.html',
-        css: '../../styles/css/main.css',
-        controller: 'vetCtrl'
+        css: '/styles/css/main.css',
+        controller: 'MainVetCtrl'
     })
-    // .when('/:id', {
+    // .when('/vet/:id', {
     //     templateUrl: '[view html]',
     //     css: '[view css stylesheet]',
-    //     controller: 'singleVetCtrl'
+    //     controller: 'MainVetCtrl'
     // })
-    // .when('/post', {
+    // .when('/vet/new', {
     //     templateUrl: '[view html]',
     //     css: '[view css stylesheet]',
-    //     controller: 'vetCtrl'
+    //     controller: 'MainVetCtrl'
     // })
-    // .when('/put', {
+    // .when('/vet/:id/edit', {
     //     templateUrl: '[view html]',
     //     css: '[view css stylesheet]',
-    //     controller: 'vetCtrl'
+    //     controller: 'SingleVetCtrl'
     // })
     // .when('/delete', {
     //     templateUrl: '[view html]',
     //     css: '[view css stylesheet]',
-    //     controller: 'vetCtrl'
+    //     controller: 'SingleVetCtrl'
     // })
     /* THESE ARE THE VET VISIT ROUTES */
-    .when('/vetvisit', {
+    // .when('/vetvisit/new', {
+    //     templateUrl: '/app/views/petTest.html',
+    //     css: '/styles/css/main.css',
+    //     controller: 'MainVetVisitCtrl'
+    // })
+    .when('/vetvisits', {
         templateUrl: '/app/views/petTest.html',
-        css: '../../styles/css/main.css',
-        controller: 'vetVisitCtrl'
+        css: '/styles/css/main.css',
+        controller: 'MainVetVisitCtrl'
     })
-    // .when('/:id', {
+    // .when('/vetvisit/:id', {
     //     templateUrl: '[view html]',
     //     css: '[view css stylesheet]',
-    //     controller: 'singleVetVisitCtrl'
+    //     controller: 'SingleVetVisitCtrl'
     // })
-    // .when('/post', {
+    // .when('/vetvisit/:id/edit', {
     //     templateUrl: '[view html]',
     //     css: '[view css stylesheet]',
-    //     controller: 'vetVisitCtrl'
+    //     controller: 'SingleVetVisitCtrl'
     // })
-    // .when('/put', {
+    // .when('/vetvisit/:id/delete', {
     //     templateUrl: '[view html]',
     //     css: '[view css stylesheet]',
-    //     controller: 'vetVisitCtrl'
+    //     controller: 'SingleVetVisitCtrl'
     // })
-    // .when('/delete', {
-    //     templateUrl: '[view html]',
-    //     css: '[view css stylesheet]',
-    //     controller: 'vetVisitCtrl'
-    // });
-    .when('/testRoute', {
+
+    /* DANNY LOGIN TEST AREA */
+    .when('/dannytest', {
         templateUrl: '/app/views/dannyTest.html',
-        css: '../../styles/css/main.css',
-        controller: 'loginCtrl'
+        controller: 'LoginCtrl'
     });
 });

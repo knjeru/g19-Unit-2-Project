@@ -23,6 +23,7 @@ var authRoutes = require('./routes/authRoutes.js');
 var imageUpload = require('./routes/imageUpload.js')
 
 
+
 // *** express instance *** //
 var app = express();
 
@@ -53,7 +54,7 @@ app.use(express.static(path.join(__dirname, '../client/')));
 app.get('/', function(req, res, next) {
   res.sendFile(path.join(__dirname, '../client/app/views/', 'index.html'));
 });
-app.use('/', routes);
+// app.use('/', routes);
 app.use('/api/pets', petRoutes);
 app.use('/api/profile', ownerRoutes);
 app.use('/api/vets', vetRoutes);
