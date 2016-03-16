@@ -32,7 +32,7 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
     /* THESE ARE THE PET RELATED ROUTES */
     .when('/pets/new', {
         templateUrl: '/app/views/initial_questionaire.html',
-        css: '/styles/css/main.css',
+        css: '/styles/css/initial_questionnaire.css',
         controller: 'genPetCtrl'
     })
     .when('/pets/main', {
