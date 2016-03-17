@@ -1,2 +1,2 @@
-firstName,lastName,email,password,street_address,city,state,zipcode,phone
-Peewee,Herman,petlover1@gmail.com,$2a$08$i.Z8gETe71TsBsynUT50COCE5kNYGv2tmDaycXHHvTEXtiY0ssGKO,1919 Clearview Cir,Austin,TX,10101,555-555-5555
+firstName,lastName,email,password,street_address,city,state,zipcode,phone,image
+Peewee,Herman,petlover1@gmail.com,$2a$08$i.Z8gETe71TsBsynUT50COCE5kNYGv2tmDaycXHHvTEXtiY0ssGKO,1919 Clearview Cir,Austin,TX,10101,555-555-5555,http://thestudioexec.com/wp-content/uploads/2013/01/jackie-chan.jpg

@@ -12,6 +12,7 @@ exports.up = function(knex, Promise) {
     table.string('zipcode');
     table.string('phone');
     table.string('facebookId');
+    table.text('image');
   });
 };
 
