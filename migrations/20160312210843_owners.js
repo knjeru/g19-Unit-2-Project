@@ -12,9 +12,9 @@ exports.up = function(knex, Promise) {
     table.string('zipcode');
     table.string('phone');
     table.string('facebookId');
-    table.text('owner_image');
+    table.text('owner_image').default('http://outlineicon.com/wp-content/uploads/2015/09/add-user.png');
     table.string('vet_name');
-    table.text('vet_image');
+    table.text('vet_image').default('http://www.clipartbest.com/cliparts/9iR/gko/9iRgkoEkT.jpeg');
     table.string('vet_street');
     table.string('vet_city');
     table.string('vet_state');
