@@ -13,6 +13,10 @@ body {
     font-size: 1.75rem;
     text-decoration: none; }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; }
+
 .right-align {
   float: right; }
 
@@ -27,3 +31,10 @@ body {
     text-decoration: none;
     color: white;
     padding: 50px; }
+
+.call-to-action {
+  font-size: 7rem;
+  font-weight: 500; }
+
+.conversation-starter {
+  background-color: #508CA4; }

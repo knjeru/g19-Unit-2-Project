@@ -21,6 +21,11 @@ body {
   }
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
 .right-align {
   float: right;
 }
@@ -41,4 +46,11 @@ body {
   }
 }
 
+.call-to-action {
+  font-size: 7rem;
+  font-weight: 500;
+}
+.conversation-starter {
+  background-color: $color;
+}
 

@@ -1,14 +1,14 @@
   <div class="container">
-  <h1 class="dash-greeting row dashGreeting">Hi there.</h1>
+  <h1 class="dash-greeting row dashGreeting">Hello There.</h1>
   <p class="dash-greeting2 row">Which friend are you keeping up with today?</p>
   <div class="row">
     <div class="each-pet four columns" ng-repeat="pet in pets | limitTo:quantity">
       <a href="/#/pet/{{pet.id}}">
         <div class="pet-image"><img class="pet-image" ng-src="{{pet.picture_url}}" alt="" /></div>
         <div class="pet-info">
-          <p>Pet Name: {{pet.name}}</p>
-          <p>Pet Species: {{pet.type}}</p>
-          <p>Pet Breed: {{pet.breed}}</p>
+          <p class="single-pet"><span class="pet-header">Pet Name:</span> {{pet.name}}</p>
+          <p class="single-pet"><span class="pet-header">Pet Species:</span> {{pet.type}}</p>
+          <p class="single-pet"><span class="pet-header">Pet Breed:</span> {{pet.breed}}</p>
         </div>
       </a>
     </div>

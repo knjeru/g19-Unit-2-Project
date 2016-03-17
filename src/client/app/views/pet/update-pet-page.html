@@ -1,48 +1,60 @@
+			<h1>Update Pet</h1>
 			<form id="pet-form" action="/api/" method="post">
 
 				<div class="twelve columns">
 					<label for="name">Name</label>
-					<input id="name" name="name" type="text" placeholder="Pet's Name">
+					<input id="name" name="name" type="text">
 				</div>
 
 				<div class="twelve columns">
 					<label for="picture_url">Picture Url</label>
-					<input id="picture_url" name="picture_url" type="text" placeholder="www.yourpetspicture.com">
+					<input id="picture_url" name="picture_url" type="text" placeholder="Starts with http://">
 				</div>
 
-				<div class="six columns" id="type-div">
-					<label for="type">Type of Pet</label>
-					<input id="type" name="type" type="text" placeholder="What type of animal is your pet?">
+				<div class="twelve columns" id="type-div">
+					<label for="petType">Type of Pet</label>
+					<select id="petType" name="pet-type">
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="small-mammal">Small mammal (gerbils, hamsters, etc)</option>
+          <option value="fish">Fish</option>
+          <option value="rabbit">Rabbit</option>
+          <option value="lizard">Lizard</option>
+          <option value="bird">Bird</option>
+          <option value="snake">Snake</option>
+          <option value="horse">Horse</option>
+          <option value="other">Other</option>
+        <select>
 				</div>
 
 				<div class="six columns" id="breed-div">
 					<label for="breed">Breed</label>
-					<input id="breed" name="breed" type="email" placeholder="What breed is your pet?">
+					<input id="breed" name="breed" type="email">
 				</div>
 
 				<div class="six columns" id="weight-div">
 					<label for="weight">Weight</label>
-					<input id="weight" name="weight" type="number" placeholder="Pet's Weight">
+					<input id="weight" name="weight" type="number">
 				</div>
 
 				<div class="six columns" id="allergy-div">
 					<label for="allergies">Allergies</label>
-					<input id="allergies" name="allergies" type="text" placeholder="Pet's Allergies">
+					<input id="allergies" name="allergies" type="text" placeholder="EX: Chocolate, Daffodils">
 				</div>
 
 				<div class="six columns" id="illnesses-div">
 					<label for="illnesses">Illnesses</label>
-					<input id="illnesses" name="illnesses" type="text" placeholder="Pet's Illnesses">
+					<input id="illnesses" name="illnesses" type="text">
 				</div>
 
-				<div class="six columns" id="last_vet_visit-div">
+				<div class="twelve columns" id="last_vet_visit-div">
 					<label for="last_vet_visit">Last Vet Visit</label>
 					<input class="button" id="last_vet_visit" name="last_vet_visit" type="date" placeholder="Pet's last vet visit">
 				</div>
 
 				<div class="twelve columns">
 					<label for="tendencies">Doesn't Like</label>
-					<input id="tendencies" name="tendencies" type="text" placeholder="My pet doesn't like">
+					<input id="tendencies" name="tendencies" type="text" placeholder="EX: Other animals, baseball caps">
 				</div>
 
 				<div class="twelve columns">
@@ -51,8 +63,14 @@
 				</div>
 
 				<div class="twelve columns">
+					<label for="products">Products</label>
+					<input id="products" name="products" type="text" placeholder="EX: Food Brand, Litter Brand, etc.">
+				</div>
+
+				<div class="twelve columns">
 					<input id="update" type="submit" value="Update">
-					<a href="/#/api/profile/id/pet_id"><input id="cancel" type="button" value="Cancel"></a><br>
+					<a href="/#/api/profile/id/pet_id"><input id="cancel" type="button" value="Cancel"></a>
+					<a href="/#/api/profile/id/pet_id/delete"><input id="delete" type="button" value="Remove Pet"></a><br>
 				</div>
 					<!-- need to check href's -->
 			</form>
