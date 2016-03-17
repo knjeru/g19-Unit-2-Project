@@ -26,17 +26,23 @@ angular.module('petApp')
         $scope.status = 'Unable to load pet data: ' + error.message;
       });
   }
+    $scope.petFormData = {};
 
-      $scope.petFormData = {};
-      $scope.newPet = function () {
-        $scope.petFormData.owner_id = parseInt($cookies.get('id'));
-          petFactory.insertPet($scope.petFormData)
-            .success(function(data) {
-              $location.url('/profile/'+parseInt($cookies.get('id'))+'/pets/main');
-            }).error(function(error) {
-              $scope.status = 'Unable to add pet data: ' + error.message;
-            });
-          };
+    $scope.fileNameChanged = function(ele){
+     var files = "https://s3-us-west-2.amazonaws.com/pet-app/"+ele.files[0].name;
+     $scope.petFormData.picture_url = files;
+    };
+
+    $scope.newPet = function () {
+      console.log($scope.petFormData);
+      $scope.petFormData.owner_id = parseInt($cookies.get('id'));
+        petFactory.insertPet($scope.petFormData)
+          .success(function(data) {
+            $location.url('/profile/'+parseInt($cookies.get('id'))+'/pets/main');
+          }).error(function(error) {
+            $scope.status = 'Unable to add pet data: ' + error.message;
+          });
+        };
 
       // $scope.step = function() {
       //     return 1;
@@ -46,7 +52,7 @@ angular.module('petApp')
       //   $scope.step++;
       // };
   }])
-  .controller('SinglePetCtrl', ['$scope', '$routeParams', 'userFactory','petFactory', function($scope, $routeParams, userFactory, petFactory){
+  .controller('SinglePetCtrl', ['$scope', '$routeParams','petFactory', function($scope, $routeParams, petFactory){
       console.log('petController 2 sounding off');
 
       $scope.id = $routeParams.id;
@@ -54,8 +60,6 @@ angular.module('petApp')
       getPet();
 
       function getPet() {
-        userFactory.getUser($routeParams.id)
-        .success(function(data) {
           console.log('inside get pet');
           petFactory.getPet($scope.id)
             .success(function(data) {
@@ -63,7 +67,6 @@ angular.module('petApp')
             }).error(function(error) {
               $scope.status = 'Unable to load pet data: ' + error.message;
             });
-        })
       };
 
       // function createPet() {

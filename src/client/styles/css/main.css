@@ -1,6 +1,6 @@
 body {
-  margin: 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;  }
 
 .main-nav {
   background-color: #3f6f82;
@@ -17,9 +17,11 @@ body {
     color: white;
     border: none; }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300; }
+.prof-div {
+  padding-top: 0;
+  width: 5rem; }
+  .prof-div .user-pic {
+    width: 100%; }
 
 .right-align {
   float: right; }
