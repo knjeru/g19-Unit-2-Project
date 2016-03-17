@@ -14,8 +14,8 @@ angular.module('petApp')
         console.log(data);
         $http.post('/api/auth/register', data)
         .success(function(data) {
-            $scope.hello = data;
-            $location.url('/pets/new')
+            $scope.id = data;
+            $location.url('/profile/'+$scope.hello+'/pets/new')
         });
      };
 
@@ -27,9 +27,9 @@ angular.module('petApp')
         // console.log(data);
         $http.post('/api/auth/login', data)
         .success(function(data) {
-            $scope.hello = data;
-            $log.info($scope.hello);
-            $location.url('/pets/main')
+            $scope.id = data;
+            $log.info($scope.id);
+            $location.url('/profile/'+$scope.id+'/pets/main')
         });
      };
 
@@ -105,46 +105,46 @@ angular.module('petApp')
 //     xhr.send(file);
 // }
 
-     $scope.initiateUpload = function(){
-        console.log($scope.file_input.files);
-        var files = $scope.file_input.files;
-        var file = files[0];
-        if(file == null){
-            alert("No file selected.");
-        }
-        else{
-            get_signed_request(file);
-        }
-     };
-
-    function get_signed_request(file){
-        $http.get('/img/sign_s3?file_name='+file.name+"&file_type="+file.type)
-          .success(function(data){
-            upload_file(file, data.signed_request, data.url);
-          })
-          .error(function(err){
-            console.log(err);
-          });
-    }
-
-    function upload_file(file, signed_request, url){
-        // $http.put(signed_request)
-        console.log(signed_request);
-        var req = {
-         method: 'PUT',
-         url: signed_request,
-         headers: {
-           'x-amz-acl': 'public-read'
-         }
-        };
-        $http(req)
-          .success(function(data){
-            console.log(data);
-          })
-          .error(function(err){
-            console.log(err);
-          });
-    }
-
-
-}]);
+//      $scope.initiateUpload = function(){
+//         console.log($scope.file_input.files);
+//         var files = $scope.file_input.files;
+//         var file = files[0];
+//         if(file == null){
+//             alert("No file selected.");
+//         }
+//         else{
+//             get_signed_request(file);
+//         }
+//      };
+//
+//     function get_signed_request(file){
+//         $http.get('/img/sign_s3?file_name='+file.name+"&file_type="+file.type)
+//           .success(function(data){
+//             upload_file(file, data.signed_request, data.url);
+//           })
+//           .error(function(err){
+//             console.log(err);
+//           });
+//     }
+//
+//     function upload_file(file, signed_request, url){
+//         // $http.put(signed_request)
+//         console.log(signed_request);
+//         var req = {
+//          method: 'PUT',
+//          url: signed_request,
+//          headers: {
+//            'x-amz-acl': 'public-read'
+//          }
+//         };
+//         $http(req)
+//           .success(function(data){
+//             console.log(data);
+//           })
+//           .error(function(err){
+//             console.log(err);
+//           });
+//     }
+//
+//
+// }]);

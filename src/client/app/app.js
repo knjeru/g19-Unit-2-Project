@@ -87,12 +87,12 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
     //     controller: 'SingleVetCtrl'
     // })
     /* THESE ARE THE VET VISIT ROUTES */
-    .when('/vetvisit/new', {
+    .when('/profile/:id/pet/:id/vetvisit/new', {
         templateUrl: '/app/views/vetvisit/update-vet-visit-page.html',
         css: '/styles/css/update-vet-visit-page.css',
         controller: 'MainVetVisitCtrl'
     })
-    .when('/vetvisits', {
+    .when('/profile/:id/pet/:id/vetvisits', {
         templateUrl: '/app/views/vetvisit/vet_visits.html',
         css: '/styles/css/vet_visits.css',
         controller: 'SingleVetVisitCtrl'
@@ -102,7 +102,7 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
     //     css: '[view css stylesheet]',
     //     controller: 'SingleVetVisitCtrl'
     // })
-    .when('/vetvisit/:id/edit', {
+    .when('/profile/:id/pet/:id/vetvisit/:id/edit', {
         templateUrl: '/app/views/vetvisit/update-vet-visit.html',
         css: '/styles/css/update-vet-visit.css',
         controller: 'SingleVetVisitCtrl'
