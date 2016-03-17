@@ -65,3 +65,15 @@ img {
 
 .pet-info {
   padding: 10vh 0; }
+
+.edit-pet {
+  float: right;
+  font-size: 2.5rem; }
+
+.top-info {
+  margin: 0;
+  font-size: 2rem;
+  padding: 3px; }
+
+.top-info-bold {
+  font-weight: 700; }
