@@ -24,14 +24,16 @@ angular.module('petApp')
                       email: $scope.loginEmail,
                       password: $scope.loginPassword
                     };
-        // console.log(data);
         $http.post('/api/auth/login', data)
         .success(function(data) {
           console.log(data);
+            if ( data === 'Incorrect email and/or password.') {
+              $scope.errorMsg = data;
+            } else {
             $scope.id = data;
-            $log.info($scope.id);
-            $cookies.put('id', $scope.id)
+            $cookies.put('id', $scope.id);
             $location.url('/profile/'+$scope.id+'/pets/main')
+          }
         });
      };
 
@@ -41,6 +43,7 @@ angular.module('petApp')
          .success(function(data) {
              $log.info('you are logged out2');
              $location.url('/');
+             $cookies.remove('id');
          });
      };
 
@@ -59,6 +62,8 @@ angular.module('petApp')
             get_signed_request(file);
         }
       };
+
+  $scope.userExist = parseInt($cookies.get('id'));
 }]);
 
 // (function() {
