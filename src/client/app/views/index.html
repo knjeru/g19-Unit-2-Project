@@ -15,14 +15,14 @@
     <link rel="stylesheet" ng-href="{{ css }}">
   </head>
   <body ng-controller="LoginCtrl">
-    <nav class="main-nav" ng-show="{{userExist}}" ng-controller="UsrProfCtrl">
-        <a class="left-align prof-div" href="/#/profile/{{user.id}}"><img class="user-pic" ng-src="{{user.owner_image}}"></a>
-        <a class="left-align"  href="/#/profile/{{user.id}}">{{user.firstName}} {{user.lastName}}</a>
-        <a class="right-align" ng-click="logout()">Logout</a>
-        <a class="right-align" href="/#/profile/{{userExist}}/reminders"><i class="fa fa-bell-o"></i></a>
-        <a class="right-align" href="/#/profile/{{userExist}}/pet/:id/vetvisit/new">+ Vet Visit</a>
-        <a class="right-align" href="/#/profile/{{userExist}}/pets/new">+ Pet</a>
-        <a class="right-align" href="/#/profile/{{userExist}}/pets/main"><i class="fa fa-tachometer"></i></a>
+    <nav class="main-nav">
+        <a class="left-align" href="/#/profile/{{user.id}}"><img src="{{user.owner_image}}"></a>
+        <a class="left-align" href="/#/profile/{{user.id}}">{{user.firstName}} {{user.lastName}}</a>
+        <button class="right-align logout" ng-click="logout()">Logout</button>
+        <a class="right-align" href="/#/{{user.id}}/reminders"><i class="fa fa-bell-o"></i></a>
+        <a class="right-align" href="/#/vetvisit/{{user.id}}/new">+ Vet Visit</a>
+        <a class="right-align" href="/#/{{user.id}}/pets/new">+ Pet</a>
+        <a class="right-align" href="/#/profile/{{user.id}}"><i class="fa fa-tachometer"></i></a>
     </nav>
     <div ng-view>
         <!-- views load here -->
