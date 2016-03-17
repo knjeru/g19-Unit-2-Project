@@ -29,8 +29,9 @@ body {
 
 #register-form {
 	border: 1px solid black;
-    height: 40rem;
+  height: 30rem;
 	margin: 20vh auto;
+	overflow: scroll;
 	width: 450px;
 	padding: 1rem;
 	padding-bottom: 0;

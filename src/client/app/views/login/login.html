@@ -1,12 +1,11 @@
-<div class="row">
-    <div class="six columns offset-by-three">{{errorMsg}}</div>
-</div>
+
+
 <form id="login-form" ng-submit="login()">
-    <div class="six columns">
+    <div class="twelve columns">
         <label for="email">Email Address</label>
         <input id="email" name="email" type="email" placeholder="Enter Email" ng-model="loginEmail">
     </div>
-    <div class="six columns">
+    <div class="twelve columns">
         <label for="password">Password</label>
         <input id="password" type="password" placeholder="•••••" ng-model="loginPassword">
     </div>
@@ -14,37 +13,30 @@
         <button type="submit">Login</button>
         <a href="/"><input id="cancel" type="button" value="Cancel"></a><br>
         <a href="/api/"><img src="https://scontent-iad3-1.xx.fbcdn.net/hphotos-xaf1/t39.2178-6/851579_209602122530903_1060396115_n.png" alt="facebook login"></a><br>
-        Not a member? Register <a href="/#/profile/new">here</a>
+        <p>Not a member? Register <a href="/#/profile/new">here</a></p>
     </div>
 </form>
 
-<form ng-submit="logout()">
+<!-- <form ng-submit="logout()">
     <button type="submit">Logout</button>
-</form>
+</form> -->
 
 <!--<div style="text-align: center">
-
     <h2>Login</h2>
     Email: <input ng-model="loginEmail" type="text"><br>
     Password: <input ng-model="loginPassword" type="text"><br>
-
     <form ng-click="login()">
       <button type="submit">Login</button>
     </form>
-
-
     <h2>Register</h2>
     First: <input type="text" ng-model="firstName"><br>
     Last: <input type="text" ng-model="lastName"><br>
     Email: <input type="text" ng-model="registerEmail"><br>
     Password: <input type="text" ng-model="registerPassword"><br>
-
     <form ng-click="register()">
       <button type="submit">Register</button>
     </form>
 </div>
-
-
 <input type="file" id="file_input"/>
 <p id="status">Please select a file</p>-->
 <!-- <img id="preview" src="/images/default.png" /> -->
