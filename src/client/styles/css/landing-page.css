@@ -74,24 +74,9 @@ div#app-explaination h4 {
 }
 
 div#features {
-	display: flex;
-	justify-content: space-between;
 	text-align: center;
 }
 
-div#features h5 {
-	text-align: center;
-}
-
-div#features div {
-	color: black;
-	flex: 1;
-	max-width: 33%;
-}
-
-div#app-tour {
-	text-align: center;
-}
 
 
 
