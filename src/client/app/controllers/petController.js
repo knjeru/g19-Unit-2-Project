@@ -23,7 +23,7 @@ angular.module('petApp')
         .success(function(data) {
             // we can set an action to the let the user know the request went through
         });
-    }
+    };
 }])
 .controller('SinglePetCtrl', ['$scope', '$http', '$routeParams', function($scope, $http,$routeParams){
     console.log('petController 2 sounding off');

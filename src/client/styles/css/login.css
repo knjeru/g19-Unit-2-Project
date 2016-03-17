@@ -1,14 +1,5 @@
-html {
-	font-size: 16px;
-}
-
 a {
 	text-decoration: none;
-}
-
-body {
-	display: flex;
-	height: 100vh;
 }
 
 #back {
@@ -18,11 +9,12 @@ body {
 
 #login-form {
 	border: 1px solid black;
-	margin: auto;
+	margin: 20vh auto;
 	width: 450px;
 	padding: 1rem;
 	padding-bottom: 0;
 	padding-right: 0;
+    height: 25rem;
 }
 
 #login-form img {
