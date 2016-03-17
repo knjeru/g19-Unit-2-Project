@@ -19,6 +19,11 @@ body {
     font-size: 1.75rem;
     text-decoration: none;
   }
+  .logout {
+    margin-top: 13px;
+    color: white;
+    border: none;
+  }
 }
 
 body {
@@ -45,12 +50,3 @@ body {
     padding: 50px;
   }
 }
-
-.call-to-action {
-  font-size: 7rem;
-  font-weight: 500;
-}
-.conversation-starter {
-  background-color: $color;
-}
-

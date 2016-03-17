@@ -22,14 +22,14 @@ a {
 #login,
 #signup {
 	color: orange;
-	font-size: 1rem;
+	font-size: 2rem;
 	margin-right: 0.5rem;
 	position: fixed;
 	right: 0;
 }
 
 #signup {
-	right: 3rem;
+	right: 7rem;
 }
 
 #login:hover,
@@ -37,8 +37,8 @@ a {
 	color: lightgreen;
 }
 
-div#app-hero { 
-  background: url("https://images.unsplash.com/photo-1433162653888-a571db5ccccf?crop=entropy&amp;dpr=2&amp;fit=crop&amp;fm=jpg&amp;h=475&amp;ixjsv=2.1.0&amp;ixlib=rb-0.3.5&amp;q=50&amp;w=1100") no-repeat center center fixed; 
+div#app-hero {
+  background: url("https://images.unsplash.com/photo-1433162653888-a571db5ccccf?crop=entropy&amp;dpr=2&amp;fit=crop&amp;fm=jpg&amp;h=475&amp;ixjsv=2.1.0&amp;ixlib=rb-0.3.5&amp;q=50&amp;w=1100") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -47,7 +47,7 @@ div#app-hero {
   display: flex;
   flex-direction: column;
   font-size: 1.5rem;
-  height: 60vh;
+  height: 70vh;
   text-align: center;
 }
 
@@ -55,11 +55,10 @@ div#app-hero p {
 	color: white;
 	font-size: 3rem;
 	margin: auto;
-	text-align: center;
 }
 
 div#app-explaination {
-	color: black;
+	color: white;
 	font-size: 2rem;
 	text-align: center;
 }
@@ -76,6 +75,24 @@ div#app-explaination h4 {
 div#features {
 	text-align: center;
 }
+.call-to-action {
+  font-size: 7rem;
+  font-weight: 500;
+}
+.conversation-starter {
+  background-color: #593A6A;
+}
+.site-info {
+  margin-top: 20vh;
+}
+.signup-button {
+  width: 100%;
+  margin-top: 10vh;
+  background-color: #593A6A;
+  color: white;
+  margin-bottom: 20vh;
+}
+
 
 
 

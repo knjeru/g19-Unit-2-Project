@@ -18,7 +18,7 @@
     <nav class="main-nav">
         <a class="left-align" href="/#/profile/{{user.id}}"><img src="{{user.owner_image}}"></a>
         <a class="left-align" href="/#/profile/{{user.id}}">{{user.firstName}} {{user.lastName}}</a>
-        <a class="right-align" ng-click="logout()">Logout</a>
+        <button class="right-align logout" ng-click="logout()">Logout</button>
         <a class="right-align" href="/#/{{user.id}}/reminders"><i class="fa fa-bell-o"></i></a>
         <a class="right-align" href="/#/vetvisit/{{user.id}}/new">+ Vet Visit</a>
         <a class="right-align" href="/#/{{user.id}}/pets/new">+ Pet</a>
