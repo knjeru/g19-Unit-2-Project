@@ -4,7 +4,9 @@ angular.module('petApp')
 .controller('GenPetCtrl', ['$scope', '$http', '$routeParams', function($scope, $http,$routeParams){
     console.log('petController 1 sounding off');
 
-    $scope.step = 1;
+    $scope.step = function() {
+        return 1;
+    };
 
     $scope.nextQuestion = function () {
       $scope.step++;
