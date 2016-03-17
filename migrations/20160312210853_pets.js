@@ -12,7 +12,7 @@ exports.up = function(knex, Promise) {
     table.date('last_vet_visit');
     table.text('likes');
     table.text('dislikes');
-    table.text('likes');
+    table.text('products');
     table.integer('owner_id');
   });
 };
