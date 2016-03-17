@@ -14,6 +14,9 @@
   text-align: right;
   font-size: 2.5rem; }
 
+img {
+  width: 100%; }
+
 .contactInfo {
   border-bottom: 1px solid black; }
   .contactInfo p {

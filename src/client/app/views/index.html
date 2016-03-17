@@ -8,20 +8,21 @@
     <link rel="stylesheet" type="text/css" href="/styles/css/skeleton.css">
     <link rel="stylesheet" type="text/css" href="/styles/css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300|Playfair+Display' rel='stylesheet' type='text/css'>
     <script src="https://code.angularjs.org/1.5.0/angular-route.min.js"></script>
     <script src="https://code.angularjs.org/1.4.9/angular-cookies.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-css/1.0.7/angular-css.min.js"></script>
     <link rel="stylesheet" ng-href="{{ css }}">
   </head>
   <body ng-controller="LoginCtrl">
-    <nav class="main-nav">
-        <a class="left-align" href="/#/profile/{{user.id}}"><img src="{{user.owner_image}}"></a>
-        <a class="left-align" href="/#/profile/{{user.id}}">{{user.firstName}} {{user.lastName}}</a>
+    <nav class="main-nav" ng-show="{{userExist}}" ng-controller="UsrProfCtrl">
+        <a class="left-align prof-div" href="/#/profile/{{user.id}}"><img class="user-pic" ng-src="{{user.owner_image}}"></a>
+        <a class="left-align"  href="/#/profile/{{user.id}}">{{user.firstName}} {{user.lastName}}</a>
         <a class="right-align" ng-click="logout()">Logout</a>
-        <a class="right-align" href="/#/{{user.id}}/reminders"><i class="fa fa-bell-o"></i></a>
-        <a class="right-align" href="/#/vetvisit/{{user.id}}/new">+ Vet Visit</a>
-        <a class="right-align" href="/#/{{user.id}}/pets/new">+ Pet</a>
-        <a class="right-align" href="/#/profile/{{user.id}}"><i class="fa fa-tachometer"></i></a>
+        <a class="right-align" href="/#/profile/{{userExist}}/reminders"><i class="fa fa-bell-o"></i></a>
+        <a class="right-align" href="/#/profile/{{userExist}}/pet/:id/vetvisit/new">+ Vet Visit</a>
+        <a class="right-align" href="/#/profile/{{userExist}}/pets/new">+ Pet</a>
+        <a class="right-align" href="/#/profile/{{userExist}}/pets/main"><i class="fa fa-tachometer"></i></a>
     </nav>
     <div ng-view>
         <!-- views load here -->

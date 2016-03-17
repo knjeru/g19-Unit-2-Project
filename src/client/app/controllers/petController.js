@@ -46,7 +46,7 @@ angular.module('petApp')
       //   $scope.step++;
       // };
   }])
-  .controller('SinglePetCtrl', ['$scope', '$routeParams', 'userFactory','petFactory', function($scope, $routeParams, userFactory, petFactory){
+  .controller('SinglePetCtrl', ['$scope', '$routeParams','petFactory', function($scope, $routeParams, petFactory){
       console.log('petController 2 sounding off');
 
       $scope.id = $routeParams.id;
@@ -54,8 +54,6 @@ angular.module('petApp')
       getPet();
 
       function getPet() {
-        userFactory.getUser($routeParams.id)
-        .success(function(data) {
           console.log('inside get pet');
           petFactory.getPet($scope.id)
             .success(function(data) {
@@ -63,7 +61,6 @@ angular.module('petApp')
             }).error(function(error) {
               $scope.status = 'Unable to load pet data: ' + error.message;
             });
-        })
       };
 
       // function createPet() {

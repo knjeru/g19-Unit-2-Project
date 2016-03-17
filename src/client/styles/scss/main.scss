@@ -3,8 +3,8 @@ $dark: #333232;
 $darkColor: darken($color, 10%);
 
 body {
-  margin: 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 .main-nav {
@@ -19,6 +19,18 @@ body {
     font-size: 1.75rem;
     text-decoration: none;
   }
+}
+
+.prof-div {
+  padding-top: 0;
+  width: 5rem;
+  .user-pic {
+    width: 100%;
+  }
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+
 }
 
 .right-align {
@@ -41,4 +53,10 @@ body {
   }
 }
 
-
+.call-to-action {
+  font-size: 7rem;
+  font-weight: 500;
+}
+.conversation-starter {
+  background-color: $color;
+}
