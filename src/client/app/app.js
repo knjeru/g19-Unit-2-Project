@@ -50,7 +50,7 @@ angular.module('petApp', ['ngRoute', 'door3.css', 'ngCookies'])
         css: '/styles/css/single_pet.css',
         controller: 'SinglePetCtrl'
     })
-    .when('/profile/:id//pet/:id/edit', {
+    .when('/profile/:id/pet/:id/edit', {
         templateUrl: '/app/views/pet/update-pet-page.html',
         css: '/styles/css/update-pet-page.css',
         controller: 'SinglePetCtrl'

@@ -13,6 +13,12 @@ body {
     font-size: 1.75rem;
     text-decoration: none; }
 
+.prof-div {
+  padding-top: 0;
+  width: 5rem; }
+  .prof-div .user-pic {
+    width: 100%; }
+
 .right-align {
   float: right; }
 

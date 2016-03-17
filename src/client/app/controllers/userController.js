@@ -1,11 +1,11 @@
 'use strict';
 
 angular.module('petApp')
-.controller('UsrProfCtrl', ['$scope', '$http', '$routeParams', '$log', '$location', function($scope,$http,$routeParams,$log,$location) {
+.controller('UsrProfCtrl', ['$scope', '$http', '$routeParams', '$log', '$location', '$cookies', function($scope,$http,$routeParams,$log,$location,$cookies) {
     console.log('userController 1 sounding off');
 
 (function() {
-    $http.get('/api/profile/'+$routeParams.id)
+    $http.get('/api/profile/'+parseInt($cookies.get('id')))
     .success(function(data) {
         console.log('This should be the id: ', $routeParams.id)
         $scope.user = data[0];
