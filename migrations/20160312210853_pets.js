@@ -10,8 +10,9 @@ exports.up = function(knex, Promise) {
     table.string('allergies');
     table.string('illnesses');
     table.date('last_vet_visit');
-    table.text('tendencies');
-    table.text('favorites');
+    table.text('likes');
+    table.text('dislikes');
+    table.text('likes');
     table.integer('owner_id');
   });
 };
