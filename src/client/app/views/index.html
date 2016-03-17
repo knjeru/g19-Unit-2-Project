@@ -14,15 +14,13 @@
   </head>
   <body ng-controller="LoginCtrl">
     <nav class="main-nav">
-        <a class="left-align" href=""><img src=""></a>
-        <a class="left-align" href=""></a>
-        <a class="right-align"><i class="fa fa-tachometer"></i></a>
-        <a class="right-align" href="">+ Pet</a>
-        <a class="right-align" href="">+ Vet</a>
-        <a class="right-align" href=""><i class="fa fa-envelope-o"></i></a>
-        <a class="right-align" href=""><i class="fa fa-cog"></i></a>
-        {{user}}
+        <a class="left-align" href="/profile/{{user.id}}"><img src=""></a>
+        <a class="left-align" href="/profile/{{user.id}}">{{user.firstName}} {{user.lastName}}</a>
         <a class="right-align" ng-click="logout()">Logout</a>
+        <a class="right-align" href="/{{user.id}}/reminders/new"><i class="fa fa-bell-o"></i></a>
+        <a class="right-align" href="/vetvisit/{{user.id}}/new">+ Vet Visit</a>
+        <a class="right-align" href="/{{user.id}}/pets/new">+ Pet</a>
+        <a class="right-align" href="/profile/{{user.id}}"><i class="fa fa-tachometer"></i></a>
     </nav>
     <div ng-view>
         <!-- views load here -->
