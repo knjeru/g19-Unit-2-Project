@@ -1,23 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Document</title>
-
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="../../../styles/css/skeleton.css">
-		<link rel="stylesheet" href="../../../styles/css/update-pet-page.css">
-
-	</head>
-	<body> <!-- need to check href's -->
-
-		<a href="/api/profile/id"><i class="fa fa-arrow-left" id="back"></i></a>
-
 			<form id="pet-form" action="/api/" method="post">
 
 				<div class="twelve columns">
 					<label for="name">Name</label>
-					<input id="name" name="name" type="text" placeholder="Pet's Name">	
+					<input id="name" name="name" type="text" placeholder="Pet's Name">
 				</div>
 
 				<div class="twelve columns">
@@ -27,12 +12,12 @@
 
 				<div class="six columns" id="type-div">
 					<label for="type">Type of Pet</label>
-					<input id="type" name="type" type="text" placeholder="What type of animal is your pet?">	
+					<input id="type" name="type" type="text" placeholder="What type of animal is your pet?">
 				</div>
 
 				<div class="six columns" id="breed-div">
 					<label for="breed">Breed</label>
-					<input id="breed" name="breed" type="email" placeholder="What breed is your pet?">	
+					<input id="breed" name="breed" type="email" placeholder="What breed is your pet?">
 				</div>
 
 				<div class="six columns" id="weight-div">
@@ -67,11 +52,7 @@
 
 				<div class="twelve columns">
 					<input id="update" type="submit" value="Update">
-					<a href="/api/profile/id/pet_id"><input id="cancel" type="button" value="Cancel"></a><br>
+					<a href="/#/api/profile/id/pet_id"><input id="cancel" type="button" value="Cancel"></a><br>
 				</div>
 					<!-- need to check href's -->
 			</form>
-
-	</body>
-</html>
-
