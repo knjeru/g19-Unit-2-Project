@@ -1,0 +1,28 @@
+a {
+	text-decoration: none;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.single-vet-vist {
+	margin: auto;
+	width: 70%;
+}
+
+#back {
+	color: black;
+	position: fixed;
+}
+
+.box {
+	border: 1px solid black;
+	border-radius: 4px;
+	display: flex;
+	margin: 1rem;
+	padding: 1rem;
+}
+

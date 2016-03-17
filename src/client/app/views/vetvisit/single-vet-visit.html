@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../../../styles/css/skeleton.css">
+		<link rel="stylesheet" href="../../../styles/css/single-vet-visit.css">
+
+	</head>
+	<body> <!-- need to check href's -->
+
+		<a href="/vetvisits/{{pet.id}}"><i class="fa fa-arrow-left" id="back"></i></a>
+		
+		<div class="single-vet-vist">
+
+			<div class="row box">
+				<div class="twelve columns">
+					<p>Pet Name: name???{{vet_visit.pet_id}}</p>
+					<p>Visit date: {{vet_visit.visit_date}}</p>
+				</div>
+			</div>
+
+			<div class="row box">
+				<div class="twelve columns">
+					<p>Vaccines: {{vet_visit.vaccines}}</p>
+					<p>Procedures: {{vet_visit.procedures}}</p>
+					<p>Medications: {{vet_visit.medications}}</p>
+				</div>
+			</div>
+
+			<div class="row box">
+				<div class="twelve columns">
+					<p>Notes: {{vet_visit.personal_notes}}</p>
+				</div>
+			</div>
+
+			<div class="row box">
+				<div class="twelve columns">
+					<p>PDF: {{vet_visit.pdf}}</p>
+				</div>
+			</div>
+
+		</div> <!-- end .container -->
+
+	</body>
+</html>
+
