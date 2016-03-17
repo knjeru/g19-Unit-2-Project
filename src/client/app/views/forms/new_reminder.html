@@ -1,0 +1,19 @@
+ <h1 class="vet_form_header">New Reminder</h1>
+<div class="container">
+  <div class="six offset-by-three columns">
+    <form id="vet-register" action="/api/vet/register" method="post">
+      <label for="reminder">What do you need to remember?</label>
+      <input required id="reminder" type="text" placeholder="EX vaccination expiring, schedule next vet appointment">
+      <label for="date">Date</label>
+      <input required id="date" name="date" type="date" placeholder="Clinic Name">
+      <label for="petName">Which Pet?</label>
+      <select id="petName" name="pet-type">
+        <option value="pet1">Pet1</option>
+        <option value="pet2">Pet2</option>
+        <option value="pet3">Pet3</option>
+      <select>
+</form>
+  <a target="_blank" href="https://www.google.com/calendar/render?action=TEMPLATE&text=New+Reminder&dates=20140127T224000Z/20140320T221500Z&details=What+do+you+need+to+remember?&location=anywhere&sf=true&output=xml">Add to google calendar</a>
+  <input id="submitReminder" type="submit" value="Add Reminder">
+</div>
+</div>
