@@ -20,6 +20,7 @@ var S3_BUCKET = process.env.S3_BUCKET;
         if (err) {
           console.log("Error uploading data: ", err);
         } else {
+          return data;
           console.log(data);
           console.log("Successfully uploaded data to myBucket/myKey");
         }
