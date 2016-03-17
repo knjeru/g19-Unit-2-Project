@@ -34,10 +34,6 @@ router.post('/register', function(req, res, next) {
     .then(function(data){
       // if email is in the database send an error
       if(data.length) {
-          req.flash('message', {
-            status: 'danger',
-            message: 'Email already exists.!'
-          });
           return res.json('Email already exists');
       } else {
         // hash and salt the password
@@ -50,10 +46,6 @@ router.post('/register', function(req, res, next) {
           password: hashedPassword
         })
         .then(function(data) {
-          req.flash('message', {
-            status: 'success',
-            message: 'Welcome!'
-          });
           return res.json(req.user);
         })
         .catch(function(err) {
