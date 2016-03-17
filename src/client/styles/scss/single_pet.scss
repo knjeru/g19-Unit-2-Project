@@ -1,6 +1,8 @@
 $dark: #333232;
+$light-dark: lighten($dark, 10%);
 $purple: #593A6A;
 $light-purple: lighten($purple, 10%);
+
 
 img {
     width: 100%;
@@ -23,10 +25,11 @@ img {
   float: left;
 }
 .tab label {
-  background: $purple;
+  background: $dark;
   border-radius: 10px 10px 0 0;
-  padding: 5px;
-  border: 1px solid $purple;
+  padding: 10px;
+  border: 1px solid $dark;
+  color: white;
   margin-left: -1px;
   position: relative;
   left: 1px;
@@ -42,16 +45,18 @@ img {
   position: absolute;
   top: 28px;
   left: 0;
-  background: $light-purple;
+  background: $light-dark;
+  color: white;
   right: 0;
   bottom: 0;
   padding: 20px;
-  border: 1px solid $light-purple;
+  border: 1px solid $light-dark;
   height: 100%;
 }
 [type=radio]:checked ~ label {
-  background: $light-purple;
-  border: 1px $light-purple;
+  background: $light-dark;
+  border: 1px $light-dark;
+  color: white;
   z-index: 2;
 }
 [type=radio]:checked ~ label ~ .content {

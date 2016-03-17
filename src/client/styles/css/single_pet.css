@@ -19,10 +19,11 @@ img {
   float: left; }
 
 .tab label {
-  background: #593A6A;
+  background: #333232;
   border-radius: 10px 10px 0 0;
-  padding: 5px;
-  border: 1px solid #593A6A;
+  padding: 10px;
+  border: 1px solid #333232;
+  color: white;
   margin-left: -1px;
   position: relative;
   left: 1px; }
@@ -36,16 +37,18 @@ img {
   position: absolute;
   top: 28px;
   left: 0;
-  background: #754c8b;
+  background: #4d4b4b;
+  color: white;
   right: 0;
   bottom: 0;
   padding: 20px;
-  border: 1px solid #754c8b;
+  border: 1px solid #4d4b4b;
   height: 100%; }
 
 [type=radio]:checked ~ label {
-  background: #754c8b;
-  border: 1px #754c8b;
+  background: #4d4b4b;
+  border: 1px #4d4b4b;
+  color: white;
   z-index: 2; }
 
 [type=radio]:checked ~ label ~ .content {
