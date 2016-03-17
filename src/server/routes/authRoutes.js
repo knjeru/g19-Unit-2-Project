@@ -16,7 +16,7 @@ router.post('/login', function(req, res, next) {
         if (err) {
           return res.json(err);
         } else {
-          return res.json('You\'re logged in!');
+          return res.json(req.user);
         }
       });
     }
@@ -54,7 +54,7 @@ router.post('/register', function(req, res, next) {
             status: 'success',
             message: 'Welcome!'
           });
-          return res.json('You\'ve registered!');
+          return res.json(req.user);
         })
         .catch(function(err) {
           return res.send(err);
