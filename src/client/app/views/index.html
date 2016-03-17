@@ -14,7 +14,7 @@
     <link rel="stylesheet" ng-href="{{ css }}">
   </head>
   <body>
-    <nav class="main-nav" ng-show="users.length">
+    <nav class="main-nav">
         <a class="left-align" href=""><img src=""></a>
         <a class="left-align" href="">Your Name</a>
         <a class="right-align"><i class="fa fa-tachometer"></i></a>
@@ -24,16 +24,18 @@
         <a class="right-align" href=""><i class="fa fa-cog"></i></a>
         <a class="right-align" href="/api/auth/logout">Logout</a>
     </nav>
+    <p>blah</p>
     <div ng-view>
         <!-- views load here -->
     </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="/app/app.js"></script>
-    <script type="text/javascript" src="/app/controllers/userController.js"></script>
+    <script type="text/javascript" src="/app/controllers/mainController.js"></script>
+    <!-- <script type="text/javascript" src="/app/controllers/userController.js"></script>
     <script type="text/javascript" src="/app/controllers/petController.js"></script>
     <script type="text/javascript" src="/app/controllers/vetController.js"></script>
     <script type="text/javascript" src="/app/controllers/vetVisitController.js"></script>
-    <script type="text/javascript" src="/app/controllers/loginController.js"></script> 
-    <script type="text/javascript" src="/js/intro-form.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/app/controllers/loginController.js"></script>
+    <script type="text/javascript" src="/js/intro-form.js" charset="utf-8"></script> -->
   </body>
 </html>

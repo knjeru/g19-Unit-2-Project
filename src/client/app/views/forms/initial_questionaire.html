@@ -1,35 +1,35 @@
 <form id="myForm" ng-submit="newPet()">
 
-    <div ng-show="step === 1" class="group">
+    <div class="group">
         <label for="value1">Upload a picture of your pet!</label>
         <input type="file" id="value1" name="petImage" ng-model="petFormData.picture_url"/>
     </div>
-    <div ng-show="step === 2" class="group">
+    <div class="group">
         <label for="value2">What's your pet's name?</label>
         <input required type="text" id="value2" name="petName" ng-model="petFormData.name"/>
     </div>
-    <div ng-show="step === 3" class="group">
+    <div class="group">
         <label for="value3">Any nicknames?</label>
         <input type="text" id="value3" name="petNickname"/>
     </div>
-    <div ng-show="step === 4" class="group">
+    <div class="group">
         <label for="value4">What type of animal is your pet?</label>
         <input type="text" id="value4" name="petType" ng-model="petFormData.type"/>
     </div>
-    <div ng-show="step === 5" class="group">
+    <div class="group">
         <label for="value5">What breed?</label>
         <input type="text" id="value5" name="petBreed" ng-model="petFormData.breed"/>
     </div>
-    <div ng-show="step === 6" class="group">
+    <div class="group">
         <label for="value6">How old?</label>
         <input type="text" id="value6" name="petAge" />
     </div>
-    <div ng-show="step === 7" class="group">
+    <div class="group">
         <label for="value7">Do you remember the last time they were at the vet?</label>
         <input type="date" id="value7" name="petVet" ng-model="petFormData.last_vet_visit"/>
     </div>
     <div>
-      <p class="count">{{step}}/7</p>
+      <p class="count">7</p>
     </div>
     <div>
         <button id="btnNext" ng-click="nextQuestion()">Next</button>
