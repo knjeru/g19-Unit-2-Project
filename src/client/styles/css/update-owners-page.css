@@ -25,13 +25,17 @@ body {
 #email, #password,
 #first-name, #last-name,
 #street_address, #city,
-#state, #zipcode, #phone {
+#state, #zipcode, #phone,
+#vet_name, #vet_image, #vet_email,
+#vet_street, #vet_city,
+#vet_state, #vet_zip, #vet_phone {
 	width: 95%;
 }
 
 #first-name-div,
 #last-name-div,
-#city-div, #state-div{
+#city-div, #state-div,
+#vet-city-div, #vet-state-div{
 	margin-left: 0;
 }
 

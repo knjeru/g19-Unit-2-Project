@@ -5,10 +5,9 @@ angular.module('petApp')
     console.log('petController 1 sounding off');
 
   $scope.status;
-  $scope.pets;
   $scope.quantity = 3;
 
-  $scope.ownerPets = [];
+  var ownerPets = [];
 
   getPets();
 
@@ -16,18 +15,12 @@ angular.module('petApp')
     petFactory.getPets()
       .success(function (data) {
         for (var i = 0; i < data.length; i++) {
-          console.log(data);
-          // console.log(data[i].owner_id);
-          // console.log($cookies.get('id'));
-          console.log(data[i]);
-          if (data[i].owner_id === $cookies.get('id')) {
-            $scope.ownerPets.push(data[i]);
+          if (data[i].owner_id === parseInt($cookies.get('id'))) {
+            ownerPets.push(data[i]);
+            $scope.pets = ownerPets;
           }
         }
-          // });
-        console.log($scope.ownerPets);
-        // $scope.pets = data;
-        console.log($scope.pets);
+        console.log('owner pets', $scope.pets);
       })
       .error(function(error) {
         $scope.status = 'Unable to load pet data: ' + error.message;
@@ -36,9 +29,10 @@ angular.module('petApp')
 
       $scope.petFormData = {};
       $scope.newPet = function () {
+        $scope.petFormData.owner_id = parseInt($cookies.get('id'));
           petFactory.insertPet($scope.petFormData)
             .success(function(data) {
-              $location.url('/profile/pets/main');
+              $location.url('/profile/'+parseInt($cookies.get('id'))+'/pets/main');
             }).error(function(error) {
               $scope.status = 'Unable to add pet data: ' + error.message;
             });

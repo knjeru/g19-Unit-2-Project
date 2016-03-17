@@ -1,10 +1,10 @@
-<form id="myForm" ng-submit="newPet()" ng-controller="MainUsrProfCtrl">
+<form id="myForm" ng-submit="newPet()">
     <div class="group">
         <label for="petName">What's your pet's name?</label>
         <input required type="text" id="petName" name="petName" ng-model="petFormData.name"/>
     </div><div class="group">
         <label required for="petType">What type of animal is your pet?</label>
-        <select id="petType" name="pet-type">
+        <select id="petType" ng-model="petFormData.type">
           <option value="dog">Dog</option>
           <option value="cat">Cat</option>
           <option value="small-mammal">Small mammal (gerbils, hamsters, etc)</option>
@@ -29,7 +29,6 @@
         <label for="petVet">Do you remember the last time they were at the vet?</label>
         <input type="date" id="petVet" name="petVet" ng-model="petFormData.last_vet_visit"/>
     </div>
-    <input type="button" name="name" value="" style="display: none;" ng-model="petFormData.owner_id">
     <!-- <div>
       <p class="count">7</p>
     </div> -->
