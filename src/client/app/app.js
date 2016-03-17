@@ -11,23 +11,23 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
     .when('/', {
         templateUrl: '/app/views/landing-page.html',
         css: '/styles/css/landing-page.css',
-        controller: 'MainCtrl'
+        controller: 'LoginCtrl'
     })
     /* THESE ARE THE USER RELATED ROUTES */
     .when('/profile/new', {
-        templateUrl: '/app/views/login&register/register.html',
+        templateUrl: '/app/views/forms/register.html',
         css: '/styles/css/register.css',
-        controller: 'MainCtrl'
+        controller: 'UsrProfCtrl'
     })
     .when('/profile/:id', {
         templateUrl: '/app/views/user/user_info.html',
         css: '/styles/css/user_info.css',
-        controller: 'MainCtrl'
+        controller: 'UsrProfCtrl'
     })
     .when('/profile/:id/edit', {
         templateUrl: '/app/views/user/update-owners-page.html',
         css: '/styles/css/update-owners-page.css',
-        controller: 'MainCtrl'
+        controller: 'UsrProfCtrl'
     })
     // .when('/profile/:id/delete', {
     //     templateUrl: '[view html]',
@@ -35,25 +35,25 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
     //     controller: 'UsrProfCtrl'
     // })
     /* THESE ARE THE PET RELATED ROUTES */
-    .when('/pets/new', {
+    .when('/profile/:id/pets/new', {
         templateUrl: '/app/views/forms/initial_questionaire.html',
         css: '/styles/css/initial_questionnaire.css',
-        controller: 'MainCtrl'
+        controller: 'GenPetCtrl'
     })
-    .when('/pets/main', {
+    .when('/profile/:id/pets/main', {
         templateUrl: '/app/views/shared/dashboard.html',
         css: '/styles/css/dashboard.css',
-        controller: 'MainCtrl'
+        controller: 'GenPetCtrl'
     })
-    .when('/pet/:id', {
+    .when('/profile/:id/pet/:id', {
         templateUrl: '/app/views/pet/single_pet.html',
         css: '/styles/css/single_pet.css',
-        controller: 'MainCtrl'
+        controller: 'SinglePetCtrl'
     })
-    .when('/pet/:id/edit', {
+    .when('/profile/:id//pet/:id/edit', {
         templateUrl: '/app/views/pet/update-pet-page.html',
         css: '/styles/css/update-pet-page.css',
-        controller: 'MainCtrl'
+        controller: 'SinglePetCtrl'
     })
     // .when('/pet/:id/delete', {
     //     templateUrl: '/app/views/test_views/.html',
@@ -88,14 +88,14 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
     // })
     /* THESE ARE THE VET VISIT ROUTES */
     .when('/vetvisit/new', {
-        templateUrl: '/app/views/vetvisit/update-vet-visit.html',
-        css: '/styles/css/update-vet-visit.css',
-        controller: 'MainCtrl'
+        templateUrl: '/app/views/vetvisit/update-vet-visit-page.html',
+        css: '/styles/css/update-vet-visit-page.css',
+        controller: 'MainVetVisitCtrl'
     })
     .when('/vetvisits', {
         templateUrl: '/app/views/vetvisit/vet_visits.html',
         css: '/styles/css/vet_visits.css',
-        controller: 'MainCtrl'
+        controller: 'SingleVetVisitCtrl'
     })
     // .when('/vetvisit/:id', {
     //     templateUrl: '[view html]',
@@ -105,7 +105,7 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
     .when('/vetvisit/:id/edit', {
         templateUrl: '/app/views/vetvisit/update-vet-visit.html',
         css: '/styles/css/update-vet-visit.css',
-        controller: 'MainCtrl'
+        controller: 'SingleVetVisitCtrl'
     })
     // .when('/vetvisit/:id/delete', {
     //     templateUrl: '[view html]',
@@ -115,8 +115,8 @@ angular.module('petApp', ['ngRoute', 'door3.css'])
 
     /* DANNY LOGIN TEST AREA */
     .when('/login', {
-        templateUrl: '/app/views/login&register/login.html',
+        templateUrl: '/app/views/login/login.html',
         css: '/styles/css/login.css',
-        controller: 'MainCtrl'
-    });
+        controller: 'LoginCtrl'
+    }).otherwise('/');
 });

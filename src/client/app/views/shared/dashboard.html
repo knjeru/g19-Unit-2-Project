@@ -2,7 +2,17 @@
   <h1 class="dash-greeting row dashGreeting">Hi there.</h1>
   <p class="dash-greeting2 row">Which friend are you keeping up with today?</p>
   <div class="row">
-    <div class="each-pet four columns">
+    <div class="each-pet four columns" ng-repeat="pet in pets | limitTo:quantity">
+      <a href="#/pet/{{pet.id}}">
+        <div class="pet-image"></div>
+        <div class="pet-info">
+          <p>Pet Name: {{pet.name}}</p>
+          <p>Pet Species: {{pet.type}}</p>
+          <p>Pet Breed: {{pet.breed}}</p>
+        </div>
+      </a>
+    </div>
+    <!-- <div class="each-pet four columns">
       <div class="pet-image"></div>
       <div class="pet-info">
         <p>Pet Name</p>
@@ -18,13 +28,5 @@
         <p>Pet Breed</p>
       </div>
     </div>
-    <div class="each-pet four columns">
-      <div class="pet-image"></div>
-      <div class="pet-info">
-        <p>Pet Name</p>
-        <p>Pet Species</p>
-        <p>Pet Breed</p>
-      </div>
-    </div>
-  </div>
+  </div> -->
 </div>
