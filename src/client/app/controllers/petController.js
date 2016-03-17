@@ -1,19 +1,32 @@
 'use strict';
 
 angular.module('petApp')
-  .controller('GenPetCtrl', ['$scope', '$routeParams', '$location', 'petFactory', function($scope, $routeParams, $location, petFactory){
+  .controller('GenPetCtrl', ['$scope', '$routeParams', '$location', 'petFactory', '$cookies', function($scope, $routeParams, $location, petFactory, $cookies){
     console.log('petController 1 sounding off');
 
   $scope.status;
   $scope.pets;
   $scope.quantity = 3;
 
+  $scope.ownerPets = [];
+
   getPets();
 
   function getPets() {
     petFactory.getPets()
       .success(function (data) {
-        $scope.pets = data;
+        for (var i = 0; i < data.length; i++) {
+          console.log(data);
+          // console.log(data[i].owner_id);
+          // console.log($cookies.get('id'));
+          console.log(data[i]);
+          if (data[i].owner_id === $cookies.get('id')) {
+            $scope.ownerPets.push(data[i]);
+          }
+        }
+          // });
+        console.log($scope.ownerPets);
+        // $scope.pets = data;
         console.log($scope.pets);
       })
       .error(function(error) {
@@ -25,7 +38,7 @@ angular.module('petApp')
       $scope.newPet = function () {
           petFactory.insertPet($scope.petFormData)
             .success(function(data) {
-              $location.url('/pets/main');
+              $location.url('/profile/pets/main');
             }).error(function(error) {
               $scope.status = 'Unable to add pet data: ' + error.message;
             });

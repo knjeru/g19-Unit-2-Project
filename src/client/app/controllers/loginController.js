@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('petApp')
-.controller('LoginCtrl', ['$scope', '$http', '$routeParams', '$log','$location', function($scope, $http,$routeParams,$log,$location){
+.controller('LoginCtrl', ['$scope', '$http', '$routeParams', '$log','$location', '$cookies', function($scope, $http,$routeParams,$log,$location, $cookies){
     console.log('LoginController sounding off');
 
      $scope.register = function(){
@@ -27,8 +27,10 @@ angular.module('petApp')
         // console.log(data);
         $http.post('/api/auth/login', data)
         .success(function(data) {
+          console.log(data);
             $scope.id = data;
             $log.info($scope.id);
+            $cookies.put('id', $scope.id)
             $location.url('/profile/'+$scope.id+'/pets/main')
         });
      };
