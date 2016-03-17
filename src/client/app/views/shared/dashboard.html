@@ -4,7 +4,7 @@
   <div class="row">
     <div class="each-pet four columns" ng-repeat="pet in pets | limitTo:quantity">
       <a href="/#/pet/{{pet.id}}">
-        <div class="pet-image"></div>
+        <div class="pet-image"><img class="pet-image" ng-src="{{pet.picture_url}}" alt="" /></div>
         <div class="pet-info">
           <p>Pet Name: {{pet.name}}</p>
           <p>Pet Species: {{pet.type}}</p>
