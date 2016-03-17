@@ -4,7 +4,7 @@ console.log('Angular Main Ready To Go!')
 
 /* The main app with route configurations */
 
-angular.module('petApp', ['ngRoute', 'door3.css'])
+angular.module('petApp', ['ngRoute', 'door3.css', 'ngCookies'])
 .config(function($routeProvider){
     console.log('Angular Config Ready To Go!');
     $routeProvider
