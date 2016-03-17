@@ -28,10 +28,14 @@ angular.module('petApp')
         $http.post('/api/auth/login', data)
         .success(function(data) {
           console.log(data);
+            if ( data === 'Incorrect email and/or password.') {
+              $scope.errorMsg = data;
+            } else {
             $scope.id = data;
             $log.info($scope.id);
             $cookies.put('id', $scope.id)
             $location.url('/profile/'+$scope.id+'/pets/main')
+          }
         });
      };
 
