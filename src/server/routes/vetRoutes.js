@@ -13,7 +13,6 @@ router.get('/', helpers.ensureAuthenticated, function(req, res, next){
 // add new vet
 router.post('/new', helpers.ensureAuthenticated, function(req, res, next){
   query.addVet(req.body).then(function(vet){
-    // res.redirect('/');
     res.json(vet[0]);
   });
 });
@@ -25,7 +24,7 @@ router.delete('/:id/delete', helpers.ensureAuthenticated, function(req, res, nex
   });
 });
 
-// update vedt by id
+// update vet by id
 router.put('/:id/edit', helpers.ensureAuthenticated, function(req, res, next){
   query.updateVet(req.body, req.params.id).then(function(vet){
     res.json(vet[0]);
