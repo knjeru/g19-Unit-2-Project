@@ -1,6 +1,6 @@
 body {
-  margin: 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;  }
 
 .main-nav {
   background-color: #3f6f82;
@@ -33,3 +33,10 @@ body {
     text-decoration: none;
     color: white;
     padding: 50px; }
+
+.call-to-action {
+  font-size: 7rem;
+  font-weight: 500; }
+
+.conversation-starter {
+  background-color: #508CA4; }

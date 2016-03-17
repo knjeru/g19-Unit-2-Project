@@ -10,4 +10,26 @@ body {
   border-radius: 50%;
   background-color: #333232;
   margin: auto;
-  margin-bottom: 4rem; }
+  margin-bottom: 2.5rem; }
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 10rem; }
+
+.dash-greeting2 {
+  font-size: 2rem;
+  padding-bottom: 10vh; }
+
+.single-pet {
+  margin: 5px;
+  color: #333232; }
+
+.pet-header {
+  color: black;
+  font-weight: 600; }
+
+.each-pet {
+  padding-bottom: 7vh; }
+
+a:link {
+  text-decoration: none; }
