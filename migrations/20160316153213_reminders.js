@@ -1,6 +1,6 @@
 
 exports.up = function(knex, Promise) {
-  return knex.schema.createTable(function(table){
+  return knex.schema.createTable('reminders', function(table){
     table.increments();
     table.text('description').notNullable();
     table.date('date').notNullable();
