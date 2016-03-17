@@ -51,6 +51,8 @@ angular.module('petApp')
     }
 }])
 .controller('MainUsrProfCtrl', ['$scope', '$http', '$routeParams', '$log', function($scope, $http, $routeParams,$log) {
+  console.log('main user controller')
+
     $http.get('/api/profile')
     .success(function(data) {
         $scope.users = data[0];
