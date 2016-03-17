@@ -1,4 +1,4 @@
-<form id="myForm" ng-submit="newPet()">
+<form id="myForm" ng-submit="newPet()" ng-controller="MainUsrProfCtrl">
 
     <div class="group">
         <label for="value1">Upload a picture of your pet!</label>
@@ -28,15 +28,17 @@
         <label for="value7">Do you remember the last time they were at the vet?</label>
         <input type="date" id="value7" name="petVet" ng-model="petFormData.last_vet_visit"/>
     </div>
-    <div>
+    <p>
+      {{users}} B
+    </p>
+    <input type="button" name="name" value="" style="display: none;" ng-model="petFormData.owner_id">
+    <!-- <div>
       <p class="count">7</p>
-    </div>
-    <div>
+    </div> -->
+    <!-- <div>
         <button id="btnNext" ng-click="nextQuestion()">Next</button>
-    </div>
+    </div> -->
   <div>
-    <button id="btnSubmit" type="submit">Submit</button>
+    <button type="submit">Submit</button>
   </div>
-
-  <!--<pre>{{petFormData}}</pre>-->
 </form>

@@ -1,32 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles/css/skeleton.css">
-    <link rel="stylesheet" href="styles/css/vet_update.css">
-
-  </head>
-  <body>
     <h1 class="vet_form_header">Update Veterinary Information</h1>
 
       <div class="container">
         <div class="six offset-by-three columns">
-          <form id="vet-update" action="/api/vet/update" method="post">
-              <label for="name">Name</label>
-              <input required id="name" name="Name" type="text" placeholder="Clinic Name">
-              <label for="vet_image">Image</label>
-              <input id="vet_image" vet_image="vet_image" type="file">
+          <form id="vet-update" ng-submit="newVet()">
+            <label for="name">Name</label>
+            <input required id="name" name="Name" type="text" placeholder="Clinic Name" ng-model="vetFormData.name">
             <label for="Email">Email</label>
-            <input required id="Email" type="Email" placeholder="you@yourname.com">
+            <input required id="Email" type="email" placeholder="you@yourname.com" ng-model="vetFormData.email">
             <label for="street_address">Street Address</label>
-            <input required id="street_address" type="text">
+            <input required id="street_address" type="text" ng-model="vetFormData.streetAddress">
             <label for="city">City</label>
-            <input required id="city" type="text">
+            <input required id="city" type="text" ng-model="vetFormData.city">
             <label for="state">State</label>
-            <select>
+            <select ng-model="vetFormData.state">
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
               <option value="AZ">Arizona</option>
@@ -80,17 +67,14 @@
               <option value="WY">Wyoming</option>
             </select>
             <label for="zipcode">Zipcode</label>
-            <input required id="zipcode" type="number">
+            <input required id="zipcode" type="number" ng-model="vetFormData.zipcode">
             <label for="phone">Phone Number</label>
-            <input required id="phone" type="text">
+            <input required id="phone" type="tel" ng-model="vetFormData.phone">
             <label for="website">Website</label>
-            <input required id="website" type="text">
+            <input required id="website" type="url" ng-model="vetFormData.website">
             <label for="licenses">Licenses</label>
-            <input required id="licenses" type="text">
+            <input required id="licenses" type="text" ng-model="vetFormData.licenses">
             <input id="login" type="submit" value="Update Information">
       </form>
-      </div>
-      </div>
-  </body>
-</html>
-
+    </div>
+  </div>
