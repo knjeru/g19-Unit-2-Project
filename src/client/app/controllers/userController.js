@@ -1,31 +1,48 @@
 'use strict';
 
 angular.module('petApp')
-.controller('UsrProfCtrl', ['$scope', '$http', '$routeParams', '$log', function($scope,$http,$routeParams,$log) {
+.controller('UsrProfCtrl', ['$scope', '$http', '$routeParams', '$log', '$location', function($scope,$http,$routeParams,$log,$location) {
     console.log('userController 1 sounding off');
-    
-    $http.get('/api/profile'+$routeParams.id)
+
+(function() {
+    $http.get('/api/profile/'+$routeParams.id)
     .success(function(data) {
         console.log('This should be the id: ', $routeParams.id)
         $scope.user = data[0];
         console.log('here is my data: ', $scope.user);
-    })
-    
-    $scope.userFormData = {};
-    $scope.newUser = function() {
-        $http.post('/api/profile/new', $scope.userFormData)
-        .success(function(data) {
-            console.log('This user has been added');
-        });
-    }
-    
+    });
+  })();
+
+    $scope.register = function(){
+       var data = {
+                     firstName: $scope.firstName,
+                     lastName: $scope.lastName,
+                     email: $scope.registerEmail,
+                     password: $scope.registerPassword
+                   }
+       console.log(data);
+       $http.post('/api/auth/register', data)
+       .success(function(data) {
+           $scope.hello = data;
+           $location.url('/pets/main')
+       });
+    };
+
+    // $scope.userFormData = {};
+    // $scope.newUser = function() {
+    //     $http.post('/api/profile/new', $scope.userFormData)
+    //     .success(function(data) {
+    //         console.log('This user has been added');
+    //     });
+    // }
+
     $scope.updateUser = function() {
         $http.put('/api/profile/'+$routeParams.id+'/edit', $scope.userFormData)
         .success(function(data) {
             console.log('This user has been updated');
         });
     }
-    
+
     $scope.removeUser = function() {
         $http.delete('/api/profile/'+$routeParams.id+'/delete')
         .success(function(data) {
@@ -36,7 +53,7 @@ angular.module('petApp')
 .controller('MainUsrProfCtrl', ['$scope', '$http', '$routeParams', '$log', function($scope, $http, $routeParams,$log) {
     $http.get('/api/profile')
     .success(function(data) {
-        $scope.users = data;
+        $scope.users = data[0];
         $log.info($scope.users);
         console.log('here is my data: ', $scope.users);
     })

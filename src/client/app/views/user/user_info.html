@@ -1,8 +1,8 @@
   <div class="container">
     <div class="row">
       <div class="four offset-by-four columns">
-        <h1 class="user-name">Your Name</h1>
-        <div class="profile-image"></div>
+        <h1 class="user-name">{{user.firstName}} {{user.lastName}}</h1>
+        <div class="profile-image"><img ng-src="" alt="" /></div>
       </div>
 
     </div>
@@ -12,16 +12,16 @@
       </div>
     </div>
     <div class="four offset-by-four columns contactInfo">
-      <p>Name: </p>
+      <p>Name: {{user.firstName}}</p>
     </div>
     <div class="four offset-by-four columns contactInfo">
-      <p>Phone Number: </p>
+      <p>Phone Number: {{user.phone}}</p>
     </div>
     <div class="four offset-by-four columns contactInfo">
-      <p>Email: </p>
+      <p>Email: {{user.email}}</p>
     </div>
     <div class="four offset-by-four columns contactInfo">
-      <p>Address: </p>
+      <p>Address: {{user.street_address}}</p>
     </div>
     <div class="four offset-by-four columns contactInfo">
       <p> </p>

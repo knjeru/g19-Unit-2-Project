@@ -1,19 +1,20 @@
 'use strict';
 
 angular.module('petApp')
-.controller('MainCtrl', ['$scope', '$http', '$routeParams', '$log',function($scope, $http,$routeParams,$log){
+.controller('MainCtrl', ['$scope', '$http', '$routeParams', '$log', '$location', function($scope, $http, $routeParams, $log, $location){
 
     // $scope.step = 1;
 
     // $scope.nextQuestion = function () {
     //   $scope.step++;
     // };
-    console.log('mainlksjdflkjsdf');
+
     $http.get('/api/pets')
     .success(function(data) {
         // then we'll attach the data to the intended $scope variable we want to use in the view
         $scope.pets = data;
         // console.log($scope.pets);
+        $scope.quantity = 3;
     });
 
     $scope.petFormData = {};
@@ -22,6 +23,7 @@ angular.module('petApp')
         // petObj.owner_id = ....
         $http.post('/api/pets/new', $scope.petFormData)
         .success(function(data) {
+          $location.url('/pets/main');
             // we can set an action to the let the user know the request went through
         });
     };
@@ -49,12 +51,12 @@ angular.module('petApp')
         });
     }
 
-    // $http.get('/api/profile'+$routeParams.id)
-    // .success(function(data) {
-    //     console.log('This should be the id: ', $routeParams.id)
-    //     $scope.user = data[0];
-    //     console.log('here is my data: ', $scope.user);
-    // })
+    $http.get('/api/profile/'+$routeParams.id)
+    .success(function(data) {
+        console.log('This should be the id: ', $routeParams.id)
+        $scope.user = data[0];
+        console.log('here is my data: ', $scope.user);
+    })
 
     $scope.userFormData = {};
     $scope.newUser = function() {

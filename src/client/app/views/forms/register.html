@@ -1,31 +1,30 @@
-<form id="register-form" action="/api/profile/login" method="post">
+<form id="register-form" ng-submit="register()">
 
     <div class="six columns" id="first-name-div">
         <label for="first-name">First Name</label>
-        <input id="first-name" name="first-name" type="text" placeholder="first name please">
+        <input id="first-name" name="first-name" type="text" placeholder="Enter first name..." ng-model="firstName">
     </div>
 
     <div class="six columns" id="last-name-div">
         <label for="last-name">Last Name</label>
-        <input id="last-name" name="last-name" type="text" placeholder="last name please">	
+        <input id="last-name" name="last-name" type="text" placeholder="Enter last name..." ng-model="lastName">
     </div>
 
     <div class="twelve columns">
         <label for="email">Email Address</label>
-        <input id="email" name="email" type="email" placeholder="email address goes here">	
+        <input id="email" name="email" type="email" placeholder="Enter email..." ng-model="registerEmail">
     </div>
 
     <div class="twelve columns">
         <label for="password">Password</label>
-        <input id="password" type="password" placeholder="••••••••••">
+        <input id="password" type="password" placeholder="•••••" ng-model="registerPassword">
     </div>
 
     <div class="twelve columns">
         <input id="register" type="submit" value="Register">
         <a href="/"><input id="cancel" type="button" value="Cancel"></a><br>
 
-        Already a member? Login <a href="/api/profile/login">here</a>
+        Already a member? Login <a href="/#/login">here</a>
     </div>
 
 </form>
-
