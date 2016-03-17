@@ -1,5 +1,8 @@
-<form id="myForm" ng-submit="newPet()">
+<form id="myForm" ng-submit="newPet()" action="/img/upload" method="POST" enctype="multipart/form-data">
+
     <div class="group">
+        <label>Upload Image</label>
+        <input type="file" name="petImage" onchange="angular.element(this).scope().fileNameChanged(this)">
         <label for="petName">What's your pet's name?</label>
         <input required type="text" id="petName" name="petName" ng-model="petFormData.name"/>
     </div><div class="group">
