@@ -2,7 +2,7 @@
 <html ng-app="petApp">
   <head>
     <meta charset="utf-8">
-    <title>Pet Store</title>
+    <title>Pet Store App</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/styles/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/styles/css/skeleton.css">
@@ -15,21 +15,20 @@
     <link rel="stylesheet" ng-href="{{ css }}">
   </head>
   <body ng-controller="LoginCtrl">
-    <nav class="main-nav">
-        <a class="left-align" href="/#/profile/{{user.id}}"><img src="{{user.owner_image}}"></a>
-        <a class="left-align" href="/#/profile/{{user.id}}">{{user.firstName}} {{user.lastName}}</a>
+    <nav class="main-nav" ng-show="userExist" ng-controller="UsrProfCtrl">
+        <a class="left-align" href="/#/profile/{{userExist}}"><img ng-src="{{user.owner_image}}"></a>
+        <a class="left-align" href="/#/profile/{{userExist}}">{{user.firstName}} {{user.lastName}}</a>
         <button class="right-align logout" ng-click="logout()">Logout</button>
-        <a class="right-align" href="/#/{{user.id}}/reminders"><i class="fa fa-bell-o"></i></a>
-        <a class="right-align" href="/#/vetvisit/{{user.id}}/new">+ Vet Visit</a>
-        <a class="right-align" href="/#/{{user.id}}/pets/new">+ Pet</a>
-        <a class="right-align" href="/#/profile/{{user.id}}"><i class="fa fa-tachometer"></i></a>
+        <a class="right-align" href="/#/profile/{{userExist}}/reminders"><i class="fa fa-bell-o"></i></a>
+        <a class="right-align" href="/#/profile/{{userExist}}/vetvisit/{{userExist}}/new">+ Vet Visit</a>
+        <a class="right-align" href="/#/profile/{{userExist}}/pets/new">+ Pet</a>
+        <a class="right-align" href="/#/profile/{{userExist}}/pets/main"><i class="fa fa-tachometer"></i></a>
     </nav>
     <div ng-view>
         <!-- views load here -->
     </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="/app/app.js"></script>
-    <!-- <script type="text/javascript" src="/app/controllers/mainController.js"></script> -->
     <script type="text/javascript" src="/app/controllers/userController.js"></script>
     <script type="text/javascript" src="/app/factories/petFactory.js"></script>
     <script type="text/javascript" src="/app/factories/remindersFactory.js"></script>

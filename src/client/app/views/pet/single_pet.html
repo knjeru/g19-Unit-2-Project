@@ -28,18 +28,18 @@
         <input type="radio" id="tab-1" name="tab-group-1" checked>
         <label for="tab-1">Health</label>
         <div class="content">
-             <p>Weight: </p>
-             <p>Allergies: </p>
-             <p>Illnesses: </p>
-             <p>Last Vet Visit: {{pet.last_vet_visit}}</p>
+             <p>Weight: {{pet.weight}}</p>
+             <p>Allergies: {{pet.allergies}}</p>
+             <p>Illnesses: {{pet.illnesses}}</p>
+             <p>Last Vet Visit: {{pet.last_vet_visit | date: yyyy-MM-dd}}</p>
         </div>
       </div>
       <div class="tab">
         <input type="radio" id="tab-2" name="tab-group-1">
         <label for="tab-2">About</label>
         <div class="content">
-          <p>Likes: </p>
-          <p>Does not like: </p>
+          <p>Likes: {{pet.likes}}</p>
+          <p>Does not like: {{pet.dislikes}}</p>
         </div>
       </div>
       <div class="tab">

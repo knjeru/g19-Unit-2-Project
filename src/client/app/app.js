@@ -90,6 +90,9 @@ angular.module('petApp', ['ngRoute', 'door3.css', 'ngCookies'])
         css: '/styles/css/update-vet-visit-page.css',
         // controller: 'SingleVetVisitCtrl'
     })
+
+    /* REMINDER ROUTES */
+
     .when('/profile/:owner/reminders', {
         templateUrl: '/app/views/pet/reminders.html',
         css: '/styles/css/reminders.css',

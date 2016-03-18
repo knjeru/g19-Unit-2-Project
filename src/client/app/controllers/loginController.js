@@ -1,8 +1,7 @@
 'use strict';
 
 angular.module('petApp')
-.controller('LoginCtrl', ['$scope', '$http', '$routeParams', '$location', '$cookies', function($scope, $http,$routeParams,$location, $cookies){
-
+.controller('LoginCtrl', ['$scope', '$http', '$routeParams', '$location', '$cookies', '$route', function($scope, $http, $routeParams, $location, $cookies, $route){
     console.log('LoginController sounding off');
 
      $scope.register = function(){
@@ -14,9 +13,11 @@ angular.module('petApp')
                     }
         $http.post('/api/auth/register', data)
         .success(function(data) {
-            $scope.id = data;
-            $cookies.put('id', $scope.id);
-            $location.url('/profile/'+$scope.id+'/pets/new');
+
+          console.log(data);
+          $scope.id = data;
+          $cookies.put('id', $scope.id);
+          $location.url('/');
         });
      };
 
@@ -27,7 +28,6 @@ angular.module('petApp')
                     };
         $http.post('/api/auth/login', data)
         .success(function(data) {
-          console.log(data);
             if ( data === 'Incorrect email and/or password.') {
               $scope.errorMsg = data;
             } else {
@@ -61,7 +61,8 @@ angular.module('petApp')
         }
       };
 
-  $scope.userExist = parseInt($cookies.get('id'));
+      $scope.userExist = parseInt($cookies.get('id'));
+
 }]);
 
 // (function() {
