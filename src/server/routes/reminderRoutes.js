@@ -18,15 +18,17 @@ router.get('/:id', helpers.ensureAuthenticated, function(req, res, next){
 });
 
 // add new reminder
-router.post('/new', helpers.ensureAuthenticated, function(req, res, next){
-	query.addReminder(req.body).then(function(reminder){
+router.post('/:user_id/new', helpers.ensureAuthenticated, function(req, res, next){
+	var newReminder = req.body
+	query.addReminder(newReminder.description, newReminder.date, newReminder.pet, req.params.user_id).then(function(reminder){
 	  res.json(reminder[0]);
 	});
 });
 
 // update reminder by id
 router.put('/:id/edit', helpers.ensureAuthenticated, function(req, res, next){
-	query.updateReminder(req.body, req.params.id).then(function(reminder){
+	var updateReminder = req.body;
+	query.updateReminder(updateReminder.description, updateReminder.date, updateReminder.pet, req.params.id).then(function(reminder){
 	  res.json(reminder[0]);
 	});
 });
