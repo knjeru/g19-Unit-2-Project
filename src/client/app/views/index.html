@@ -16,11 +16,10 @@
   </head>
   <body ng-controller="LoginCtrl">
     <nav class="main-nav" ng-show="userExist" ng-controller="UsrProfCtrl">
-        <a class="left-align" href="/#/profile/{{userExist}}"><img ng-src="{{user.owner_image}}"></a>
+        <a class="left-align user-container" href="/#/profile/{{userExist}}"><img class="user-pic" ng-src="{{user.owner_image}}"></a>
         <a class="left-align" href="/#/profile/{{userExist}}">{{user.firstName}} {{user.lastName}}</a>
         <button class="right-align logout" ng-click="logout()">Logout</button>
         <a class="right-align" href="/#/profile/{{userExist}}/reminders"><i class="fa fa-bell-o"></i></a>
-        <a class="right-align" href="/#/profile/{{userExist}}/vetvisit/{{userExist}}/new">+ Vet Visit</a>
         <a class="right-align" href="/#/profile/{{userExist}}/pets/new">+ Pet</a>
         <a class="right-align" href="/#/profile/{{userExist}}/pets/main"><i class="fa fa-tachometer"></i></a>
     </nav>

@@ -1,16 +1,16 @@
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;  }
+  font-weight: 300; }
 
 .main-nav {
   background-color: #3f6f82;
-  height: 7rem;
+  height: 8rem;
   width: 100%;
   margin-top: 0; }
   .main-nav a {
     color: white;
     padding: 20px;
-    font-size: 1.75rem;
+    font-size: 2rem;
     text-decoration: none; }
   .main-nav .logout {
     margin-top: 13px;
@@ -20,8 +20,9 @@ body {
 .prof-div {
   padding-top: 0;
   width: 5rem; }
-  .prof-div .user-pic {
-    width: 100%; }
+
+.user-pic {
+  width: 100%; }
 
 .right-align {
   float: right; }
@@ -37,3 +38,18 @@ body {
     text-decoration: none;
     color: white;
     padding: 50px; }
+
+.call-to-action {
+  font-size: 7rem;
+  font-weight: 500; }
+
+.conversation-starter {
+  background-color: #508CA4; }
+
+.user-container {
+  width: 5rem; }
+  .user-container a {
+    margin: 0; }
+
+.user-pic {
+  width: 100%; }
