@@ -9,6 +9,7 @@ chai.use(chaiHttp);
 
 describe('Owner API routes', function() {
   beforeEach(function(done) {
+      process.env.TEST = 'testtime';
       knex.migrate.rollback().then(function() {
           knex.migrate.latest()
           .then(function() {
