@@ -19,13 +19,14 @@ module.exports = {
       description: description,
       date: date,
       pet_id: pet_id
-    }).where('id',id);
+    }, 'id').where('id',id);
   },
   addReminder: function(description, date, pet_id, owner_id){
     return Reminders().insert({
       description: description,
       date: date,
+      owner_id: owner_id,
       pet_id: pet_id
-    }).where('owner_id', owner_id)
+    }, 'id').where('owner_id', owner_id);
   }
 }
