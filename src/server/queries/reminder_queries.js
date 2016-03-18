@@ -5,8 +5,8 @@ function Reminders() {
 }
 
 module.exports = {
-  getReminders: function(){
-    return Reminders().select();
+  getReminders: function(id){
+    return Reminders().select().where('owner_id', id);
   },
   getOneReminder: function(id){
     return Reminders().where('id', id);
@@ -14,10 +14,18 @@ module.exports = {
   deleteReminder: function(id){
   	return Reminders().del().where('id',id);
   },
-  updateReminder: function(reminder, id){
-  	return Reminders().update(reminder,'id').where('id',id);
+  updateReminder: function(description, date, pet_id, id){
+  	return Reminders().update({
+      description: description,
+      date: date,
+      pet_id: pet_id
+    }).where('id',id);
   },
-  addReminder: function(reminder){
-    return Reminders().insert(reminder,'id');
+  addReminder: function(description, date, pet_id, owner_id){
+    return Reminders().insert({
+      description: description,
+      date: date,
+      pet_id: pet_id
+    }).where('owner_id', owner_id)
   }
 }
