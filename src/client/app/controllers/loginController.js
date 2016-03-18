@@ -1,7 +1,8 @@
 'use strict';
 
 angular.module('petApp')
-.controller('LoginCtrl', ['$scope', '$http', '$routeParams', '$log','$location', '$cookies', function($scope, $http,$routeParams,$log,$location, $cookies){
+.controller('LoginCtrl', ['$scope', '$http', '$routeParams', '$location', '$cookies', function($scope, $http,$routeParams,$location, $cookies){
+
     console.log('LoginController sounding off');
 
      $scope.register = function(){
@@ -11,11 +12,11 @@ angular.module('petApp')
                       email: $scope.registerEmail,
                       password: $scope.registerPassword
                     }
-        console.log(data);
         $http.post('/api/auth/register', data)
         .success(function(data) {
             $scope.id = data;
-            $location.url('/profile/'+$scope.hello+'/pets/new')
+            $cookies.put('id', $scope.id);
+            $location.url('/profile/'+$scope.id+'/pets/new');
         });
      };
 
@@ -28,15 +29,13 @@ angular.module('petApp')
         .success(function(data) {
             $scope.id = data;
             $cookies.put('id', $scope.id);
-            $location.url('/profile/'+$scope.id+'/pets/main')
+            $location.url('/profile/'+$scope.id+'/pets/main');
         });
      };
 
      $scope.logout = function(){
-         $log.info('you are logged out');
          $http.get('/api/auth/logout')
          .success(function(data) {
-             $log.info('you are logged out2');
              $location.url('/');
              $cookies.remove('id');
          });
@@ -48,7 +47,6 @@ angular.module('petApp')
        for (var i in files){
          namesArr.push(files[i].name);
        }
-       console.log(namesArr);
        var file = files[0];
        if(file == null){
             alert("No file selected.");
