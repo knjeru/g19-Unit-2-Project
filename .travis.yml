@@ -1,7 +1,15 @@
 language: node_js
 node_js:
-  - "0.10"
+- '0.10'
 services:
-  - postgresql
+- postgresql
 before_script:
-  - psql -c 'create database pet_app;' -U postgres
+- psql -c 'create database pet_app;' -U postgres
+deploy:
+  provider: heroku
+  app: vast-harbor-19731
+  api_key:
+    secure: jGjOfFT3jdXlzozjb46pDFitb1Eeb2JFaw6qC4+DjEwpN9+9np4qaIk1c1T1+NDyEhWigAt7MM2UE97sYrQP8XReIex/yeZkdvJq1MaPuWI4zurx/UWpVTmxtLlo6LfrmBaswchxKCGnAk4k2mWI15pbNVOFWsInzSSbOVAeqNgQTo8mAAnqKpgA5SCzzUjsq+j+B1ZFgdDuL4PbjGNQ2pnXz9oyrdCyaPBb6n8yHxwqxXLZThz6aKctX4KPdvyMRKpPfCBgdxqrsEOMjFEJlVaSEVWp/XdzSvP2xvtRmzF+aC3Gn/Ar3AIlZVKdYZdFb00aJOUZbbkdoQuCOLsKiqYasfzV7ccTnEzvyWwiCa/wakk8oXS2aXtAGJTNo2h6ORjABi5jAX++BTNxliLF5DMZMuCz1/bQrm77dE4tG7qsYRdOI5eLmluhvSRs6DEjJCy3DQErF/rnZXF/6angCqLtY4UB/Cwii0W1MBpAbYS4G/NnqIrgCR23HPC1S7RiKXUykoxrm5vgYyzJcZ07/jcaAngI8PhL6pU+EH1ZD488Vcx04zK5xjnq5DCnyhAdX0u3lFlwMQETjygWuh0Vc5DxlOtNJpCq1AN/ZvDKIuPZ9x58RiZTd+fq7GkZZ/dVWFhh4hlWyrUGgw/Wz94dc0cimrmdG7MZTjBpaixSy6s=
+notifications:
+  email:
+  - daniel@djrobinson.me
