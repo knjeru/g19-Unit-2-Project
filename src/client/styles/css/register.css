@@ -29,13 +29,21 @@ body {
 
 #register-form {
 	border: 1px solid black;
-  height: 34rem;
+  height: 50rem;
 	margin: 20vh auto;
 	overflow: scroll;
 	width: 450px;
 	padding: 1rem;
 	padding-bottom: 0;
 	padding-right: 0;
+	position: relative;
+}
+
+#register-form img {
+	border-radius: 4px;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+	width: 47.5%;
 }
 
 #email, #password,
@@ -43,12 +51,8 @@ body {
 	width: 95%;
 }
 
-#register-form #facebook-sigin {
-	text-align: center;
-	width: 60%;
-}
-
 #register-form p {
+	display: inline-block;
 	text-align: center;
 }
 
