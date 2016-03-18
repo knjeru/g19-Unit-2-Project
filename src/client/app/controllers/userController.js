@@ -1,15 +1,13 @@
 'use strict';
 
 angular.module('petApp')
-.controller('UsrProfCtrl', ['$scope', '$http', '$routeParams', '$log', '$location', '$cookies', function($scope,$http,$routeParams,$log,$location,$cookies) {
+.controller('UsrProfCtrl', ['$scope', '$http', '$routeParams', '$location', '$cookies', function($scope,$http,$routeParams,$location,$cookies) {
     console.log('userController 1 sounding off');
 
 (function() {
     $http.get('/api/profile/'+parseInt($cookies.get('id')))
     .success(function(data) {
-        console.log('This should be the id: ', $routeParams.id)
         $scope.user = data[0];
-        console.log('here is my data: ', $scope.user);
     });
   })();
 
@@ -28,18 +26,10 @@ angular.module('petApp')
        });
     };
 
-    // $scope.userFormData = {};
-    // $scope.newUser = function() {
-    //     $http.post('/api/profile/new', $scope.userFormData)
-    //     .success(function(data) {
-    //         console.log('This user has been added');
-    //     });
-    // }
-
     $scope.updateUser = function() {
         $http.put('/api/profile/'+$routeParams.id+'/edit', $scope.userFormData)
         .success(function(data) {
-            console.log('This user has been updated');
+            $location.url('/profile/'+$cookies.get('id'))
         });
     }
 
@@ -50,13 +40,11 @@ angular.module('petApp')
         });
     }
 }])
-.controller('MainUsrProfCtrl', ['$scope', '$http', '$routeParams', '$log', function($scope, $http, $routeParams,$log) {
+.controller('MainUsrProfCtrl', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams,$log) {
   console.log('main user controller')
 
     $http.get('/api/profile')
     .success(function(data) {
         $scope.users = data[0];
-        $log.info($scope.users);
-        console.log('here is my data: ', $scope.users);
     })
 }]);

@@ -1,76 +1,75 @@
 			<h1>Update Pet</h1>
-			<form id="pet-form" action="/api/" method="post">
-
+			<form id="pet-form" ng-submit="updatePet()" ng-cloak>
 				<div class="twelve columns">
 					<label for="name">Name</label>
-					<input id="name" name="name" type="text">
+					<input id="name" ng-value="pet.name" type="text" ng-model="petFormData.name">
 				</div>
 
 				<div class="twelve columns">
 					<label for="picture_url">Picture Url</label>
-					<input id="picture_url" name="picture_url" type="text" placeholder="Starts with http://">
+					<input id="picture_url" ng-value="pet.picture_url" type="text" placeholder="Starts with http://" ng-model="petFormData.picture_url">
 				</div>
 
 				<div class="twelve columns" id="type-div">
 					<label for="petType">Type of Pet</label>
-					<select id="petType" name="pet-type">
-          <option value="dog">Dog</option>
-          <option value="cat">Cat</option>
-          <option value="small-mammal">Small mammal (gerbils, hamsters, etc)</option>
-          <option value="fish">Fish</option>
-          <option value="rabbit">Rabbit</option>
-          <option value="lizard">Lizard</option>
-          <option value="bird">Bird</option>
-          <option value="snake">Snake</option>
-          <option value="horse">Horse</option>
-          <option value="other">Other</option>
+					<select id="petType" ng-model="petFormData.type">
+						<option ng-value="pet.type" selected>Current: {{pet.type}}</option>
+	          <option value="dog">Dog</option>
+	          <option value="cat">Cat</option>
+	          <option value="small-mammal">Small mammal (gerbils, hamsters, etc)</option>
+	          <option value="fish">Fish</option>
+	          <option value="rabbit">Rabbit</option>
+	          <option value="lizard">Lizard</option>
+	          <option value="bird">Bird</option>
+	          <option value="snake">Snake</option>
+	          <option value="horse">Horse</option>
+	          <option value="other">Other</option>
         <select>
 				</div>
 
 				<div class="six columns" id="breed-div">
 					<label for="breed">Breed</label>
-					<input id="breed" name="breed" type="email">
+					<input id="breed" type="text" ng-value="pet.breed" ng-model="petFormData.breed">
 				</div>
 
 				<div class="six columns" id="weight-div">
 					<label for="weight">Weight</label>
-					<input id="weight" name="weight" type="number">
+					<input id="weight" type="number" ng-value="pet.weight" ng-model="petFormData.weight">
 				</div>
 
 				<div class="six columns" id="allergy-div">
 					<label for="allergies">Allergies</label>
-					<input id="allergies" name="allergies" type="text" placeholder="EX: Chocolate, Daffodils">
+					<input id="allergies" type="text" placeholder="EX: Chocolate, Daffodils" ng-value="pet.allergies" ng-model="petFormData.allergies">
 				</div>
 
 				<div class="six columns" id="illnesses-div">
 					<label for="illnesses">Illnesses</label>
-					<input id="illnesses" name="illnesses" type="text">
+					<input id="illnesses" type="text" ng-value="pet.illnesses" ng-model="petFormData.illnesses">
 				</div>
 
 				<div class="twelve columns" id="last_vet_visit-div">
 					<label for="last_vet_visit">Last Vet Visit</label>
-					<input class="button" id="last_vet_visit" name="last_vet_visit" type="date" placeholder="Pet's last vet visit">
+					<input class="button" id="last_vet_visit" type="date" placeholder="Pet's last vet visit" ng-value="pet.last_vet_visit | date: yyyy-MM-dd" ng-model="petFormData.last_vet_visit">
 				</div>
 
 				<div class="twelve columns">
 					<label for="tendencies">Doesn't Like</label>
-					<input id="tendencies" name="tendencies" type="text" placeholder="EX: Other animals, baseball caps">
+					<input id="tendencies" type="text" placeholder="EX: Other animals, baseball caps" ng-value="pet.tendencies" ng-model="petFormData.tendencies">
 				</div>
 
 				<div class="twelve columns">
 					<label for="favorites">Favorites</label>
-					<input id="favorites" name="favorites" type="text" placeholder="Pet's Favorites">
+					<input id="favorites" type="text" placeholder="Pet's Favorites" ng-value="pet.favorites">
 				</div>
 
-				<div class="twelve columns">
+				<!-- <div class="twelve columns">
 					<label for="products">Products</label>
-					<input id="products" name="products" type="text" placeholder="EX: Food Brand, Litter Brand, etc.">
-				</div>
+					<input id="products" type="text" placeholder="EX: Food Brand, Litter Brand, etc.">
+				</div> -->
 
 				<div class="twelve columns">
-					<input id="update" type="submit" value="Update">
-					<a href="/#/api/profile/id/pet_id"><input id="cancel" type="button" value="Cancel"></a>
-					<a href="/#/api/profile/id/pet_id/delete"><input id="delete" type="button" value="Remove Pet"></a><br>
+					<button type="submit">Update Pet</button>
+					<a href="/#/profile/{{userExist}}/{{pet.id}}"><input id="cancel" type="button" value="Cancel"></a>
+					<a href="/#/profile/{{userExist}}/pets/main" ng-click="removePet()"><input id="delete" type="button"></a><br>
 				</div>
-					<!-- need to check href's -->
 			</form>

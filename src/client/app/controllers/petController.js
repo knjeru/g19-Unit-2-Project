@@ -52,15 +52,13 @@ angular.module('petApp')
       //   $scope.step++;
       // };
   }])
-  .controller('SinglePetCtrl', ['$scope', '$routeParams','petFactory', function($scope, $routeParams, petFactory){
-      console.log('petController 2 sounding off');
+  .controller('SinglePetCtrl', ['$scope', '$routeParams','petFactory', '$cookies', '$location', '$http', function($scope, $routeParams, petFactory, $cookies, $location, $http){
 
       $scope.id = $routeParams.id;
 
       getPet();
 
       function getPet() {
-          console.log('inside get pet');
           petFactory.getPet($scope.id)
             .success(function(data) {
               $scope.pet = data[0]
@@ -69,21 +67,13 @@ angular.module('petApp')
             });
       };
 
-      // function createPet() {
-      //   petFactory.insertPet()) {
-      //     .success(function(data) {
-      //
-      //     }).error(function(data) {
-      //
-      //     })
-      //
-      //   }
-      // }
 
+      $scope.petFormData = {}
       $scope.updatePet = function() {
           $http.put('/api/pets/'+$routeParams.id+'/edit', $scope.petFormData)
           .success(function(data) {
               // we can set an action to the let the user know the request went through
+              $location.url('/profile/'+$cookies.get('id')+'/pets/main');
           });
       }
 
