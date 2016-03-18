@@ -17,5 +17,11 @@
   margin-top: 0;
   font-size: 3rem; }
 
-.leftFloat {
-  float: left; }
+.visit-title {
+  font-weight: 500;
+  font-size: 1.75rem;
+  text-decoration: underline;
+  padding-right: 2rem; }
+
+.details {
+  padding-left: 25px; }
