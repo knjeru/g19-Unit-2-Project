@@ -7,13 +7,9 @@
       <label for="date">Date</label>
       <input required id="date" name="date" type="date" ng-model="reminderFormData.date">
       <label for="petName">Which Pet?</label>
-      <select id="petName" name="pet-type" ng-model="reminderFormData.pet_id">
-        <div ng-repeat="pet in pets">
-          <option ng-value="{{pet.id}}">{{pet.name}}</option>
-        </div>
-      <select>
+      <select ng-options="pet as pet.name for pet in pets track by pet.id" ng-model="reminderFormData.pet_id"></select>
+      <input id="submitReminder" type="submit" value="Add Reminder">
     </form>
     <a target="_blank" href="https://www.google.com/calendar/render?action=TEMPLATE&text=New+Reminder&dates=20140127T224000Z/20140320T221500Z&details=What+do+you+need+to+remember?&location=anywhere&sf=true&output=xml">Add to google calendar</a>
-    <input id="submitReminder" type="submit" value="Add Reminder">
   </div>
 </div>

@@ -15,8 +15,9 @@ angular.module('petApp')
     };
 
 
-    reminderFactory.insertReminder = function (pet) {
-      return $http.post(urlBase + '/new', pet);
+    reminderFactory.insertReminder = function (pet, owner) {
+      console.log(pet);
+      return $http.post(urlBase + '/'+ owner + '/new', pet);
     };
 
     reminderFactory.updateReminder = function(remID) {

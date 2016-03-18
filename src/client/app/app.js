@@ -98,10 +98,10 @@ angular.module('petApp', ['ngRoute', 'door3.css', 'ngCookies'])
         css: '/styles/css/reminders.css',
         controller: 'MainReminderCtrl'
     })
-    .when('/profile/:owner/reminders/:reminder/new', {
+    .when('/profile/:owner/reminders/new', {
         templateUrl: '/app/views/forms/new_reminder.html',
         css: '/styles/css/reminders.css',
-        controller: 'SingleReminderCtrl'
+        controller: 'MainReminderCtrl'
     })
     .when('/profile/:owner/reminders/:reminder/edit', {
         templateUrl: '/app/views/user/update-reminders-page.html',
