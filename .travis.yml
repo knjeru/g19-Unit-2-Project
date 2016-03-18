@@ -1,7 +1,10 @@
 language: node_js
 node_js:
-  - "0.10"
+- '0.10'
 services:
-  - postgresql
+- postgresql
 before_script:
-  - psql -c 'create database pet_app;' -U postgres
+- psql -c 'create database pet_app;' -U postgres
+deploy:
+  api_key:
+    secure: yaWIVPoHHMsX29gWNFKEERwXNij9JxVfxn53osabj/hZpk2x3QMONdh5tFFHkB+iw4MC3jlj7YNzPvGo7HF3X0ZaDD92ZQSnxVidJd497ocJUKE3a0TjZq+7VLeCywM+zGIdTwgiFQIG/3bM3xD1w+xLX28XhOR08GgCvYCqYOHu4zLVBkRBs1Bv97cVfS9kM0ueeXc951rTwwjNBBKgsejMKJ/N15WCMR1OaIRjhc154icL+v73/ni2rppciKZhVmfdh6izegpE/mUZaPF3W/Xk56G2P10LVO/DeTT6us/ZHzLbj8/aYuLcRckQAQKyfGdze7qIGpxJ3IMBny0yPWD9JdeR0wjt4TLBYSkNKvqLCD/i4SoHrVd1G+ItvksqR3QX/BGwGnyUIT6g3ORgStZ/mLQvo6ljJ96WU8M1L9BFSPT+xaa+PRuIEYcs7kgO5hERV64YbB+S8PMRCCKHEEK7QshnY3Q7Cv0h2fgte+5yLk/fGUhto5lEE9jGb6EtW2OnCfJfkCqnXVKXRV7+dwHDyjrJJJt57BdOFUIDAz49mdI4m3mlf/ozPfwTBeSsbzXuaggVYMzikkvPqCDJM7EmNvwwK5c7L/GOz9w7p2FhgAIC49H7f8u9I/GgJXpH5OzB1iGZEzrzGbnvyo/6a3w1S4eu+O9o9+DjzOghzco=
