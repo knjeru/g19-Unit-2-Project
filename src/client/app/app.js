@@ -105,7 +105,22 @@ angular.module('petApp', ['ngRoute', 'door3.css', 'ngCookies'])
     .when('/profile/:owner/pet/:pet/vetvisit/:visit/edit', {
         templateUrl: '/app/views/vetvisit/update-vet-visit-page.html',
         css: '/styles/css/update-vet-visit-page.css',
-        controller: 'SingleVetVisitCtrl'
+        // controller: 'SingleVetVisitCtrl'
+    })
+    .when('/profile/:owner/reminders', {
+        templateUrl: '/app/views/pet/reminders.html',
+        css: '/styles/css/reminders.css',
+        controller: 'MainReminderCtrl'
+    })
+    .when('/profile/:owner/reminders/:reminder', {
+        templateUrl: '/app/views/forms/new_reminder.html',
+        css: '/styles/css/reminders.css',
+        controller: 'SingleReminderCtrl'
+    })
+    .when('/profile/:owner/reminders/:reminder/edit', {
+        templateUrl: '/app/views/user/update-reminders-page.html',
+        css: '/styles/css/reminders.css',
+        controller: 'SingleReminderCtrl'
     })
     // .when('/vetvisit/:id/delete', {
     //     templateUrl: '[view html]',
