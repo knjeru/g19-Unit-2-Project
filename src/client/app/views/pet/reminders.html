@@ -4,38 +4,24 @@
       <img src="https://s3-media4.fl.yelpcdn.com/bphoto/K-0rDTlExkpF2WbSKiyz2Q/ls.jpg">
       <!-- Vet image -->
       <h4 class="reminderH1">Your Vet:</h4>
-      <p>Vet Name</p>
-      <p>Vet Street Address</p>
-      <p>Vet city, Vet State, Vet zipcode</p>
+      <p>{{owner.vet_name}}</p>
+      <p>{{owner.vet_address}}</p>
+      <p>{{owner.vet_city}}, {{owner.vet_state}}, {{owner.vet_zip}}</p>
     </div>
   </div>
   <div class="row">
     <div class="six offset-by-three columns underline">
-      <a href="/#/{{user.id}}/reminders/new"><p class="addReminder">+</p></a>
+      <a ng-href="/#/{{user.id}}/reminders/new"><p class="addReminder">+</p></a>
     </div>
   </div>
-  <div class="row">
-    <div class="one offset-by-three columns">
-      <a href="/#/{{user.id}}/reminders/{{reminder.id}}/edit"><i class="fa fa-pencil"></i></a>
-    </div>
-    <div class="five columns">
-      <p class="reminderCenter">Pet name: Last vet visit</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="one offset-by-three columns">
-      <a href="/#/{{user.id}}/reminders/{{reminder.id}}/edit"><i class="fa fa-pencil"></i></a>
-    </div>
-    <div class="five columns">
-      <p class="reminderCenter">Pet name: Other update</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="one offset-by-three columns">
-      <a href="/#/{{user.id}}/reminders/{{reminder.id}}/edit"><i class="fa fa-pencil"></i></a>
-    </div>
-    <div class="five columns">
-      <p class="reminderCenter">Pet name: Other update</p>
+  <div ng-repeat="reminder in reminders">
+    <div class="row">
+      <div class="one offset-by-three columns">
+        <a ng-href="/#/{{user.id}}/reminders/{{reminder.id}}/edit"><i class="fa fa-pencil"></i></a>
+      </div>
+      <div class="five columns">
+        <p class="reminderCenter">Pet name: Last vet visit</p>
+      </div>
     </div>
   </div>
 </div>
