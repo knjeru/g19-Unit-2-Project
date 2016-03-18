@@ -109,4 +109,5 @@ angular.module('petApp', ['ngRoute', 'door3.css', 'ngCookies'])
         controller: 'SingleReminderCtrl'
     })
     .otherwise('/');
+
 });

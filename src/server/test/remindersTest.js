@@ -28,24 +28,25 @@ describe('Reminders API routes', function() {
   describe('Add a single reminder', function() {
       it('should add a single reminder into the db', function(done){
         chai.request(server)
-        .post('/api/reminders/new')
+        .post('/api/reminders/1/new')
         .send({
                 description: 'Canine Parvovirus Vaccination',
                 date: '10-10-2016',
-                pet_id: 1,
-                owner_id: 1
+                pet_id: 1
             })
         .end(function(error, response){
+          console.log(response.body);
           chai.request(server)
           .get('/api/reminders/' +response.body)
           .end(function(err, res){
+            console.log(res.body);
             res.should.have.status(200);
                 res.should.be.json;
                 res.body.should.be.a('array');
-                res.body[0].should.have.property('description');
-                res.body[0].description.should.equal('Canine Parvovirus Vaccination');
-                res.body[0].should.have.property('date');
-                res.body[0].date.should.equal('10-10-2016');
+                res.body[1].should.have.property('description');
+                res.body[1].description.should.equal('Canine Parvovirus Vaccination');
+                res.body[1].should.have.property('date');
+                res.body[1].date.should.equal('2016-10-10T00:00:00.000Z');
                 done();
           });
         });
@@ -57,7 +58,7 @@ describe('Reminders API routes', function() {
 
         it('should get all reminders', function(done) {
             chai.request(server)
-            .get('/api/reminders')
+            .get('/api/reminders/1')
             .end(function(err, res) {
                 res.should.have.status(200);
                 res.should.be.json;
@@ -65,7 +66,7 @@ describe('Reminders API routes', function() {
                 res.body[0].should.have.property('description');
                 res.body[0].description.should.equal('meningitis vaccination');
                 res.body[0].should.have.property('date');
-                res.body[0].date.should.equal('11-11-2016');
+                res.body[0].date.should.equal('2016-11-11T00:00:00.000Z');
                 done();
             });
         });
@@ -83,7 +84,7 @@ describe('Reminders API routes', function() {
                 res.body[0].should.have.property('description');
                 res.body[0].description.should.equal('meningitis vaccination');
                 res.body[0].should.have.property('date');
-                res.body[0].date.should.equal('11-11-2016');
+                res.body[0].date.should.equal('2016-11-11T00:00:00.000Z');
                 done();
               });
         });
@@ -109,7 +110,7 @@ describe('Reminders API routes', function() {
                 res.body[0].should.have.property('description');
                 res.body[0].description.should.equal('canine hepatitis vaccination');
                 res.body[0].should.have.property('date');
-                res.body[0].date.should.equal('10-10-2016');
+                res.body[0].date.should.equal('2016-10-10T00:00:00.000Z');
                 done();
             });
           });

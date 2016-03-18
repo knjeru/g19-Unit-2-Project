@@ -6,8 +6,8 @@ angular.module('petApp')
     var urlBase = '/api/reminders';
     var reminderFactory = {};
 
-    reminderFactory.getReminders = function() {
-      return $http.get(urlBase);
+    reminderFactory.getReminders = function(owner_id) {
+      return $http.get(urlBase + '/' + owner_id);
     };
 
     reminderFactory.getReminder = function(id) {

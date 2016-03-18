@@ -4,8 +4,8 @@ var query = require('../queries/reminder_queries');
 var helpers = require('../lib/helpers');
 
 // get ALL reminders
-router.get('/', helpers.ensureAuthenticated, function(req, res, next){
-  query.getReminders().then(function(reminders){
+router.get('/:owner_id', helpers.ensureAuthenticated, function(req, res, next){
+  query.getReminders(req.params.owner_id).then(function(reminders){
     res.json(reminders);
   });
 });
@@ -19,16 +19,20 @@ router.get('/:id', helpers.ensureAuthenticated, function(req, res, next){
 
 // add new reminder
 router.post('/:user_id/new', helpers.ensureAuthenticated, function(req, res, next){
-	var newReminder = req.body
-	query.addReminder(newReminder.description, newReminder.date, newReminder.pet, req.params.user_id).then(function(reminder){
+	console.log(req.body);
+	var newReminder = req.body;
+	query.addReminder(newReminder.description, newReminder.date, newReminder.pet_id, req.params.user_id).then(function(reminder){
+		console.log(reminder);
 	  res.json(reminder[0]);
 	});
 });
 
 // update reminder by id
 router.put('/:id/edit', helpers.ensureAuthenticated, function(req, res, next){
+	console.log(req.params.id);
+	console.log(updateReminder);
 	var updateReminder = req.body;
-	query.updateReminder(updateReminder.description, updateReminder.date, updateReminder.pet, req.params.id).then(function(reminder){
+	query.updateReminder(updateReminder.description, updateReminder.date, updateReminder.pet_id, req.params.id).then(function(reminder){
 	  res.json(reminder[0]);
 	});
 });
