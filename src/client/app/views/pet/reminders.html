@@ -1,12 +1,12 @@
 <div class="container">
   <div class="row">
     <div class="four offset-by-four columns">
-      <img src="https://s3-media4.fl.yelpcdn.com/bphoto/K-0rDTlExkpF2WbSKiyz2Q/ls.jpg">
+      <img class="vet-image"src="https://s3-media4.fl.yelpcdn.com/bphoto/K-0rDTlExkpF2WbSKiyz2Q/ls.jpg">
       <!-- Vet image -->
       <h4 class="reminderH1">Your Vet:</h4>
-      <p>{{owner.vet_name}}</p>
-      <p>{{owner.vet_address}}</p>
-      <p>{{owner.vet_city}}, {{owner.vet_state}}, {{owner.vet_zip}}</p>
+      <p class="vet-info">{{owner.vet_name}}</p>
+      <p class="vet-info">{{owner.vet_address}}</p>
+      <p class="vet-info">{{owner.vet_city}}, {{owner.vet_state}}, {{owner.vet_zip}}</p>
     </div>
   </div>
   <div class="row">
@@ -14,6 +14,7 @@
       <a ng-href="/#/{{user.id}}/reminders/new"><p class="addReminder">+</p></a>
     </div>
   </div>
+  <div class="all-reminders">
   <div ng-repeat="reminder in reminders">
     <div class="row">
       <div class="one offset-by-three columns">
@@ -25,5 +26,6 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 

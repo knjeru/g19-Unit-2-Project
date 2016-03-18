@@ -15,7 +15,8 @@ body {
 
 #owner-form {
 	border: 1px solid black;
-	margin: auto;
+	height: 110rem;
+	margin: 10vh auto;
 	width: 450px;
 	padding: 1rem;
 	padding-bottom: 0;
