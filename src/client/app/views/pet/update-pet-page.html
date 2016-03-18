@@ -49,17 +49,17 @@
 
 				<div class="twelve columns" id="last_vet_visit-div">
 					<label for="last_vet_visit">Last Vet Visit</label>
-					<input class="button" id="last_vet_visit" type="date" placeholder="Pet's last vet visit" ng-value="pet.last_vet_visit | date: yyyy-MM-dd" ng-model="petFormData.last_vet_visit">
+					<input class="button" id="last_vet_visit" type="date" placeholder="Pet's last vet visit" ng-value="pet.last_vet_visit | date: 'yyyy-MM-dd'" ng-model="petFormData.last_vet_visit">
 				</div>
 
 				<div class="twelve columns">
 					<label for="tendencies">Doesn't Like</label>
-					<input id="tendencies" type="text" placeholder="EX: Other animals, baseball caps" ng-value="pet.tendencies" ng-model="petFormData.tendencies">
+					<input id="tendencies" type="text" placeholder="EX: Other animals, baseball caps" ng-value="pet.dislikes" ng-model="petFormData.dislikes">
 				</div>
 
 				<div class="twelve columns">
-					<label for="favorites">Favorites</label>
-					<input id="favorites" type="text" placeholder="Pet's Favorites" ng-value="pet.favorites">
+					<label for="favorites">Likes</label>
+					<input id="favorites" type="text" placeholder="Pet's Likes" ng-value="pet.likes" ng-model="pet.likes">
 				</div>
 
 				<!-- <div class="twelve columns">
