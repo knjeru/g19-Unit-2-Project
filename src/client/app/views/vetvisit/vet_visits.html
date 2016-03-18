@@ -10,9 +10,9 @@
     <a ng-href="/#/profile/{{owner}}/pet/{{pet}}/vetvisit/{{visit.id}}/edit">
       <div class="eight offset-by-two columns summary">
         <h2>Visit Summary</h2>
-        <p>Date:{{visit.visit_date}} </p>
-        <p class="leftFloat">{{visit.vaccines}}</p><br>
-        <p class="leftFloat">{{visit.personal_notes}}</p>
+        <p class="details"><span class="visit-title">Visit Date:</span> {{visit.visit_date}} </p>
+        <p class="details"><span class="visit-title">Vaccines:</span> {{visit.vaccines}}</p>
+        <p class="details"><span class="visit-title">Visit Notes:</span> {{visit.personal_notes}}</p>
       </div>
     </a>
   </div>
