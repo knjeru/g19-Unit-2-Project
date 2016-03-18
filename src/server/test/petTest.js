@@ -38,8 +38,6 @@ describe('Pet API routes', function() {
                 allergies: 'Everything',
                 illnesses: 'Everyting',
                 last_vet_visit: '2016-03-12T00:00:00.000Z',
-                tendencies: 'Is tiny',
-                favorites: 'yapping',
                 owner_id: 1
             })
         .end(function(error, response){
@@ -65,10 +63,6 @@ describe('Pet API routes', function() {
                 res.body[0].illnesses.should.equal('Everyting');
                 res.body[0].should.have.property('last_vet_visit');
                 res.body[0].last_vet_visit.should.equal('2016-03-12T00:00:00.000Z')
-                res.body[0].should.have.property('tendencies');
-                res.body[0].tendencies.should.equal('Is tiny');
-                res.body[0].should.have.property('favorites');
-                res.body[0].favorites.should.equal('yapping');
                 done();
           });
         });
@@ -101,10 +95,6 @@ describe('Pet API routes', function() {
                 res.body[0].illnesses.should.equal('none');
                 res.body[0].should.have.property('last_vet_visit');
                 res.body[0].last_vet_visit.should.equal('2016-03-12T00:00:00.000Z')
-                res.body[0].should.have.property('tendencies');
-                res.body[0].tendencies.should.equal('eats');
-                res.body[0].should.have.property('favorites');
-                res.body[0].favorites.should.equal('food');
                 // res.body[0].should.have.property('owner_id');  //Need to add ref
                 done();
             });
@@ -136,10 +126,6 @@ describe('Pet API routes', function() {
                 res.body[0].illnesses.should.equal('none');
                 res.body[0].should.have.property('last_vet_visit');
                 res.body[0].last_vet_visit.should.equal('2016-03-12T00:00:00.000Z')
-                res.body[0].should.have.property('tendencies');
-                res.body[0].tendencies.should.equal('eats');
-                res.body[0].should.have.property('favorites');
-                res.body[0].favorites.should.equal('food');
                 done();
               });
         });
@@ -158,8 +144,6 @@ describe('Pet API routes', function() {
                 allergies: 'Everything',
                 illnesses: 'Everyting',
                 last_vet_visit: '2016-03-12T00:00:00.000Z',
-                tendencies: 'Is tiny',
-                favorites: 'yapping',
                 owner_id: 1
             })
         .end(function(error, response){
@@ -185,10 +169,6 @@ describe('Pet API routes', function() {
                 res.body[0].illnesses.should.equal('Everyting');
                 res.body[0].should.have.property('last_vet_visit');
                 res.body[0].last_vet_visit.should.equal('2016-03-12T00:00:00.000Z')
-                res.body[0].should.have.property('tendencies');
-                res.body[0].tendencies.should.equal('Is tiny');
-                res.body[0].should.have.property('favorites');
-                res.body[0].favorites.should.equal('yapping');
                 done();
             });
           });
