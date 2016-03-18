@@ -4,7 +4,7 @@
         <label>Upload Image</label>
         <input type="file" name="petImage" onchange="angular.element(this).scope().fileNameChanged(this)">
         <label for="petName">What's your pet's name?</label>
-        <input required type="text" id="petName" name="petName" ng-model="petFormData.name"/>
+        <input required type="text" id="petName" ng-model="petFormData.name"/>
     </div><div class="group">
         <label required for="petType">What type of animal is your pet?</label>
         <select id="petType" ng-model="petFormData.type">
@@ -22,15 +22,15 @@
     </div>
     <div class="group">
         <label for="petBreed">What breed?</label>
-        <input type="text" id="petBreed" name="petBreed" ng-model="petFormData.breed"/>
+        <input type="text" id="petBreed" ng-model="petFormData.breed"/>
     </div>
     <div class="group">
         <label for="petAge">How old?</label>
-        <input type="text" id="petAge" name="petAge" />
+        <input type="text" id="petAge"/>
     </div>
     <div class="group">
         <label for="petVet">Do you remember the last time they were at the vet?</label>
-        <input type="date" id="petVet" name="petVet" ng-model="petFormData.last_vet_visit"/>
+        <input type="date" id="petVet" ng-model="petFormData.last_vet_visit"/>
     </div>
     <!-- <div>
       <p class="count">7</p>

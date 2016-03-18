@@ -1,3 +1,5 @@
+'use strict';
+
 angular.module('petApp')
   .factories('loginFactory', ['$http', function($http) {
     var urlBase = '/api/auth/'

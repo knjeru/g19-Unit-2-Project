@@ -1,6 +1,6 @@
 <nav class="single-pet-nav">
-  <a ng-href="/pet/{{pet.id}}">General Pet Information</a>
-  <a ng-href="/vetvisits/{{pet.id}}">Vet Visits</a>
+  <a ng-href="/#/profile/{{owner}}/pet/{{pet.id}}">General Pet Information</a>
+  <a ng-href="/#/profile/{{userExist}}/pet/{{pet.id}}/vetvisits">Vet Visits</a>
 </nav>
 <h1 class="vet-visit">Vet Visits</h1>
 <a class="add" ng-href="/#/profile/{{owner}}/pet/{{pet}}/vetvisit/new">+ Add Visit</a>

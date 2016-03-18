@@ -3,13 +3,14 @@ body {
   margin: 0;
   padding: 0; }
 
-img {
+.vet-image {
   padding-top: 15vh; }
 
 a {
   text-decoration: none; }
 
 .addReminder {
+  margin-top: -5rem;
   text-align: right;
   padding-right: 4rem;
   font-size: 4rem; }
@@ -20,3 +21,9 @@ a {
 
 .reminderCenter {
   padding-left: 10%; }
+
+.vet-info {
+  margin-top: -10px; }
+
+.all-reminders {
+  margin-bottom: 15vh; }
