@@ -9,25 +9,35 @@ a {
 
 #login-form {
 	border: 1px solid black;
+	height: 34rem;
 	margin: 20vh auto;
-	width: 450px;
-	padding: 1rem;
+	overflow: scroll;
+	padding: 1.5rem;
 	padding-bottom: 0;
-	padding-right: 0;
-    height: 25rem;
+	width: 450px;
 }
 
 #login-form img {
 	border-radius: 4px;
-	width: 40%;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+	width: 47.5%;
+}
+
+#login-form p {
+	margin-bottom: 0;
 }
 
 #login-form #email,
 #login-form #password {
-	width: 90%;
+	width: 100%;
 }
 
 #login-form #login,
 #login-form #cancel {
 	width: 25%;
+}
+
+#password-div {
+	margin: 0;
 }

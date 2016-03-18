@@ -12,6 +12,10 @@ body {
     padding: 20px;
     font-size: 1.75rem;
     text-decoration: none; }
+  .main-nav .logout {
+    margin-top: 13px;
+    color: white;
+    border: none; }
 
 .prof-div {
   padding-top: 0;
@@ -33,10 +37,3 @@ body {
     text-decoration: none;
     color: white;
     padding: 50px; }
-
-.call-to-action {
-  font-size: 7rem;
-  font-weight: 500; }
-
-.conversation-starter {
-  background-color: #508CA4; }

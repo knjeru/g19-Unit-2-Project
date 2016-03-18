@@ -6,7 +6,7 @@ exports.up = function(knex, Promise) {
     table.date('date').notNullable();
     table.integer('owner_id').references('owners', 'id');
     table.integer('pet_id').references('pets', 'id');
-  })
+  });
 };
 
 exports.down = function(knex, Promise) {

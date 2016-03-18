@@ -15,7 +15,7 @@ passport.use(new LocalStrategy({
     .then(function(data) {
       // email does not exist. return error.
       if (!data.length) {
-        return done('Incorrect email.');
+        return done('Incorrect email and/or password.');
       }
       var user = data[0];
       // email found but do the passwords match?
@@ -24,7 +24,7 @@ passport.use(new LocalStrategy({
         return done(null, user.id);
       } else {
         // passwords don't match! return error
-        return done('Incorrect password.');
+        return done('Incorrect email and/or password.');
       }
     })
     .catch(function(err) {

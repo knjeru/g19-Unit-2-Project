@@ -13,14 +13,15 @@
     </div>
     <div class="eight columns">
       <div class="general-info">
-        <p>Pet Name: {{pet.name}}</p>
-        <p>Nick Names</p>
-        <p>Type: {{pet.type}}</p>
-        <p>Age</p>
+        <p class="top-info"><span class="top-info-bold">Pet Name:</span> {{pet.name}}</p>
+        <p class="top-info"><span class="top-info-bold">Type:</span> {{pet.type}}</p>
+        <p class="top-info"><span class="top-info-bold">Breed:</span> {{pet.breed}}</p>
+        <p class="top-info"><span class="top-info-bold">Age:</span> {{pet.age}}</p>
       </div>
     </div>
   </div>
   </div>
+  <a class="edit-pet" href="/#/profile/{{userExist}}/pet/{{pet.id}}/edit"><i class="fa fa-pencil"></i></a>
   <div class="tab-display">
     <div class="tabs">
       <div class="tab">
@@ -29,7 +30,6 @@
         <div class="content">
              <p>Weight: </p>
              <p>Allergies: </p>
-             <p>Breed: {{pet.breed}}</p>
              <p>Illnesses: </p>
              <p>Last Vet Visit: {{pet.last_vet_visit}}</p>
         </div>
@@ -46,7 +46,7 @@
         <input type="radio" id="tab-3" name="tab-group-1">
         <label for="tab-3">Products</label>
         <div class="content">
-          <p>Pet Food: </p>
+          <p></p>
          </div>
      </div>
      <div class="tab">

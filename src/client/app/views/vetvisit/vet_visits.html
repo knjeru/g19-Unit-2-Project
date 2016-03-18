@@ -1,38 +1,20 @@
 <nav class="single-pet-nav">
-  <a href="/pet/{{pet.id}}">General Pet Information</a>
-  <a href="/vetvisits/{{pet.id}}">Vet Visits</a>
+  <a ng-href="/pet/{{pet.id}}">General Pet Information</a>
+  <a ng-href="/vetvisits/{{pet.id}}">Vet Visits</a>
 </nav>
-<h1 class="h1vet-visit">Vet Visits</h1>
-<a class="add" href="">+ Add Visit</a>
+<h1 class="vet-visit">Vet Visits</h1>
+<a class="add" ng-href="/#/profile/{{owner}}/pet/{{pet}}/vetvisit/new">+ Add Visit</a>
 <div class="container">
+  <div ng-repeat="visit in vetVisits">
   <div class="row">
-    <a href="">
+    <a ng-href="/#/profile/{{owner}}/pet/{{pet}}/vetvisit/{{visit.id}}/edit">
       <div class="eight offset-by-two columns summary">
         <h2>Visit Summary</h2>
-        <p>Date: </p>
-        <p class="leftFloat">Vacc, Checkup</p>
-        <p class="expand">+</p>
+        <p>Date:{{visit.visit_date}} </p>
+        <p class="leftFloat">{{visit.vaccines}}</p><br>
+        <p class="leftFloat">{{visit.personal_notes}}</p>
       </div>
     </a>
   </div>
-  <div class="row">
-    <a href="">
-      <div class="eight offset-by-two columns summary">
-        <h2>Visit Summary</h2>
-        <p>Date: </p>
-        <p class="leftFloat">Vacc, Checkup</p>
-        <p class="expand">+</p>
-      </div>
-    </a>
-  </div>
-  <div class="row">
-    <a href="">
-      <div class="eight offset-by-two columns summary">
-        <h2>Visit Summary</h2>
-        <p>Date: </p>
-        <p class="leftFloat">Vacc, Checkup</p>
-        <p class="expand">+</p>
-      </div>
-    </a>
   </div>
 </div>

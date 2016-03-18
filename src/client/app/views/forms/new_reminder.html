@@ -1,19 +1,19 @@
- <h1 class="vet_form_header">New Reminder</h1>
+<h1 class="vet_form_header">New Reminder</h1>
 <div class="container">
   <div class="six offset-by-three columns">
-    <form id="vet-register" action="/api/vet/register" method="post">
+    <form id="new-reminder" ng-submit="newReminder()">
       <label for="reminder">What do you need to remember?</label>
-      <input required id="reminder" type="text" placeholder="EX vaccination expiring, schedule next vet appointment">
+      <input required id="reminder" type="text" placeholder="EX vaccination expiring, schedule next vet appointment" ng-model="reminderFormData.description">
       <label for="date">Date</label>
-      <input required id="date" name="date" type="date" placeholder="Clinic Name">
+      <input required id="date" name="date" type="date" ng-model="reminderFormData.date">
       <label for="petName">Which Pet?</label>
-      <select id="petName" name="pet-type">
-        <option value="pet1">Pet1</option>
-        <option value="pet2">Pet2</option>
-        <option value="pet3">Pet3</option>
+      <select id="petName" name="pet-type" ng-model="reminderFormData.pet_id">
+        <div ng-repeat="pet in pets">
+          <option ng-value="{{pet.id}}">{{pet.name}}</option>
+        </div>
       <select>
-</form>
-  <a target="_blank" href="https://www.google.com/calendar/render?action=TEMPLATE&text=New+Reminder&dates=20140127T224000Z/20140320T221500Z&details=What+do+you+need+to+remember?&location=anywhere&sf=true&output=xml">Add to google calendar</a>
-  <input id="submitReminder" type="submit" value="Add Reminder">
-</div>
+    </form>
+    <a target="_blank" href="https://www.google.com/calendar/render?action=TEMPLATE&text=New+Reminder&dates=20140127T224000Z/20140320T221500Z&details=What+do+you+need+to+remember?&location=anywhere&sf=true&output=xml">Add to google calendar</a>
+    <input id="submitReminder" type="submit" value="Add Reminder">
+  </div>
 </div>
