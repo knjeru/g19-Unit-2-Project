@@ -62,7 +62,7 @@ app.use('/api/vets', vetRoutes);
 app.use('/api/vet_visits', vetVisits);
 app.use('/api/auth', authRoutes);
 app.use('/img', imageUpload);
-app.use('/reminders', reminderRoutes);
+app.use('/api/reminders', reminderRoutes);
 
 
 

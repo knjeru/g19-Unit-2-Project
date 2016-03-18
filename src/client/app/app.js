@@ -87,25 +87,40 @@ angular.module('petApp', ['ngRoute', 'door3.css', 'ngCookies'])
     //     controller: 'SingleVetCtrl'
     // })
     /* THESE ARE THE VET VISIT ROUTES */
-    .when('/profile/:id/pet/:id/vetvisit/new', {
-        templateUrl: '/app/views/vetvisit/update-vet-visit-page.html',
+    .when('/profile/:owner/pet/:pet/vetvisit/new', {
+        templateUrl: '/app/views/vetvisit/new-vet-visit.html',
         css: '/styles/css/update-vet-visit-page.css',
         controller: 'MainVetVisitCtrl'
     })
-    .when('/profile/:id/pet/:id/vetvisits', {
+    .when('/profile/:owner/pet/:pet/vetvisits', {
         templateUrl: '/app/views/vetvisit/vet_visits.html',
         css: '/styles/css/vet_visits.css',
-        controller: 'SingleVetVisitCtrl'
+        controller: 'MainVetVisitCtrl'
     })
     // .when('/vetvisit/:id', {
     //     templateUrl: '[view html]',
     //     css: '[view css stylesheet]',
     //     controller: 'SingleVetVisitCtrl'
     // })
-    .when('/profile/:id/pet/:id/vetvisit/:id/edit', {
-        templateUrl: '/app/views/vetvisit/update-vet-visit.html',
-        css: '/styles/css/update-vet-visit.css',
-        controller: 'SingleVetVisitCtrl'
+    .when('/profile/:owner/pet/:pet/vetvisit/:visit/edit', {
+        templateUrl: '/app/views/vetvisit/update-vet-visit-page.html',
+        css: '/styles/css/update-vet-visit-page.css',
+        // controller: 'SingleVetVisitCtrl'
+    })
+    .when('/profile/:owner/reminders', {
+        templateUrl: '/app/views/pet/reminders.html',
+        css: '/styles/css/reminders.css',
+        controller: 'MainReminderCtrl'
+    })
+    .when('/profile/:owner/reminders/:reminder', {
+        templateUrl: '/app/views/forms/new_reminder.html',
+        css: '/styles/css/reminders.css',
+        controller: 'SingleReminderCtrl'
+    })
+    .when('/profile/:owner/reminders/:reminder/edit', {
+        templateUrl: '/app/views/user/update-reminders-page.html',
+        css: '/styles/css/reminders.css',
+        controller: 'SingleReminderCtrl'
     })
     // .when('/vetvisit/:id/delete', {
     //     templateUrl: '[view html]',
