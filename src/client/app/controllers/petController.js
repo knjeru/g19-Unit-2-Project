@@ -7,6 +7,17 @@ angular.module('petApp')
   $scope.status;
   $scope.quantity = 3;
 
+  $scope.step = 1;
+
+  $scope.nextQuestion = function () {
+    if($scope.step < 6) {
+        $scope.step++;
+    } else {
+      $scope.step = 6;
+    }
+
+  };
+
   var ownerPets = [];
 
   getPets();
@@ -44,13 +55,6 @@ angular.module('petApp')
           });
         };
 
-      // $scope.step = function() {
-      //     return 1;
-      // };
-      //
-      // $scope.nextQuestion = function () {
-      //   $scope.step++;
-      // };
   }])
   .controller('SinglePetCtrl', ['$scope', '$routeParams','petFactory', '$cookies', '$location', '$http', function($scope, $routeParams, petFactory, $cookies, $location, $http){
 

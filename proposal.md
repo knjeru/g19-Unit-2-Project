@@ -26,6 +26,9 @@
  * Passport/OAuth2: User authentication
  * Pivotal Tracker: Workflow management
  * Github: Team collaboration
+ * Angular: Front-end framework
+ * TravisCI: Continuous build integration
+ * AWS: S3 image upload
 
  ## Current Features
 

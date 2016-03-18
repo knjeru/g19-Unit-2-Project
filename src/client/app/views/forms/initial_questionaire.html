@@ -1,11 +1,12 @@
 <form id="myForm" ng-submit="newPet()" action="/img/upload" method="POST" enctype="multipart/form-data">
 
-    <div class="group">
+    <div class="group" ng-show="step === 1 || step === 6">
         <label>Upload Image</label>
         <input type="file" name="petImage" onchange="angular.element(this).scope().fileNameChanged(this)">
         <label for="petName">What's your pet's name?</label>
         <input required type="text" id="petName" ng-model="petFormData.name"/>
-    </div><div class="group">
+    </div>
+    <div class="group" ng-show="step === 2 || step === 6">
         <label required for="petType">What type of animal is your pet?</label>
         <select id="petType" ng-model="petFormData.type">
           <option value="dog">Dog</option>
@@ -20,25 +21,25 @@
           <option value="other">Other</option>
         <select>
     </div>
-    <div class="group">
+    <div class="group" ng-show="step === 3 || step === 6">
         <label for="petBreed">What breed?</label>
         <input type="text" id="petBreed" ng-model="petFormData.breed"/>
     </div>
-    <div class="group">
+    <div class="group" ng-show="step === 4 || step === 6">
         <label for="petAge">How old?</label>
         <input type="text" id="petAge"/>
     </div>
-    <div class="group">
+    <div class="group" ng-show="step === 5 || step === 6">
         <label for="petVet">Do you remember the last time they were at the vet?</label>
         <input type="date" id="petVet" ng-model="petFormData.last_vet_visit"/>
     </div>
-    <!-- <div>
-      <p class="count">7</p>
-    </div> -->
-    <!-- <div>
+    <div>
+      <p class="count">{{step}}/5</p>
+    </div>
+    <div ng-hide="step === 6">
         <button id="btnNext" ng-click="nextQuestion()">Next</button>
-    </div> -->
-  <div>
+    </div>
+  <div ng-show="step === 6">
     <button type="submit">Submit</button>
   </div>
 </form>
