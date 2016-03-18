@@ -5,12 +5,14 @@ body {
   margin-top: 10vh; }
 
 .pet-image {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
-  background-color: #333232;
+  border: 1px solid #333232;
   margin: auto;
   margin-bottom: 2.5rem; }
+  .pet-image img {
+    object-fit: cover; }
 
 h1 {
   font-family: 'Playfair Display', serif;
