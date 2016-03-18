@@ -32,8 +32,7 @@ describe('Reminders API routes', function() {
         .send({
                 description: 'Canine Parvovirus Vaccination',
                 date: '10-10-2016',
-                pet_id: 1,
-                owner_id: 1
+                pet_id: 1
             })
         .end(function(error, response){
           console.log(response.body);
@@ -44,10 +43,10 @@ describe('Reminders API routes', function() {
             res.should.have.status(200);
                 res.should.be.json;
                 res.body.should.be.a('array');
-                res.body[0].should.have.property('description');
-                res.body[0].description.should.equal('Canine Parvovirus Vaccination');
-                res.body[0].should.have.property('date');
-                res.body[0].date.should.equal('2016-10-10T00:00:00.000Z');
+                res.body[1].should.have.property('description');
+                res.body[1].description.should.equal('Canine Parvovirus Vaccination');
+                res.body[1].should.have.property('date');
+                res.body[1].date.should.equal('2016-10-10T00:00:00.000Z');
                 done();
           });
         });

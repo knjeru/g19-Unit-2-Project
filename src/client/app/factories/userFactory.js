@@ -4,7 +4,7 @@ angular.module('petApp')
   .factory('userFactory', ['$http', function($http) {
 
     var urlBase = '/api/profile/';
-    var petFactory = {};
+    var userFactory = {};
 
     userFactory.getUsers = function() {
       return $http.get(urlBase);

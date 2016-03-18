@@ -27,6 +27,6 @@ module.exports = {
       date: date,
       owner_id: owner_id,
       pet_id: pet_id
-    }, 'id').where('owner_id', owner_id);
+    }, 'owner_id').where('owner_id', owner_id);
   }
-}
+};

@@ -84,7 +84,7 @@ angular.module('petApp', ['ngRoute', 'door3.css', 'ngCookies'])
         templateUrl: '/app/views/vetvisit/update-vet-visit.html',
         css: '/styles/css/update-vet-visit.css',
         controller: 'SingleVetVisitCtrl'
-
+    })
     .when('/profile/:owner/pet/:pet/vetvisit/:visit/edit', {
         templateUrl: '/app/views/vetvisit/update-vet-visit-page.html',
         css: '/styles/css/update-vet-visit-page.css',
@@ -106,4 +106,5 @@ angular.module('petApp', ['ngRoute', 'door3.css', 'ngCookies'])
         controller: 'SingleReminderCtrl'
     })
     .otherwise('/');
+
 });

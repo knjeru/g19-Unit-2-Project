@@ -20,7 +20,8 @@
         <a ng-href="/#/{{user.id}}/reminders/{{reminder.id}}/edit"><i class="fa fa-pencil"></i></a>
       </div>
       <div class="five columns">
-        <p class="reminderCenter">Pet name: Last vet visit</p>
+        <p class="reminderCenter">{{reminder.description}}</p>
+        <p class="reminderCenter">Date: {{reminder.date}}</p>
       </div>
     </div>
   </div>

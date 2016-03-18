@@ -2,21 +2,34 @@
 
 angular.module('petApp')
   .controller('MainReminderCtrl' , ['$scope', '$routeParams', '$location',
-  'reminderFactory', '$cookies', function($scope, $routeParams, $location,
-    reminderFactory, $cookies){
+  'reminderFactory', 'userFactory', '$cookies', function($scope, $routeParams, $location,
+    reminderFactory, userFactory, $cookies){
 
-    getReminders();
+    getReminders($routeParams.owner);
+    getUser($routeParams.owner);
 
-    function getReminders() {
-      reminderFactory.getReminders()
+    function getReminders(owner) {
+      reminderFactory.getReminders(owner)
         .success(function(data) {
+          console.log(data);
           $scope.reminders = data;
         })
         .error(function(error) {
           $scope.status = 'Unable to load the reminder data: ' + error.message;
         });
+      }
 
-    }
+    function getUser(owner){
+      userFactory.getUser(owner)
+        .success(function(data){
+          console.log(data);
+          $scope.owner = data[0];
+        })
+        .error(function(error){
+          $scope.status = 'Unable to load the reminder data: ' + error.message;
+        });
+      }
+
 
 
     $scope.reminderFormData = {};
