@@ -1,5 +1,6 @@
 $purple: #593A6A;
 $dark: #333232;
+$light-gray: #D3D3D3;
 
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -35,4 +36,7 @@ a {
 }
 .all-reminders {
   margin-bottom: 15vh;
+}
+.single_reminder {
+  border-bottom: 1px solid $light-gray;
 }

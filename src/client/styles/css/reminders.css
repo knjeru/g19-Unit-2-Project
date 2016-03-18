@@ -27,3 +27,6 @@ a {
 
 .all-reminders {
   margin-bottom: 15vh; }
+
+.single_reminder {
+  border-bottom: 1px solid #D3D3D3; }
